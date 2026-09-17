@@ -1,0 +1,33 @@
+{
+  "name": "@hundred/server",
+  "version": "0.2.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    }
+  },
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "tsx src/index.ts",
+    "replay": "tsx src/replay-cli.ts",
+    "typecheck": "tsc -p tsconfig.json --pretty"
+  },
+  "dependencies": {
+    "@hono/node-server": "catalog:",
+    "@hundred/decision": "workspace:*",
+    "@hundred/decision-jev": "workspace:*",
+    "@hundred/domain": "workspace:*",
+    "@hundred/protocol": "workspace:*",
+    "@hundred/simulation": "workspace:*",
+    "hono": "catalog:",
+    "ws": "catalog:"
+  },
+  "devDependencies": {
+    "@types/ws": "catalog:",
+    "tsx": "catalog:"
+  }
+}

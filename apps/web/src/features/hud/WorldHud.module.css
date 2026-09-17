@@ -1,0 +1,92 @@
+.left {
+  position: absolute;
+  top: var(--space-4);
+  left: var(--space-4);
+  z-index: 2;
+  display: grid;
+  gap: 8px;
+  width: 252px;
+  max-height: calc(100% - 24px);
+  overflow: auto;
+}
+
+.card,
+.god,
+.hover {
+  background: color-mix(in srgb, var(--surface-1) 92%, transparent);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(8px);
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px 12px;
+  padding: 10px 12px;
+  font-size: 12px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-2);
+  color: var(--text-secondary);
+}
+
+.row:last-child {
+  grid-column: 1 / -1;
+}
+
+.row strong {
+  color: var(--text-primary);
+  font-variant-numeric: tabular-nums;
+}
+
+.god {
+  padding: 8px 10px;
+}
+
+.god h2 {
+  margin: 0 0 8px;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  color: var(--text-muted);
+}
+
+.god p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 12px;
+}
+
+.godGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  margin: 6px 0 0;
+}
+
+.godGrid button {
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  color: var(--text-primary);
+  border-radius: var(--radius-sm);
+  padding: 6px 8px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.godGrid button:disabled {
+  opacity: 0.45;
+}
+
+.hover {
+  position: absolute;
+  left: 276px;
+  bottom: var(--space-4);
+  z-index: 2;
+  padding: 8px 10px;
+}

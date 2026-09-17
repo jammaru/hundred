@@ -1,0 +1,16 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist",
+    "lib": ["ES2023", "DOM"]
+  },
+  "include": ["src"],
+  "references": [
+    { "path": "../../packages/decision" },
+    { "path": "../../packages/decision-jev" },
+    { "path": "../../packages/domain" },
+    { "path": "../../packages/protocol" },
+    { "path": "../../packages/simulation" }
+  ]
+}

@@ -1,0 +1,62 @@
+.visor {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+}
+
+.vignette {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse at 50% 62%,
+    transparent 42%,
+    color-mix(in srgb, #4a3228 42%, transparent) 100%
+  );
+}
+
+.eyes,
+.place {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: color-mix(in srgb, #fff7ee 88%, transparent);
+  color: #4a3228;
+  box-shadow: 0 6px 0 #f0c9b8;
+}
+
+.eyes {
+  top: 16px;
+  font-weight: 800;
+}
+
+.place {
+  top: 56px;
+  font-size: 13px;
+}
+
+.near {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  margin: 0;
+  padding: 10px 12px;
+  list-style: none;
+  width: 220px;
+  background: color-mix(in srgb, #fff7ee 90%, transparent);
+  border-radius: 18px;
+  box-shadow: 0 6px 0 #f0c9b8;
+}
+
+.near li {
+  display: grid;
+  margin-bottom: 6px;
+}
+
+.near span {
+  color: #7a584c;
+  font-size: 12px;
+}

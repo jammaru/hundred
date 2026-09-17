@@ -1,0 +1,13 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./packages/domain" },
+    { "path": "./packages/simulation" },
+    { "path": "./packages/decision" },
+    { "path": "./packages/decision-jev" },
+    { "path": "./packages/protocol" },
+    { "path": "./packages/avatar" },
+    { "path": "./apps/server" },
+    { "path": "./apps/web" }
+  ]
+}

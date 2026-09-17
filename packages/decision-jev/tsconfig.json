@@ -1,0 +1,10 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist"
+  },
+  "include": ["src"],
+  "exclude": ["src/**/*.live.test.ts"],
+  "references": [{ "path": "../decision" }, { "path": "../domain" }, { "path": "../simulation" }]
+}

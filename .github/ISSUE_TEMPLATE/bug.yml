@@ -1,0 +1,18 @@
+name: Bug report
+description: Report a simulation or UI bug
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+    validations:
+      required: true
+  - type: input
+    id: seed
+    attributes:
+      label: World seed
+  - type: dropdown
+    id: provider
+    attributes:
+      label: Decision provider
+      options: [rules, jev, replay]

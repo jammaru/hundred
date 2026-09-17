@@ -1,0 +1,45 @@
+{
+  "name": "hundred",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Open source AI society simulation powered by Jev",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "pnpm --filter @hundred/server --filter @hundred/web --parallel dev",
+    "build": "pnpm -r --if-present build",
+    "start": "pnpm --filter @hundred/server start",
+    "lint": "oxlint --type-aware",
+    "lint:fix": "oxlint --type-aware --fix",
+    "format": "oxfmt",
+    "format:check": "oxfmt --check",
+    "typecheck": "tsc -b --pretty",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "pnpm --filter @hundred/web test:e2e",
+    "test:jev": "vitest run --config packages/decision-jev/vitest.jev.config.ts",
+    "deadcode": "knip",
+    "replay": "pnpm --filter @hundred/server replay",
+    "boundaries": "tsx scripts/check-boundaries.ts",
+    "prepare": "simple-git-hooks",
+    "check": "pnpm format:check && pnpm lint && pnpm typecheck && pnpm test && pnpm boundaries && pnpm deadcode && pnpm build"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "knip": "catalog:",
+    "oxfmt": "catalog:",
+    "oxlint": "catalog:",
+    "oxlint-tsgolint": "catalog:",
+    "simple-git-hooks": "catalog:",
+    "tsx": "catalog:",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm exec oxfmt && pnpm exec oxlint --type-aware"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "packageManager": "pnpm@12.4.2"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "@hundred/decision-jev",
+  "version": "0.2.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    }
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json --pretty"
+  },
+  "dependencies": {
+    "@hundred/decision": "workspace:*",
+    "@hundred/domain": "workspace:*",
+    "@hundred/simulation": "workspace:*",
+    "@typesafe-ai/sdk": "catalog:"
+  },
+  "devDependencies": {
+    "vitest": "catalog:"
+  }
+}

@@ -1,0 +1,17 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+    groups:
+      vite:
+        patterns: ['vite', '@vitejs/*']
+      testing:
+        patterns: ['vitest', 'fast-check', 'playwright', '@playwright/*']
+      oxc:
+        patterns: ['oxlint', 'oxfmt']
+      react:
+        patterns: ['react', 'react-dom', '@types/react', '@types/react-dom']
+      pixi:
+        patterns: ['pixi.js']
