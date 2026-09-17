@@ -20,6 +20,7 @@
     "test:jev": "vitest run --config packages/decision-jev/vitest.jev.config.ts",
     "deadcode": "knip",
     "replay": "pnpm --filter @hundred/server replay",
+    "sprite:key": "node scripts/sprite-key.mjs",
     "boundaries": "tsx scripts/check-boundaries.ts",
     "prepare": "simple-git-hooks",
     "check": "pnpm format:check && pnpm lint && pnpm typecheck && pnpm test && pnpm boundaries && pnpm deadcode && pnpm build"
@@ -30,6 +31,7 @@
     "oxfmt": "catalog:",
     "oxlint": "catalog:",
     "oxlint-tsgolint": "catalog:",
+    "pngjs": "^7.0.0",
     "simple-git-hooks": "catalog:",
     "tsx": "catalog:",
     "typescript": "catalog:",

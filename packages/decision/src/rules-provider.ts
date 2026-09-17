@@ -177,4 +177,8 @@ export class RulesProvider implements DecisionProvider {
       ...(targetNpcId ? { targetNpcId } : {}),
     });
   }
+
+  decideMany(contexts: EngineDecisionContext[], signal?: unknown): Promise<DecisionResult[]> {
+    return Promise.all(contexts.map((context) => this.decide(context, signal)));
+  }
 }

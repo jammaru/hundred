@@ -31,6 +31,7 @@ const scheduler = new DecisionScheduler(
   logger,
   config.maxConcurrency,
   config.maxQps,
+  config.batchSize,
 );
 const runner = new SimulationRunner(world, hub, scheduler, recorder, providerId);
 

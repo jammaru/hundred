@@ -1,4 +1,17 @@
-import { Eye, Map, Pause, Play, UserRound } from 'lucide-react';
+import {
+  CloudRain,
+  Coins,
+  Eye,
+  Map,
+  PartyPopper,
+  Pause,
+  Play,
+  Siren,
+  Sun,
+  UserRound,
+  Users,
+  Wheat,
+} from 'lucide-react';
 
 import { formatClockLabel, jobLabel, t } from '../../i18n';
 import type { SimulationSocket } from '../../net/socket';
@@ -23,7 +36,9 @@ export const TopBar = ({ socket }: Props) => {
     return (
       <header className={styles.bar}>
         <div className={styles.brand}>
-          <strong>Hundred</strong>
+          <strong>
+            HUNDRED<span className={styles.brandDot}>.</span>
+          </strong>
         </div>
       </header>
     );
@@ -39,14 +54,51 @@ export const TopBar = ({ socket }: Props) => {
       : snapshot.provider === 'replay'
         ? t(locale, 'app.providerReplay')
         : t(locale, 'app.providerRules');
+  const atmosphereLabel = snapshot.festival
+    ? t(locale, 'hud.festival')
+    : snapshot.weather === 'rain'
+      ? t(locale, 'hud.weatherRain')
+      : t(locale, 'hud.weatherClear');
+  const AtmosphereIcon = snapshot.festival
+    ? PartyPopper
+    : snapshot.weather === 'rain'
+      ? CloudRain
+      : Sun;
   return (
     <header className={styles.bar}>
       <div className={styles.brand}>
-        <strong>Hundred</strong>
+        <strong>
+          HUNDRED<span className={styles.brandDot}>.</span>
+        </strong>
         <span className={styles.clock}>
           {formatClockLabel(locale, snapshot.day, snapshot.minuteOfDay)}
         </span>
-        <span className={styles.seed}>{t(locale, 'app.seed', { seed: snapshot.seed })}</span>
+      </div>
+      <div className={styles.stats} aria-label={t(locale, 'hud.worldStats')}>
+        <span className={styles.stat} title={t(locale, 'hud.population')}>
+          <Users size={13} aria-hidden="true" />
+          <strong>{snapshot.population}</strong>
+        </span>
+        <span className={styles.stat} title={t(locale, 'hud.food')}>
+          <Wheat size={13} aria-hidden="true" />
+          <strong>{snapshot.food}</strong>
+        </span>
+        <span className={styles.stat} title={t(locale, 'hud.wealth')}>
+          <Coins size={13} aria-hidden="true" />
+          <strong>${snapshot.averageWealth}</strong>
+        </span>
+        <span
+          className={styles.stat}
+          data-warn={snapshot.incidentsToday > 0 ? 'true' : undefined}
+          title={t(locale, 'hud.incidents')}
+        >
+          <Siren size={13} aria-hidden="true" />
+          <strong>{snapshot.incidentsToday}</strong>
+        </span>
+        <span className={styles.stat} data-testid="world-atmosphere" title={atmosphereLabel}>
+          <AtmosphereIcon size={13} aria-hidden="true" />
+          <strong>{atmosphereLabel}</strong>
+        </span>
       </div>
       <div className={styles.controls}>
         <div className={styles.search}>
@@ -78,7 +130,7 @@ export const TopBar = ({ socket }: Props) => {
             </ul>
           ) : null}
         </div>
-        <fieldset className={styles.locale}>
+        <fieldset className={styles.group}>
           <legend className={styles.legend}>{t(locale, 'app.cameraTown')}</legend>
           <button
             type="button"
@@ -108,7 +160,7 @@ export const TopBar = ({ socket }: Props) => {
             <Eye size={14} />
           </button>
         </fieldset>
-        <fieldset className={styles.locale}>
+        <fieldset className={styles.group}>
           <legend className={styles.legend}>{t(locale, 'app.language')}</legend>
           <button
             type="button"

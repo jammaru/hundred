@@ -4,8 +4,11 @@ import { TopBar } from '../features/controls/TopBar';
 import { EventFeed } from '../features/feed/EventFeed';
 import { DebugOverlay } from '../features/hud/DebugOverlay';
 import { FirstPersonChrome } from '../features/hud/FirstPerson';
+import { GodPanel } from '../features/hud/GodPanel';
+import { Minimap } from '../features/hud/Minimap';
 import { WorldHud } from '../features/hud/WorldHud';
 import { Inspector } from '../features/inspector/Inspector';
+import { t } from '../i18n';
 import type { SimulationSocket } from '../net/socket';
 import { useUiStore } from '../stores/ui-store';
 import { WorldCanvas } from '../world/WorldCanvas';
@@ -32,6 +35,11 @@ export const App = () => {
 
   useEffect(() => {
     const onKey = (event: KeyboardEvent) => {
+      if (
+        event.target instanceof HTMLElement &&
+        event.target.closest('input, textarea, button, select, summary, [contenteditable]')
+      )
+        return;
       if (event.code === 'Space') {
         event.preventDefault();
         socket?.send({
@@ -48,19 +56,18 @@ export const App = () => {
 
   return (
     <div className={styles.shell}>
-      <TopBar socket={socket} />
-      <div className={styles.body}>
-        <div className={styles.stage}>
-          <WorldCanvas onReady={onReady} />
-          <WorldHud socket={socket} />
-          <DebugOverlay />
-          {snapshot?.weather === 'rain' ? <div className={styles.rain} /> : null}
-          {snapshot?.festival ? <div className={styles.festival} /> : null}
-          <FirstPersonChrome />
-        </div>
-        <Inspector socket={socket} />
+      <div className={styles.stage}>
+        <WorldCanvas onReady={onReady} />
+        <DebugOverlay />
+        <FirstPersonChrome />
       </div>
+      <TopBar socket={socket} />
+      <WorldHud />
+      <Inspector socket={socket} />
       <EventFeed />
+      <Minimap />
+      <GodPanel socket={socket} />
+      <div className={styles.navigation}>{t(locale, 'app.navigation')}</div>
     </div>
   );
 };

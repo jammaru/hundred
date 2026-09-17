@@ -88,6 +88,10 @@ const worldSnapshotSchema = z.object({
   shopOpen: z.boolean(),
   festival: z.boolean(),
   locations: z.array(locationPublicSchema),
+  bounds: z.object({
+    width: z.number(),
+    height: z.number(),
+  }),
   npcs: z.array(npcPublicSchema),
   recording: z.boolean(),
 });

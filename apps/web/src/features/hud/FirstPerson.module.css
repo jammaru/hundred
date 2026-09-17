@@ -10,8 +10,8 @@
   inset: 0;
   background: radial-gradient(
     ellipse at 50% 62%,
-    transparent 42%,
-    color-mix(in srgb, #4a3228 42%, transparent) 100%
+    transparent 40%,
+    color-mix(in srgb, #06080a 62%, transparent) 100%
   );
 }
 
@@ -23,32 +23,39 @@
   margin: 0;
   padding: 8px 16px;
   border-radius: 999px;
-  background: color-mix(in srgb, #fff7ee 88%, transparent);
-  color: #4a3228;
-  box-shadow: 0 6px 0 #f0c9b8;
+  background: var(--surface-1);
+  border: 1px solid var(--border);
+  backdrop-filter: blur(10px);
+  color: var(--text-primary);
+  box-shadow: var(--shadow);
+  white-space: nowrap;
 }
 
 .eyes {
-  top: 16px;
+  top: 76px;
   font-weight: 800;
+  color: var(--accent);
 }
 
 .place {
-  top: 56px;
-  font-size: 13px;
+  top: 116px;
+  font-size: 12px;
+  color: var(--text-secondary);
 }
 
 .near {
   position: absolute;
   right: 16px;
-  bottom: 16px;
+  bottom: 76px;
   margin: 0;
-  padding: 10px 12px;
+  padding: 12px 14px;
   list-style: none;
   width: 220px;
-  background: color-mix(in srgb, #fff7ee 90%, transparent);
-  border-radius: 18px;
-  box-shadow: 0 6px 0 #f0c9b8;
+  background: var(--surface-1);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(10px);
 }
 
 .near li {
@@ -56,7 +63,11 @@
   margin-bottom: 6px;
 }
 
-.near span {
-  color: #7a584c;
+.near strong {
   font-size: 12px;
+}
+
+.near span {
+  color: var(--text-secondary);
+  font-size: 11px;
 }

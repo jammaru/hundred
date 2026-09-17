@@ -2,6 +2,11 @@ export type Locale = 'ja' | 'en';
 
 const en = {
   app: {
+    subtitle: 'A hundred lives. One little world.',
+    residents: 'Town residents',
+    explore: 'Every life has a story',
+    exploreHint: 'Meet a resident, follow their day, and see how small choices change the town.',
+    navigation: 'Drag to explore · Scroll to zoom · Click a resident',
     pause: 'Pause simulation',
     resume: 'Resume simulation',
     speed: 'Set speed {speed}x',
@@ -14,6 +19,8 @@ const en = {
     languageJa: 'Japanese',
     languageEn: 'English',
     search: 'Search people',
+    close: 'Close',
+    minimap: 'Minimap',
     follow: 'Follow',
     unfollow: 'Stop following',
     favorite: 'Favorite',
@@ -80,7 +87,8 @@ const en = {
     distrust: 'Distrust',
   },
   feed: {
-    label: 'Event feed',
+    label: 'Town journal',
+    highlights: 'Highlights',
     waiting: 'Waiting for the town to wake up.',
     crime: 'CRIME',
     conflict: 'CONFLICT',
@@ -89,6 +97,7 @@ const en = {
   inspector: {
     label: 'NPC inspector',
     empty: 'Click a person to inspect them.',
+    tabOverview: 'Overview',
     needs: 'Needs',
     next: 'Next decision',
     deciding: 'DECIDING',
@@ -144,13 +153,17 @@ const en = {
   location: {
     plaza: 'Plaza',
     market: 'Market',
-    farm: 'Farm',
+    farm: 'West Farm',
+    farm_south: 'South Fields',
     workshop: 'Workshop',
     tavern: 'Tavern',
     clinic: 'Clinic',
-    park: 'Park',
+    park: 'East Park',
     homes_west: 'West Homes',
+    homes_north: 'North Homes',
     homes_east: 'East Homes',
+    homes_river: 'River Homes',
+    homes_south: 'South Homes',
     town: 'Town',
   },
   memoryAge: {
@@ -199,6 +212,11 @@ const en = {
 
 const ja = {
   app: {
+    subtitle: '100人の暮らし、ひとつの小さな世界。',
+    residents: 'この町の住民',
+    explore: 'ひとりずつ、物語がある。',
+    exploreHint: '住民を選んで、一日を追いかけてみましょう。小さな選択から、町の物語が生まれます。',
+    navigation: 'ドラッグで移動 · スクロールで拡大 · 住民をクリック',
     pause: 'シミュレーションを一時停止',
     resume: 'シミュレーションを再開',
     speed: '速度を {speed}x にする',
@@ -211,6 +229,8 @@ const ja = {
     languageJa: '日本語',
     languageEn: 'English',
     search: '人物を探す',
+    close: '閉じる',
+    minimap: 'ミニマップ',
     follow: '追いかける',
     unfollow: '追跡をやめる',
     favorite: 'お気に入り',
@@ -277,7 +297,8 @@ const ja = {
     distrust: '不信',
   },
   feed: {
-    label: '出来事',
+    label: '町のできごと',
+    highlights: '注目の出来事',
     waiting: '町が動き出すのを待っています。',
     crime: '犯罪',
     conflict: '争い',
@@ -286,6 +307,7 @@ const ja = {
   inspector: {
     label: '人物の詳細',
     empty: '人物をクリックすると詳細を表示します。',
+    tabOverview: '概要',
     needs: '状態',
     next: '次の判断',
     deciding: '判断中',
@@ -341,13 +363,17 @@ const ja = {
   location: {
     plaza: '広場',
     market: '市場',
-    farm: '農場',
+    farm: '西の農場',
+    farm_south: '南の畑',
     workshop: '工房',
     tavern: '酒場',
     clinic: '診療所',
-    park: '公園',
+    park: '東の公園',
     homes_west: '西の住居',
+    homes_north: '北の住居',
     homes_east: '東の住居',
+    homes_river: '川沿いの住居',
+    homes_south: '南の住居',
     town: '町',
   },
   memoryAge: {

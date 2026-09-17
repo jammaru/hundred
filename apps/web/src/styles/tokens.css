@@ -1,29 +1,32 @@
 :root {
-  --surface-0: #f4ddd0;
-  --surface-1: #fff7ee;
-  --surface-2: #ffe8d7;
-  --text-primary: #4a3228;
-  --text-secondary: #7a584c;
-  --text-muted: #a07d72;
-  --border: #f0c9b8;
-  --accent: #e8899a;
-  --positive: #7dbe8e;
+  --surface-0: #0c100d;
+  --surface-1: rgba(19, 25, 20, 0.82);
+  --surface-2: rgba(255, 255, 255, 0.06);
+  --panel-solid: #131a15;
+  --text-primary: #edf1e3;
+  --text-secondary: #b3bda9;
+  --text-muted: #7e8878;
+  --border: rgba(233, 238, 216, 0.14);
+  --accent: #d9a441;
+  --accent-2: #63c5b2;
+  --positive: #7cc98a;
   --warning: #e0a45c;
-  --negative: #d36b6b;
-  --radius-sm: 14px;
-  --radius-md: 22px;
-  --radius-lg: 28px;
+  --negative: #e06c60;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
   --space-1: 4px;
   --space-2: 8px;
   --space-3: 12px;
   --space-4: 16px;
   --space-5: 24px;
-  --inspector-width: 340px;
-  --topbar-height: 58px;
-  --feed-height: 104px;
+  --inspector-width: 330px;
+  --topbar-height: 52px;
+  --feed-height: 132px;
   --font:
-    'M PLUS Rounded 1c', 'Zen Maru Gothic', ui-rounded, 'Hiragino Maru Gothic ProN', sans-serif;
-  --shadow: 0 6px 0 #f0c9b8;
+    'M PLUS Rounded 1c', 'Zen Maru Gothic', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', system-ui,
+    sans-serif;
+  --shadow: 0 14px 36px rgba(0, 0, 0, 0.48);
 }
 
 * {
@@ -35,9 +38,7 @@ body,
 #root {
   margin: 0;
   height: 100%;
-  background:
-    radial-gradient(circle at 12% 8%, #ffe3f0 0 14%, transparent 15%),
-    radial-gradient(circle at 88% 12%, #d7f0ff 0 12%, transparent 13%), var(--surface-0);
+  background: var(--surface-0);
   color: var(--text-primary);
   font-family: var(--font);
 }
@@ -57,4 +58,16 @@ button:focus-visible {
     animation: none !important;
     transition: none !important;
   }
+}
+
+button {
+  cursor: pointer;
+}
+button:hover {
+  filter: brightness(1.12);
+}
+input:focus-visible,
+summary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
 }

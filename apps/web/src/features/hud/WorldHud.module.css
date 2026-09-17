@@ -1,92 +1,122 @@
-.left {
-  position: absolute;
-  top: var(--space-4);
-  left: var(--space-4);
-  z-index: 2;
-  display: grid;
-  gap: 8px;
-  width: 252px;
-  max-height: calc(100% - 24px);
-  overflow: auto;
-}
-
-.card,
-.god,
 .hover {
-  background: color-mix(in srgb, var(--surface-1) 92%, transparent);
+  position: absolute;
+  top: 76px;
+  left: 16px;
+  z-index: 5;
+  padding: 10px 12px;
+  font-size: 12px;
+  pointer-events: none;
+  background: var(--surface-1);
   color: var(--text-primary);
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow);
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(10px);
 }
 
-.card {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4px 12px;
-  padding: 10px 12px;
-  font-size: 12px;
+.hover strong {
+  display: block;
+  margin-bottom: 2px;
+  color: var(--accent);
 }
 
-.row {
-  display: flex;
-  justify-content: space-between;
-  gap: var(--space-2);
+.hover div {
   color: var(--text-secondary);
-}
-
-.row:last-child {
-  grid-column: 1 / -1;
-}
-
-.row strong {
-  color: var(--text-primary);
-  font-variant-numeric: tabular-nums;
+  line-height: 1.6;
 }
 
 .god {
-  padding: 8px 10px;
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  z-index: 6;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
 }
 
-.god h2 {
-  margin: 0 0 8px;
+.god summary {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: var(--surface-1);
+  border: 1px solid var(--border);
+  color: var(--accent);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(10px);
+  transition: transform 120ms ease;
+}
+
+.god summary:hover {
+  transform: translateY(-2px);
+}
+
+.god summary::-webkit-details-marker {
+  display: none;
+}
+
+.god[open] summary {
+  background: rgba(217, 164, 65, 0.2);
+  border-color: var(--accent);
+}
+
+.godPopover {
+  display: grid;
+  gap: 8px;
+  width: 240px;
+  padding: 14px;
+  background: var(--panel-solid);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+}
+
+.godPopover h2 {
+  margin: 0;
   font-size: 11px;
-  letter-spacing: 0.12em;
-  color: var(--text-muted);
+  letter-spacing: 0.14em;
+  color: var(--accent);
+  text-transform: uppercase;
 }
 
-.god p {
+.godPopover p {
   margin: 0;
   color: var(--text-muted);
-  font-size: 12px;
+  font-size: 11px;
+  line-height: 1.6;
 }
 
 .godGrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 5px;
-  margin: 6px 0 0;
+  gap: 6px;
 }
 
 .godGrid button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
   border: 1px solid var(--border);
   background: var(--surface-2);
   color: var(--text-primary);
   border-radius: var(--radius-sm);
-  padding: 6px 8px;
-  font-size: 12px;
+  padding: 8px 9px;
+  font-size: 11px;
+  min-height: 36px;
   cursor: pointer;
+  text-align: left;
+}
+
+.godGrid button:hover {
+  border-color: var(--accent);
 }
 
 .godGrid button:disabled {
   opacity: 0.45;
-}
-
-.hover {
-  position: absolute;
-  left: 276px;
-  bottom: var(--space-4);
-  z-index: 2;
-  padding: 8px 10px;
 }

@@ -4,6 +4,14 @@ import { create } from 'zustand';
 import type { Locale } from '../i18n';
 import type { CameraMode } from '../world/camera';
 
+interface CameraView {
+  x: number;
+  y: number;
+  scale: number;
+  width: number;
+  height: number;
+}
+
 interface UiState {
   locale: Locale;
   selectedNpcId: string | null;
@@ -17,6 +25,8 @@ interface UiState {
   inspected: NpcInspected['npc'] | null;
   events: EventCreated[];
   debug: boolean;
+  cameraView: CameraView | null;
+  cameraFocus: { x: number; y: number } | null;
   setLocale: (locale: Locale) => void;
   setQuery: (query: string) => void;
   toggleFavorite: (id: string) => void;
@@ -28,6 +38,9 @@ interface UiState {
   setPeople: (people: Record<string, NpcPublic>) => void;
   setInspected: (npc: NpcInspected['npc'] | null) => void;
   addEvent: (event: EventCreated) => void;
+  setCameraView: (view: CameraView) => void;
+  requestCameraFocus: (point: { x: number; y: number }) => void;
+  clearCameraFocus: () => void;
 }
 
 const readLocale = (): Locale => {
@@ -79,6 +92,8 @@ export const useUiStore = create<UiState>((set) => ({
   inspected: null,
   events: [],
   debug: new URLSearchParams(window.location.search).has('debug'),
+  cameraView: null,
+  cameraFocus: null,
   setLocale: (locale) => {
     try {
       window.localStorage.setItem('hundred.locale', locale);
@@ -102,6 +117,7 @@ export const useUiStore = create<UiState>((set) => ({
   selectNpc: (id) =>
     set((state) => ({
       selectedNpcId: id,
+      inspected: state.inspected?.id === id ? state.inspected : null,
       followNpcId: state.cameraMode === 'town' ? null : id,
     })),
   hoverNpc: (id) => set({ hoveredNpcId: id }),
@@ -135,4 +151,7 @@ export const useUiStore = create<UiState>((set) => ({
         events: [event, ...state.events].slice(0, 40),
       };
     }),
+  setCameraView: (view) => set({ cameraView: view }),
+  requestCameraFocus: (point) => set({ cameraFocus: point }),
+  clearCameraFocus: () => set({ cameraFocus: null }),
 }));

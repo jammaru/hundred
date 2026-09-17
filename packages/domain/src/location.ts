@@ -44,8 +44,8 @@ export interface MovementIntent {
 }
 
 export const WORLD_BOUNDS: WorldBounds = {
-  width: 1600,
-  height: 1000,
+  width: 3200,
+  height: 2200,
 };
 
 export const SIMULATION_TICK_MS = 100;

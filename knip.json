@@ -1,4 +1,9 @@
 {
   "$schema": "https://unpkg.com/knip@6/schema.json",
-  "ignoreDependencies": ["simple-git-hooks", "oxlint-tsgolint"]
+  "ignoreDependencies": ["simple-git-hooks", "oxlint-tsgolint"],
+  "workspaces": {
+    "packages/decision-jev": {
+      "entry": ["src/**/*.test.ts"]
+    }
+  }
 }

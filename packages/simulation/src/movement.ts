@@ -33,7 +33,7 @@ export const advanceMovement = (world: World): void => {
   }
 };
 
-export const nearbyNpcs = (world: World, npc: Npc, radius = 90): Npc[] => {
+export const nearbyNpcs = (world: World, npc: Npc, radius = 120): Npc[] => {
   return world.npcs.filter(
     (other) =>
       other.id !== npc.id && distance(other.location.position, npc.location.position) <= radius,

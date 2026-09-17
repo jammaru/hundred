@@ -1,0 +1,17 @@
+.map {
+  position: absolute;
+  right: 80px;
+  bottom: 16px;
+  z-index: 5;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow);
+  background: var(--panel-solid);
+  cursor: crosshair;
+}
+
+@media (max-width: 640px) {
+  .map {
+    display: none;
+  }
+}

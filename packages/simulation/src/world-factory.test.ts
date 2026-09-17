@@ -65,3 +65,21 @@ describe('available actions', () => {
     expect(isJobShift(world, 'farmer')).toBe(false);
   });
 });
+
+describe('town scale', () => {
+  it('spreads households across a larger map', () => {
+    const world = createWorld(7, 100);
+    const homes = world.locations.filter((location) => location.kind === 'home');
+    expect(homes.length).toBeGreaterThanOrEqual(5);
+    const homeIds = new Set(world.npcs.map((npc) => npc.identity.homeId));
+    expect(homeIds.size).toBeGreaterThanOrEqual(4);
+    const maxX = Math.max(
+      ...world.locations.map((location) => location.position.x + location.size.x),
+    );
+    const maxY = Math.max(
+      ...world.locations.map((location) => location.position.y + location.size.y),
+    );
+    expect(maxX).toBeGreaterThan(2800);
+    expect(maxY).toBeGreaterThan(1900);
+  });
+});

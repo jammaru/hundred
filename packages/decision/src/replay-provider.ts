@@ -41,4 +41,8 @@ export class ReplayProvider implements DecisionProvider {
       fallback: selected !== record.selected,
     };
   }
+
+  decideMany(contexts: EngineDecisionContext[], signal?: unknown): Promise<DecisionResult[]> {
+    return Promise.all(contexts.map((context) => this.decide(context, signal)));
+  }
 }

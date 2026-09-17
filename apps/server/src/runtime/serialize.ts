@@ -1,4 +1,4 @@
-import type { Npc, World, WorldEvent } from '@hundred/domain';
+import { WORLD_BOUNDS, type Npc, type World, type WorldEvent } from '@hundred/domain';
 import type { EventCreated, NpcInspected, NpcPublic, ServerMessage } from '@hundred/protocol';
 import {
   averageWealth,
@@ -59,6 +59,7 @@ export const snapshotMessage = (
   population: world.npcs.length,
   ...worldStats(world),
   locations: world.locations,
+  bounds: WORLD_BOUNDS,
   npcs: world.npcs.map(toNpcPublic),
   recording,
 });

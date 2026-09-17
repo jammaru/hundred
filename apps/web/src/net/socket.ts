@@ -88,7 +88,7 @@ export class SimulationSocket {
       return;
     }
     if (message.type === 'npc.inspected') {
-      store.setInspected(message.npc);
+      if (store.selectedNpcId === message.npc.id) store.setInspected(message.npc);
       return;
     }
     if (message.type === 'simulation.status' && store.snapshot) {

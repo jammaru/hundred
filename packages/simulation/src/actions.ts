@@ -22,21 +22,21 @@ import { locationById, locationCenter, nearestLocationOfKind } from './space';
 import { jobWorkplaceKind } from './world-factory';
 
 const actionDuration: Record<ActionType, number> = {
-  idle: 18,
-  rest: 24,
-  explore: 28,
-  eat: 14,
-  sleep: 64,
-  work: 40,
-  buy_food: 22,
-  steal: 16,
-  talk: 18,
-  visit: 32,
-  help: 16,
-  ask_for_help: 16,
-  fight: 14,
-  flee: 12,
-  intervene: 14,
+  idle: 28,
+  rest: 32,
+  explore: 40,
+  eat: 16,
+  sleep: 72,
+  work: 52,
+  buy_food: 26,
+  steal: 18,
+  talk: 22,
+  visit: 40,
+  help: 18,
+  ask_for_help: 18,
+  fight: 16,
+  flee: 14,
+  intervene: 16,
 };
 
 const durationFor = (world: World, type: ActionType): number => {
@@ -153,6 +153,25 @@ const pickTarget = (world: World, npc: Npc, result: DecisionResult, rng: Rng): N
   return rng.pick(nearby);
 };
 
+const gapFor = (world: World, npc: Npc, selected: ActionType): { min: number; max: number } => {
+  const urgent =
+    npc.needs.hunger >= 72 ||
+    npc.needs.energy <= 22 ||
+    selected === 'steal' ||
+    selected === 'fight' ||
+    selected === 'flee' ||
+    selected === 'help' ||
+    selected === 'ask_for_help' ||
+    selected === 'intervene';
+  if (urgent) {
+    return { min: 16, max: 48 };
+  }
+  if (isFestival(world)) {
+    return { min: 24, max: 70 };
+  }
+  return { min: 48, max: 150 };
+};
+
 export const beginAction = (
   world: World,
   npc: Npc,
@@ -162,6 +181,7 @@ export const beginAction = (
   const created: WorldEvent[] = [];
   const target = pickTarget(world, npc, result, rng);
   const duration = durationFor(world, result.selected);
+  const gap = gapFor(world, npc, result.selected);
   npc.action = {
     type: result.selected,
     startedTick: world.clock.tick,
@@ -171,7 +191,7 @@ export const beginAction = (
   };
   npc.decision = {
     status: 'decided',
-    dueTick: npc.action.endsTick + rng.intRange(20, 90),
+    dueTick: npc.action.endsTick + rng.intRange(gap.min, gap.max),
     availableActions: result.probabilities
       ? (Object.keys(result.probabilities) as typeof npc.decision.availableActions)
       : [result.selected],
@@ -182,7 +202,7 @@ export const beginAction = (
   };
   const destinationResult = target ? { ...result, targetNpcId: target.id } : result;
   const to = destinationFor(world, npc, destinationResult);
-  startMovement(npc, to, world.clock.tick, result.selected === 'flee' ? 78 : 48);
+  startMovement(npc, to, world.clock.tick, result.selected === 'flee' ? 110 : 72);
   const event: WorldEvent = {
     id: eventId(world, npc.id),
     tick: world.clock.tick,

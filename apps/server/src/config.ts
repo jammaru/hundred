@@ -11,6 +11,7 @@ export interface ServerConfig {
   replayPath: string | undefined;
   maxConcurrency: number;
   maxQps: number;
+  batchSize: number;
   timeoutMs: number;
   webRoot: string | undefined;
 }
@@ -64,9 +65,10 @@ export const loadConfig = (): ServerConfig => {
     worldSeed,
     recordRun: process.env.RECORD_RUN !== 'false',
     replayPath: process.env.REPLAY_PATH || undefined,
-    maxConcurrency: numberEnv('JEV_MAX_CONCURRENCY', 8),
-    maxQps: numberEnv('JEV_MAX_QPS', 10),
-    timeoutMs: numberEnv('JEV_TIMEOUT_MS', 3000),
+    maxConcurrency: numberEnv('JEV_MAX_CONCURRENCY', 2),
+    maxQps: numberEnv('JEV_MAX_QPS', 4),
+    batchSize: numberEnv('JEV_BATCH_SIZE', 8),
+    timeoutMs: numberEnv('JEV_TIMEOUT_MS', 4000),
     webRoot: process.env.WEB_ROOT,
   };
 };
