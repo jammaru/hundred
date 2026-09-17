@@ -49,7 +49,7 @@ const app = new Hono();
 app.use(
   '/api/*',
   cors({
-    origin: ['http://127.0.0.1:5173', 'http://localhost:5173'],
+    origin: ['http://127.0.0.1:5188', 'http://localhost:5188'],
   }),
 );
 
@@ -115,7 +115,7 @@ runner.start();
 const webUrl =
   existsSync(webRoot) && process.env.NODE_ENV === 'production'
     ? `http://${config.host}:${config.port}`
-    : 'http://127.0.0.1:5173';
+    : 'http://127.0.0.1:5188';
 
 console.info(`
 Hundred

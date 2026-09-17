@@ -134,16 +134,17 @@ export const TopBar = ({ socket }: Props) => {
           <legend className={styles.legend}>{t(locale, 'app.cameraTown')}</legend>
           <button
             type="button"
-            data-active={cameraMode === 'town'}
+            aria-pressed={cameraMode === 'town'}
             data-testid="camera-town"
             aria-label={t(locale, 'app.cameraTown')}
             onClick={() => setCameraMode('town')}
           >
             <Map size={14} />
+            <span>{t(locale, 'app.cameraTown')}</span>
           </button>
           <button
             type="button"
-            data-active={cameraMode === 'follow'}
+            aria-pressed={cameraMode === 'follow'}
             data-testid="camera-follow"
             aria-label={t(locale, 'app.cameraFollow')}
             onClick={() => setCameraMode('follow')}
@@ -152,7 +153,7 @@ export const TopBar = ({ socket }: Props) => {
           </button>
           <button
             type="button"
-            data-active={cameraMode === 'first'}
+            aria-pressed={cameraMode === 'first'}
             data-testid="camera-first"
             aria-label={t(locale, 'app.cameraFirst')}
             onClick={() => setCameraMode('first')}
@@ -164,7 +165,7 @@ export const TopBar = ({ socket }: Props) => {
           <legend className={styles.legend}>{t(locale, 'app.language')}</legend>
           <button
             type="button"
-            data-active={locale === 'ja'}
+            aria-pressed={locale === 'ja'}
             data-testid="locale-ja"
             aria-label={t(locale, 'app.languageJa')}
             onClick={() => setLocale('ja')}
@@ -173,7 +174,7 @@ export const TopBar = ({ socket }: Props) => {
           </button>
           <button
             type="button"
-            data-active={locale === 'en'}
+            aria-pressed={locale === 'en'}
             data-testid="locale-en"
             aria-label={t(locale, 'app.languageEn')}
             onClick={() => setLocale('en')}
@@ -205,7 +206,7 @@ export const TopBar = ({ socket }: Props) => {
             key={speed}
             type="button"
             className={styles.speed}
-            data-active={snapshot.speed === speed}
+            aria-pressed={snapshot.speed === speed}
             aria-label={t(locale, 'app.speed', { speed })}
             onClick={() => socket?.send({ type: 'simulation.setSpeed', speed })}
           >

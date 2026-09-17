@@ -3,13 +3,12 @@ import { Application, Container } from 'pixi.js';
 
 import { pickInteresting } from '../features/hud/interesting';
 import { useUiStore } from '../stores/ui-store';
-import { loadSprites, VILLAGER_SPRITES, type SpriteSet } from './assets';
+import { loadSprites, type SpriteSet } from './assets';
 import { AtmosphereLayer, tintAt } from './atmosphere';
 import { facingOf } from './camera';
 import { NpcView } from './npc-view';
-import { createTown, relabelTown, villagerIndexFor, type TownLayer } from './town';
-
-const TICK_MS = 100;
+import { villagerSpriteName } from './sprite-identity';
+import { createTown, relabelTown, type TownLayer } from './town';
 
 export class WorldRuntime {
   readonly app = new Application();
@@ -23,6 +22,8 @@ export class WorldRuntime {
   private lastOccupancy = '';
   private nightAlpha = 0;
   private dragging = false;
+  private readonly inputController = new AbortController();
+  private lastCameraMode = 'town';
   private lastX = 0;
   private lastY = 0;
   private scale = 0.32;
@@ -40,7 +41,7 @@ export class WorldRuntime {
     const [sprites] = await Promise.all([
       loadSprites(),
       this.app.init({
-        background: '#87a568',
+        background: '#9dbd7e',
         resizeTo: host,
         antialias: true,
         autoDensity: true,
@@ -94,8 +95,7 @@ export class WorldRuntime {
       this.records.set(npc.id, npc);
       let view = this.npcs.get(npc.id);
       if (!view) {
-        const index = villagerIndexFor(npc.avatarSeed, VILLAGER_SPRITES.length);
-        view = new NpcView(npc.id, this.sprites[VILLAGER_SPRITES[index]!]);
+        view = new NpcView(npc.id, this.sprites[villagerSpriteName(npc.avatarSeed)]);
         view.root.on('pointertap', () => {
           useUiStore.getState().selectNpc(npc.id);
         });
@@ -111,6 +111,7 @@ export class WorldRuntime {
     if (!this.initialized) {
       return;
     }
+    this.inputController.abort();
     this.resizeObserver?.disconnect();
     this.app.destroy(true, { children: true });
   }
@@ -118,6 +119,28 @@ export class WorldRuntime {
   private tick(): void {
     const state = useUiStore.getState();
     const now = performance.now();
+    if (state.cameraMode !== this.lastCameraMode) {
+      if (state.cameraMode === 'town' && this.snapshot) {
+        this.fitted = false;
+        this.focusTarget = null;
+        this.zoomPivot = null;
+        this.fitTown(this.snapshot);
+      }
+      this.lastCameraMode = state.cameraMode;
+    }
+    if (state.cameraCommand && this.snapshot) {
+      if (state.cameraCommand === 'reset') {
+        this.fitted = false;
+        this.fitTown(this.snapshot);
+      } else {
+        this.zoomPivot = { x: this.app.screen.width / 2, y: this.app.screen.height / 2 };
+        this.targetScale = Math.min(
+          2.4,
+          Math.max(0.08, this.targetScale * (state.cameraCommand === 'in' ? 1.3 : 1 / 1.3)),
+        );
+      }
+      state.setCameraCommand(null);
+    }
     const minuteOfDay = state.snapshot?.minuteOfDay ?? 8 * 60;
     const hour = Math.floor(minuteOfDay / 60);
     const raining = state.snapshot?.weather === 'rain';
@@ -144,8 +167,8 @@ export class WorldRuntime {
         x: this.world.x,
         y: this.world.y,
         scale: this.world.scale.x,
-        width: this.app.renderer.width / this.app.renderer.resolution,
-        height: this.app.renderer.height / this.app.renderer.resolution,
+        width: this.app.screen.width,
+        height: this.app.screen.height,
       });
     }
     if (state.cameraFocus) {
@@ -155,12 +178,15 @@ export class WorldRuntime {
     this.atmosphere.tick();
     this.easeTownCamera(state.cameraMode === 'town');
     if (this.town) {
+      for (const label of this.town.labels) {
+        label.text.scale.set(Math.min(4, Math.max(1, 0.8 / this.scale)));
+      }
       this.nightAlpha += ((night ? 1 : 0) - this.nightAlpha) * 0.04;
       this.town.night.alpha = this.nightAlpha;
       this.town.festival.visible = festival;
     }
     const { strength } = tintAt(minuteOfDay);
-    const dayColor = { r: 0x87, g: 0xa5, b: 0x68 };
+    const dayColor = { r: 0x9d, g: 0xbd, b: 0x7e };
     const nightColor = { r: 0x2c, g: 0x38, b: 0x50 };
     const mix = Math.min(1, strength * 2 + (raining ? 0.25 : 0));
     const r = Math.round(dayColor.r + (nightColor.r - dayColor.r) * mix);
@@ -177,7 +203,7 @@ export class WorldRuntime {
       if (!npc) {
         continue;
       }
-      const position = interpolate(npc, now);
+      const position = npc.position;
       view.root.position.set(position.x, position.y);
       const near =
         firstPerson && follow
@@ -214,8 +240,8 @@ export class WorldRuntime {
       this.world.scale.set(next);
     }
     if (this.focusTarget) {
-      const viewW = this.app.renderer.width / this.app.renderer.resolution;
-      const viewH = this.app.renderer.height / this.app.renderer.resolution;
+      const viewW = this.app.screen.width;
+      const viewH = this.app.screen.height;
       const targetX = viewW / 2 - this.focusTarget.x * this.scale;
       const targetY = viewH / 2 - this.focusTarget.y * this.scale;
       const dx = targetX - this.world.x;
@@ -244,8 +270,8 @@ export class WorldRuntime {
     const lookAhead = first ? 70 : 0;
     const focusX = view.root.x + look.x * lookAhead;
     const focusY = view.root.y + look.y * lookAhead;
-    const anchorY = first ? this.app.renderer.height * 0.72 : this.app.renderer.height / 2;
-    const targetX = this.app.renderer.width / 2 - focusX * this.world.scale.x;
+    const anchorY = first ? this.app.screen.height * 0.72 : this.app.screen.height / 2;
+    const targetX = this.app.screen.width / 2 - focusX * this.world.scale.x;
     const targetY = anchorY - focusY * this.world.scale.y;
     this.world.x += (targetX - this.world.x) * 0.1;
     this.world.y += (targetY - this.world.y) * 0.1;
@@ -253,23 +279,38 @@ export class WorldRuntime {
 
   private bindCamera(): void {
     const canvas = this.app.canvas;
-    canvas.addEventListener('pointerdown', (event) => {
-      this.dragging = true;
-      this.lastX = event.clientX;
-      this.lastY = event.clientY;
-    });
-    window.addEventListener('pointerup', () => {
-      this.dragging = false;
-    });
-    canvas.addEventListener('pointermove', (event) => {
-      if (!this.dragging || useUiStore.getState().cameraMode !== 'town') {
-        return;
-      }
-      this.world.x += event.clientX - this.lastX;
-      this.world.y += event.clientY - this.lastY;
-      this.lastX = event.clientX;
-      this.lastY = event.clientY;
-    });
+    const signal = this.inputController.signal;
+    canvas.addEventListener(
+      'pointerdown',
+      (event) => {
+        if (event.button !== 0 || this.dragging) return;
+        canvas.setPointerCapture(event.pointerId);
+        this.dragging = true;
+        this.lastX = event.clientX;
+        this.lastY = event.clientY;
+      },
+      { signal },
+    );
+    canvas.addEventListener(
+      'lostpointercapture',
+      () => {
+        this.dragging = false;
+      },
+      { signal },
+    );
+    canvas.addEventListener(
+      'pointermove',
+      (event) => {
+        if (!this.dragging || useUiStore.getState().cameraMode !== 'town') {
+          return;
+        }
+        this.world.x += event.clientX - this.lastX;
+        this.world.y += event.clientY - this.lastY;
+        this.lastX = event.clientX;
+        this.lastY = event.clientY;
+      },
+      { signal },
+    );
     canvas.addEventListener(
       'wheel',
       (event) => {
@@ -284,23 +325,27 @@ export class WorldRuntime {
           Math.max(0.18, this.targetScale * (event.deltaY > 0 ? 0.9 : 1.11)),
         );
       },
-      { passive: false },
+      { passive: false, signal },
     );
-    canvas.addEventListener('dblclick', () => {
-      const hovered = useUiStore.getState().hoveredNpcId;
-      if (hovered) {
-        useUiStore.getState().followNpc(hovered);
-        useUiStore.getState().setCameraMode('follow');
-      }
-    });
+    canvas.addEventListener(
+      'dblclick',
+      () => {
+        const hovered = useUiStore.getState().hoveredNpcId;
+        if (hovered) {
+          useUiStore.getState().followNpc(hovered);
+          useUiStore.getState().setCameraMode('follow');
+        }
+      },
+      { signal },
+    );
   }
 
   private fitTown(snapshot: WorldSnapshot): void {
     if (this.fitted) {
       return;
     }
-    const viewW = this.app.renderer.width;
-    const viewH = this.app.renderer.height;
+    const viewW = this.app.screen.width;
+    const viewH = this.app.screen.height;
     const fit = Math.min(viewW / snapshot.bounds.width, viewH / snapshot.bounds.height) * 0.92;
     this.scale = Math.min(0.55, Math.max(0.05, fit));
     this.targetScale = this.scale;
@@ -312,16 +357,3 @@ export class WorldRuntime {
     this.fitted = true;
   }
 }
-
-const interpolate = (npc: NpcPublic, now: number): { x: number; y: number } => {
-  const movement = npc.movement;
-  if (!movement) {
-    return npc.position;
-  }
-  const started = movement.startTick * TICK_MS;
-  const duration = movement.durationTicks * TICK_MS;
-  const t = Math.min(1, Math.max(0, (now % 1_000_000_000) / duration));
-  void started;
-  void t;
-  return npc.position;
-};

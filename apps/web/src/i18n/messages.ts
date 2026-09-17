@@ -56,6 +56,9 @@ const en = {
     festival: 'Festival',
   },
   camera: {
+    zoomIn: 'Zoom in',
+    zoomOut: 'Zoom out',
+    reset: 'Fit town to view',
     eyes: "Seeing through {name}'s eyes",
   },
   interesting: {
@@ -266,6 +269,9 @@ const ja = {
     festival: '祭り',
   },
   camera: {
+    zoomIn: '拡大',
+    zoomOut: '縮小',
+    reset: '街全体を表示',
     eyes: '{name}の目で見ている',
   },
   interesting: {

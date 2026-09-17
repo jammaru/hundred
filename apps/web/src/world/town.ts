@@ -35,15 +35,6 @@ const scatter = (seed: string, count: number, width: number, height: number): Sc
   return points;
 };
 
-const hashOf = (seed: string): number => {
-  let hash = 2166136261;
-  for (const char of seed) {
-    hash ^= char.charCodeAt(0);
-    hash = Math.imul(hash, 16777619);
-  }
-  return hash >>> 0;
-};
-
 const drawRiver = (g: Graphics, width: number, height: number): void => {
   g.moveTo(0, height * 0.52)
     .bezierCurveTo(
@@ -439,7 +430,7 @@ export const createTown = (
       },
     });
     text.x = location.position.x + 12;
-    text.y = location.position.y - 8;
+    text.y = location.position.y - 28;
     text.zIndex = 2;
     root.addChild(text);
     labels.push({ id: location.id, kind: location.kind, name: location.name, text });
@@ -450,9 +441,6 @@ export const createTown = (
   stage.addChild(festival);
   return { root, stage, labels, night, festival };
 };
-
-export const villagerIndexFor = (avatarSeed: string, count: number): number =>
-  hashOf(avatarSeed) % count;
 
 export const relabelTown = (
   town: TownLayer,

@@ -1,15 +1,12 @@
 .feed {
-  position: absolute;
-  left: 16px;
-  bottom: 16px;
-  z-index: 5;
+  position: relative;
   display: grid;
   grid-template-rows: auto minmax(0, 1fr);
   gap: 8px;
-  width: 330px;
-  max-height: 216px;
+  min-height: 0;
+  min-width: 0;
   padding: 12px 14px;
-  background: var(--surface-1);
+  background: var(--panel-solid);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow);
@@ -53,7 +50,6 @@
   gap: 6px;
   overflow: auto;
   scrollbar-width: thin;
-  mask-image: linear-gradient(to bottom, black 78%, transparent);
 }
 
 .item {
@@ -67,8 +63,8 @@
   padding: 7px 10px;
   text-align: left;
   cursor: pointer;
-  font-size: 11px;
-  line-height: 1.5;
+  font-size: 12px;
+  line-height: 1.6;
   align-content: start;
 }
 
@@ -97,14 +93,4 @@
   font-size: 9px;
   letter-spacing: 0.1em;
   color: var(--accent);
-}
-
-@media (max-width: 640px) {
-  .feed {
-    left: 8px;
-    right: 8px;
-    width: auto;
-    max-height: 150px;
-    bottom: 8px;
-  }
 }

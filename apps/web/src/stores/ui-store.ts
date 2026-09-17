@@ -27,6 +27,8 @@ interface UiState {
   debug: boolean;
   cameraView: CameraView | null;
   cameraFocus: { x: number; y: number } | null;
+  cameraCommand: 'in' | 'out' | 'reset' | null;
+  setCameraCommand: (command: 'in' | 'out' | 'reset' | null) => void;
   setLocale: (locale: Locale) => void;
   setQuery: (query: string) => void;
   toggleFavorite: (id: string) => void;
@@ -94,6 +96,11 @@ export const useUiStore = create<UiState>((set) => ({
   debug: new URLSearchParams(window.location.search).has('debug'),
   cameraView: null,
   cameraFocus: null,
+  cameraCommand: null,
+  setCameraCommand: (cameraCommand) =>
+    set(
+      cameraCommand ? { cameraCommand, cameraMode: 'town', followNpcId: null } : { cameraCommand },
+    ),
   setLocale: (locale) => {
     try {
       window.localStorage.setItem('hundred.locale', locale);
@@ -130,7 +137,7 @@ export const useUiStore = create<UiState>((set) => ({
   setCameraMode: (mode) =>
     set((state) => {
       if (mode === 'town') {
-        return { cameraMode: 'town' };
+        return { cameraMode: 'town', followNpcId: null, cameraCommand: 'reset' };
       }
       const id = state.followNpcId ?? state.selectedNpcId ?? state.snapshot?.npcs[0]?.id ?? null;
       return {

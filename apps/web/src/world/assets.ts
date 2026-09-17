@@ -30,19 +30,10 @@ export type SpriteName = (typeof SPRITE_NAMES)[number];
 
 export type SpriteSet = Record<SpriteName, Texture>;
 
-export const VILLAGER_SPRITES: SpriteName[] = [
-  'villager-1',
-  'villager-2',
-  'villager-3',
-  'villager-4',
-  'villager-5',
-  'villager-6',
-];
-
 export const loadSprites = async (): Promise<SpriteSet> => {
   const entries = await Promise.all(
     SPRITE_NAMES.map(async (name) => {
-      const texture = await Assets.load<Texture>(`/assets/sprites/${name}.png`);
+      const texture = await Assets.load<Texture>(`/assets/world/${name}.png`);
       texture.source.scaleMode = 'linear';
       return [name, texture] as const;
     }),

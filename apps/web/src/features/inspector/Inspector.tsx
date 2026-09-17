@@ -1,4 +1,3 @@
-import { portraitSvg } from '@hundred/avatar';
 import { X } from 'lucide-react';
 import { useState } from 'react';
 
@@ -13,6 +12,7 @@ import {
 } from '../../i18n';
 import type { SimulationSocket } from '../../net/socket';
 import { useUiStore } from '../../stores/ui-store';
+import { villagerSpriteName } from '../../world/sprite-identity';
 import { pickInteresting, relationLabel, whyActing } from '../hud/interesting';
 
 import styles from './Inspector.module.css';
@@ -60,12 +60,14 @@ export const Inspector = ({ socket }: { socket: SimulationSocket | undefined }) 
         <div className={styles.welcome}>
           <div className={styles.faces}>
             {snapshot?.npcs.slice(0, 3).map((npc) => (
-              <span
-                key={npc.id}
-                dangerouslySetInnerHTML={{
-                  __html: portraitSvg(npc.avatarSeed, npc.expression, 64),
-                }}
-              />
+              <span key={npc.id}>
+                <img
+                  src={`/assets/world/${villagerSpriteName(npc.avatarSeed)}.png`}
+                  alt=""
+                  width={64}
+                  height={80}
+                />
+              </span>
             ))}
           </div>
           <h2>{t(locale, 'app.explore')}</h2>
@@ -82,12 +84,14 @@ export const Inspector = ({ socket }: { socket: SimulationSocket | undefined }) 
               key={npc.id}
               onClick={() => selectNpc(npc.id)}
             >
-              <span
-                className={styles.face}
-                dangerouslySetInnerHTML={{
-                  __html: portraitSvg(npc.avatarSeed, npc.expression, 40),
-                }}
-              />
+              <span className={styles.face}>
+                <img
+                  src={`/assets/world/${villagerSpriteName(npc.avatarSeed)}.png`}
+                  alt=""
+                  width={40}
+                  height={40}
+                />
+              </span>
               <span>
                 <strong>{npc.name}</strong>
                 <small>
@@ -121,12 +125,14 @@ export const Inspector = ({ socket }: { socket: SimulationSocket | undefined }) 
         <X size={15} />
       </button>
       <div className={styles.head}>
-        <div
-          className={styles.portrait}
-          dangerouslySetInnerHTML={{
-            __html: portraitSvg(inspected.avatarSeed, inspected.expression, 96),
-          }}
-        />
+        <div className={styles.portrait}>
+          <img
+            src={`/assets/world/${villagerSpriteName(inspected.avatarSeed)}.png`}
+            alt=""
+            width={96}
+            height={120}
+          />
+        </div>
         <div className={styles.identity}>
           <h2>{inspected.name}</h2>
           <p>

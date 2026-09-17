@@ -25,7 +25,50 @@ pnpm install
 pnpm dev
 ```
 
-Open `http://127.0.0.1:5173`. No API key is required. The world starts in **Rules** mode.
+Open `http://127.0.0.1:5188`. No API key is required. The world starts in **Rules** mode.
+
+## Nix development environment
+
+The committed `flake.lock` pins Nixpkgs. The development shell supplies Node.js 24,
+Git, and a Corepack-backed `pnpm` that honors the exact `packageManager` version.
+Install Nix using the [official instructions](https://nixos.org/download/), then run:
+
+```bash
+nix develop
+pnpm install --frozen-lockfile
+pnpm dev
+```
+
+On Windows, run these commands inside a WSL2 Linux distribution. Keep Linux and
+Windows dependency installations separate; do not reuse `node_modules` across OSes.
+For an untracked flake in a fresh working tree, use `nix develop path:.`.
+If your Nix installation does not enable flakes, add
+`experimental-features = nix-command flakes` to `~/.config/nix/nix.conf`.
+Optional direnv integration is available through `.envrc` (`direnv allow`).
+The shell does not load `.env` or install dependencies automatically.
+
+Validate the environment with `nix flake check` and the application with `pnpm check`.
+For browser tests on Ubuntu/WSL, install Chromium and its OS dependencies once:
+
+```bash
+pnpm --filter @hundred/web exec playwright install --with-deps chromium
+pnpm test:e2e
+```
+
+When editing files on the Windows filesystem from Windows tools, Vite's WSL file
+watcher may miss changes. Restart `pnpm dev` before verifying, or keep the checkout
+and editor inside WSL.
+
+### World sprites
+
+Original sprites are retained in `apps/web/public/assets/sprites`. The Vite sprite
+plugin produces `/assets/world/*.png` for both development and production. It
+removes bright and dark magenta, recovers RGB data beneath alpha erased by the
+legacy shadow key, and trims each sprite with transparent padding. This must happen
+before browser decoding, which discards RGB under fully transparent pixels.
+Do not apply the legacy `sprite:key --shadow` option to architectural sprites:
+it can erase connected gray roofs and walls. The recovery mode is specifically for
+these legacy sources, not arbitrary new transparent artwork.
 
 ## Enable Jev
 

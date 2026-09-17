@@ -56,18 +56,20 @@ export const App = () => {
 
   return (
     <div className={styles.shell}>
+      <TopBar socket={socket} />
       <div className={styles.stage}>
         <WorldCanvas onReady={onReady} />
         <DebugOverlay />
         <FirstPersonChrome />
+        <WorldHud />
+        <Minimap />
+        <GodPanel socket={socket} />
+        <div className={styles.navigation}>{t(locale, 'app.navigation')}</div>
       </div>
-      <TopBar socket={socket} />
-      <WorldHud />
-      <Inspector socket={socket} />
-      <EventFeed />
-      <Minimap />
-      <GodPanel socket={socket} />
-      <div className={styles.navigation}>{t(locale, 'app.navigation')}</div>
+      <div className={styles.sidebar}>
+        <Inspector socket={socket} />
+        <EventFeed />
+      </div>
     </div>
   );
 };

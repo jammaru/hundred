@@ -1,6 +1,6 @@
 .hover {
   position: absolute;
-  top: 76px;
+  top: 16px;
   left: 16px;
   z-index: 5;
   padding: 10px 12px;
@@ -67,6 +67,9 @@
 }
 
 .godPopover {
+  position: absolute;
+  bottom: 60px;
+  right: 0;
   display: grid;
   gap: 8px;
   width: 240px;
@@ -119,4 +122,26 @@
 
 .godGrid button:disabled {
   opacity: 0.45;
+}
+.cameraTools {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  gap: 2px;
+  padding: 4px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: var(--surface-1);
+}
+
+.cameraTools button {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border: 0;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--text-primary);
 }

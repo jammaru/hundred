@@ -4,7 +4,7 @@ export default defineConfig({
   testDir: './e2e',
   fullyParallel: false,
   use: {
-    baseURL: 'http://127.0.0.1:5173',
+    baseURL: 'http://127.0.0.1:5188',
     trace: 'on-first-retry',
   },
   webServer: [
@@ -16,7 +16,7 @@ export default defineConfig({
     },
     {
       command: 'pnpm --filter @hundred/web dev',
-      url: 'http://127.0.0.1:5173',
+      url: 'http://127.0.0.1:5188',
       reuseExistingServer: true,
       timeout: 120_000,
     },

@@ -1,36 +1,61 @@
 .shell {
-  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  grid-template-rows: auto minmax(0, 1fr);
+  gap: 12px;
   height: 100%;
-  min-width: 0;
+  padding: 12px;
   overflow: hidden;
   background: var(--surface-0);
 }
-
 .stage {
-  position: absolute;
-  inset: 0;
+  position: relative;
   min-width: 0;
+  min-height: 0;
   overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
 }
-
+.sidebar {
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) minmax(160px, 28%);
+  gap: 12px;
+  min-height: 0;
+  min-width: 0;
+}
 .navigation {
   position: absolute;
-  bottom: 14px;
-  left: 50%;
-  transform: translateX(-50%);
+  bottom: 16px;
+  left: 16px;
+  max-width: calc(100% - 260px);
   font-size: 11px;
+  line-height: 1.7;
   color: var(--text-secondary);
   background: var(--surface-1);
   border: 1px solid var(--border);
-  backdrop-filter: blur(10px);
-  padding: 5px 12px;
-  border-radius: 999px;
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
   pointer-events: none;
-  white-space: nowrap;
 }
-
-@media (max-width: 640px) {
+@media (max-width: 900px) {
+  .shell {
+    grid-template-columns: minmax(0, 1fr) 280px;
+    gap: 8px;
+    padding: 8px;
+  }
   .navigation {
     display: none;
+  }
+}
+@media (max-width: 640px) {
+  .shell {
+    height: auto;
+    min-height: 100%;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto 52svh auto;
+    overflow: visible;
+  }
+  .sidebar {
+    grid-template-rows: minmax(240px, 40svh) 220px;
   }
 }
