@@ -19,7 +19,7 @@ Hundred is a local-first open source society simulation. One hundred NPCs live i
 ## Quick start
 
 ```bash
-git clone https://github.com/manmaru-ai/hundred.git
+git clone https://github.com/jammaru/hundred.git
 cd hundred
 pnpm install
 pnpm dev
@@ -70,4 +70,4 @@ Stack: TypeScript, pnpm workspaces, Vite, React 19, PixiJS 8, Hono, Zod, Vitest,
 
 ## License
 
-MIT © [jammaru](https://github.com/manmaru-ai)
+MIT © [jammaru](https://github.com/jammaru)
