@@ -142,6 +142,20 @@ const decisionStartedSchema = z.object({
 
 const decisionResolvedSchema = z.object({
   type: z.literal('decision.resolved'),
+  context: z
+    .object({
+      hunger: z.number(),
+      energy: z.number(),
+      money: z.number(),
+      kindness: z.number(),
+      greed: z.number(),
+      nearby: z.number(),
+      memories: z.number(),
+      raining: z.boolean(),
+      festival: z.boolean(),
+      shopOpen: z.boolean(),
+    })
+    .optional(),
   npcId: z.string(),
   tick: z.number(),
   provider: providerSchema,

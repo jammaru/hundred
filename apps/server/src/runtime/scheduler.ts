@@ -147,6 +147,18 @@ export class DecisionScheduler {
     });
     this.hub.broadcast({
       type: 'decision.resolved',
+      context: {
+        hunger: Math.round(job.context.npc.needs.hunger),
+        energy: Math.round(job.context.npc.needs.energy),
+        money: job.context.npc.money,
+        kindness: job.context.npc.traits.kindness,
+        greed: job.context.npc.traits.greed,
+        nearby: job.context.nearbyPeople.length,
+        memories: job.context.memories.length,
+        raining: job.context.clock.raining,
+        festival: job.context.clock.festival,
+        shopOpen: job.context.clock.shopOpen,
+      },
       npcId: job.npc.id,
       tick: this.world.clock.tick,
       provider: result.provider,

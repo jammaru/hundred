@@ -99,6 +99,7 @@ export class SimulationSocket {
         provider: message.provider,
       });
     }
+    if (message.type === 'decision.resolved') store.addDecision(message);
     if (message.type === 'decision.started' || message.type === 'decision.resolved') {
       const selected = store.selectedNpcId;
       if (selected === message.npcId) {

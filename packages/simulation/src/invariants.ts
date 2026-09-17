@@ -1,4 +1,4 @@
-import { clampNeed, type Npc, type World } from '@hundred/domain';
+import { clampNeed, WORLD_BOUNDS, type Npc, type World } from '@hundred/domain';
 
 export interface InvariantError {
   npcId?: string;
@@ -8,6 +8,17 @@ export interface InvariantError {
 export const assertInvariants = (world: World): InvariantError[] => {
   const errors: InvariantError[] = [];
   for (const npc of world.npcs) {
+    const { x, y } = npc.location.position;
+    if (
+      !Number.isFinite(x) ||
+      !Number.isFinite(y) ||
+      x < 0 ||
+      y < 0 ||
+      x > WORLD_BOUNDS.width ||
+      y > WORLD_BOUNDS.height
+    ) {
+      errors.push({ npcId: npc.id, message: 'position outside world bounds' });
+    }
     checkNeed(errors, npc, 'hunger', npc.needs.hunger);
     checkNeed(errors, npc, 'energy', npc.needs.energy);
     checkNeed(errors, npc, 'health', npc.needs.health);

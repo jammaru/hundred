@@ -60,6 +60,15 @@ const pushEvent = (world: World, event: WorldEvent): void => {
 const eventId = (world: World, suffix: string) =>
   asEventId(`${world.clock.tick}_${suffix}_${world.events.length}`);
 
+const SOCIAL_ACTIONS: ActionType[] = [
+  'talk',
+  'visit',
+  'help',
+  'ask_for_help',
+  'fight',
+  'intervene',
+];
+
 const destinationFor = (world: World, npc: Npc, result: DecisionResult) => {
   const period = dayPeriod(world);
   const hour = hourOf(world);
@@ -95,7 +104,7 @@ const destinationFor = (world: World, npc: Npc, result: DecisionResult) => {
     }
     return locationCenter(nearestLocationOfKind(world, npc.location.position, 'park'));
   }
-  if (result.targetNpcId) {
+  if (SOCIAL_ACTIONS.includes(result.selected) && result.targetNpcId) {
     const target = world.npcs.find((person) => person.id === result.targetNpcId);
     if (target) {
       return { x: target.location.position.x + 12, y: target.location.position.y };
@@ -122,6 +131,7 @@ const bestFriend = (world: World, npc: Npc): Npc | undefined => {
 };
 
 const pickTarget = (world: World, npc: Npc, result: DecisionResult, rng: Rng): Npc | undefined => {
+  if (!SOCIAL_ACTIONS.includes(result.selected)) return undefined;
   if (result.selected === 'visit') {
     if (result.targetNpcId) {
       const chosen = world.npcs.find((person) => person.id === result.targetNpcId);

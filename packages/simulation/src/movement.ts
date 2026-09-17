@@ -1,9 +1,16 @@
-import type { Npc, Vec2, World } from '@hundred/domain';
+import { WORLD_BOUNDS, type Npc, type Vec2, type World } from '@hundred/domain';
 
 import { containingLocation, distance, lerp } from './space';
 
+const bounded = (point: Vec2): Vec2 => ({
+  x: Math.max(64, Math.min(WORLD_BOUNDS.width - 64, Number.isFinite(point.x) ? point.x : 64)),
+  y: Math.max(64, Math.min(WORLD_BOUNDS.height - 64, Number.isFinite(point.y) ? point.y : 64)),
+});
+
 export const startMovement = (npc: Npc, to: Vec2, tick: number, speed = 48): void => {
-  const from = npc.location.position;
+  const from = bounded(npc.location.position);
+  to = bounded(to);
+  npc.location.position = from;
   const travel = Math.max(1, distance(from, to));
   const durationTicks = Math.max(8, Math.round((travel / speed) * 10));
   npc.movement = {
@@ -16,13 +23,14 @@ export const startMovement = (npc: Npc, to: Vec2, tick: number, speed = 48): voi
 
 export const advanceMovement = (world: World): void => {
   for (const npc of world.npcs) {
+    npc.location.position = bounded(npc.location.position);
     const movement = npc.movement;
     if (!movement) {
       continue;
     }
     const elapsed = world.clock.tick - movement.startTick;
-    const t = Math.min(1, elapsed / movement.durationTicks);
-    npc.location.position = lerp(movement.from, movement.to, t);
+    const t = Math.max(0, Math.min(1, elapsed / Math.max(1, movement.durationTicks)));
+    npc.location.position = bounded(lerp(bounded(movement.from), bounded(movement.to), t));
     npc.location.locationId = containingLocation(world, npc.location.position).id;
     if (t >= 1) {
       delete npc.movement;

@@ -14,6 +14,7 @@ import type { SimulationSocket } from '../../net/socket';
 import { useUiStore } from '../../stores/ui-store';
 import { villagerSpriteName } from '../../world/sprite-identity';
 import { pickInteresting, relationLabel, whyActing } from '../hud/interesting';
+import { DecisionJournal } from './DecisionJournal';
 
 import styles from './Inspector.module.css';
 
@@ -73,6 +74,7 @@ export const Inspector = ({ socket }: { socket: SimulationSocket | undefined }) 
           <h2>{t(locale, 'app.explore')}</h2>
           <p>{t(locale, 'app.exploreHint')}</p>
         </div>
+        <DecisionJournal />
         <section className={styles.section}>
           <h3>
             {t(locale, 'app.residents')} <span>{snapshot?.population ?? 0}</span>
@@ -187,6 +189,7 @@ export const Inspector = ({ socket }: { socket: SimulationSocket | undefined }) 
       </nav>
       {tab === 'overview' ? (
         <>
+          <DecisionJournal npcId={inspected.id} />
           <section className={styles.section}>
             <h3>{t(locale, 'inspector.needs')}</h3>
             {NEED_KEYS.map((key) => {

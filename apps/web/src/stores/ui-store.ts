@@ -1,4 +1,10 @@
-import type { EventCreated, NpcInspected, NpcPublic, WorldSnapshot } from '@hundred/protocol';
+import type {
+  EventCreated,
+  NpcInspected,
+  NpcPublic,
+  ServerMessage,
+  WorldSnapshot,
+} from '@hundred/protocol';
 import { create } from 'zustand';
 
 import type { Locale } from '../i18n';
@@ -12,7 +18,11 @@ interface CameraView {
   height: number;
 }
 
+type DecisionRecord = Extract<ServerMessage, { type: 'decision.resolved' }>;
+
 interface UiState {
+  decisions: DecisionRecord[];
+  addDecision: (decision: DecisionRecord) => void;
   locale: Locale;
   selectedNpcId: string | null;
   hoveredNpcId: string | null;
@@ -82,6 +92,9 @@ const persistFavorites = (favorites: Set<string>): void => {
 };
 
 export const useUiStore = create<UiState>((set) => ({
+  decisions: [],
+  addDecision: (decision) =>
+    set((state) => ({ decisions: [decision, ...state.decisions].slice(0, 100) })),
   locale: readLocale(),
   selectedNpcId: null,
   hoveredNpcId: null,
@@ -146,7 +159,11 @@ export const useUiStore = create<UiState>((set) => ({
         selectedNpcId: id ?? state.selectedNpcId,
       };
     }),
-  setSnapshot: (snapshot) => set({ snapshot }),
+  setSnapshot: (snapshot) =>
+    set((state) => ({
+      snapshot,
+      ...(state.snapshot?.seed !== snapshot.seed ? { decisions: [] } : {}),
+    })),
   setPeople: (people) => set({ people }),
   setInspected: (npc) => set({ inspected: npc }),
   addEvent: (event) =>
