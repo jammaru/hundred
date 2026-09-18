@@ -31,7 +31,11 @@ export default defineConfig({
   ignorePatterns: ['**/dist/**', '**/node_modules/**', 'runs/**', '**/*.d.ts'],
   overrides: [
     {
-      files: ['apps/web/**/*.{ts,tsx}'],
+      files: [
+        'apps/hundred-web/**/*.{ts,tsx}',
+        'apps/shogi-web/**/*.{ts,tsx}',
+        'apps/lab-web/**/*.{ts,tsx}',
+      ],
       env: {
         browser: true,
       },
@@ -43,7 +47,7 @@ export default defineConfig({
       },
     },
     {
-      files: ['apps/server/**/*.ts', 'scripts/**/*.ts'],
+      files: ['apps/hundred-server/**/*.ts', 'apps/shogi-server/**/*.ts', 'scripts/**/*.ts'],
       rules: {
         'no-console': 'off',
       },

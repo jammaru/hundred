@@ -1,0 +1,1489 @@
+{"tick":31,"type":"action_completed","text":"Sam Bauer finished eat."}
+{"tick":50,"type":"action_completed","text":"Lina Santos finished idle."}
+{"tick":55,"type":"action_completed","text":"Sam Rossi finished eat."}
+{"tick":57,"type":"conversation","text":"Ravi Diaz talked with Ken Chen."}
+{"tick":57,"type":"action_completed","text":"Ravi Diaz finished talk."}
+{"tick":58,"type":"action_completed","text":"Priya Khan finished eat."}
+{"tick":60,"type":"action_completed","text":"Greta Wright finished eat."}
+{"tick":68,"type":"action_completed","text":"Nina Sato finished eat."}
+{"tick":83,"type":"action_completed","text":"Amelia Bauer finished eat."}
+{"tick":83,"type":"conversation","text":"Ines Hassan talked with Jamal Kowalski."}
+{"tick":83,"type":"action_completed","text":"Ines Hassan finished talk."}
+{"tick":83,"type":"conversation","text":"Noor Silva talked with Sam Rossi."}
+{"tick":83,"type":"action_completed","text":"Noor Silva finished talk."}
+{"tick":85,"type":"action_completed","text":"Priya Tanaka finished eat."}
+{"tick":87,"type":"action_completed","text":"Rosa Kim finished eat."}
+{"tick":89,"type":"conversation","text":"Ken Chen talked with Sam Bauer."}
+{"tick":89,"type":"action_completed","text":"Ken Chen finished talk."}
+{"tick":90,"type":"action_completed","text":"Zara Nwosu finished eat."}
+{"tick":92,"type":"action_completed","text":"Anton Khan finished eat."}
+{"tick":93,"type":"action_completed","text":"Emma Wright finished eat."}
+{"tick":94,"type":"action_completed","text":"Sam Khan finished work."}
+{"tick":95,"type":"action_completed","text":"Sora Costa finished eat."}
+{"tick":101,"type":"action_completed","text":"Hugo Larsen finished eat."}
+{"tick":104,"type":"action_completed","text":"Hana Bauer finished ask for help."}
+{"tick":106,"type":"action_completed","text":"Ibrahim Moreau finished rest."}
+{"tick":109,"type":"action_completed","text":"Diego Hughes finished eat."}
+{"tick":110,"type":"conversation","text":"Nina Sato talked with Amelia Tanaka."}
+{"tick":110,"type":"action_completed","text":"Nina Sato finished talk."}
+{"tick":112,"type":"action_completed","text":"Sam Bauer finished work."}
+{"tick":112,"type":"action_completed","text":"Anika Diaz finished work."}
+{"tick":112,"type":"conversation","text":"Nina Petrov talked with Nina Sato."}
+{"tick":112,"type":"action_completed","text":"Nina Petrov finished talk."}
+{"tick":115,"type":"action_completed","text":"Nina Nwosu finished work."}
+{"tick":115,"type":"action_completed","text":"Mira Andersen finished eat."}
+{"tick":116,"type":"action_completed","text":"Jonas Novak finished rest."}
+{"tick":118,"type":"action_completed","text":"Ibrahim Sato finished eat."}
+{"tick":119,"type":"help","text":"Greta Wright gave food to Amelia Bauer."}
+{"tick":119,"type":"action_completed","text":"Greta Wright finished help."}
+{"tick":120,"type":"action_completed","text":"Lina Sato finished ask for help."}
+{"tick":121,"type":"action_completed","text":"Lina Santos finished work."}
+{"tick":123,"type":"action_completed","text":"Mira Wright finished eat."}
+{"tick":124,"type":"action_completed","text":"Owen Sato finished eat."}
+{"tick":128,"type":"conversation","text":"Noor Santos talked with Omar Kim."}
+{"tick":128,"type":"action_completed","text":"Noor Santos finished talk."}
+{"tick":133,"type":"action_completed","text":"Amelia Kim finished eat."}
+{"tick":135,"type":"action_completed","text":"Noor Novak finished visit."}
+{"tick":136,"type":"action_completed","text":"Mira Nguyen finished eat."}
+{"tick":136,"type":"action_completed","text":"Pavel Hassan finished eat."}
+{"tick":137,"type":"action_completed","text":"Amelia Tanaka finished work."}
+{"tick":137,"type":"action_completed","text":"Ibrahim Okada finished visit."}
+{"tick":139,"type":"action_completed","text":"Sarah Ito finished eat."}
+{"tick":146,"type":"action_completed","text":"Pavel Novak finished eat."}
+{"tick":150,"type":"action_completed","text":"Elena Larsen finished eat."}
+{"tick":151,"type":"conversation","text":"Maya Novak talked with Omar Kim."}
+{"tick":151,"type":"action_completed","text":"Maya Novak finished talk."}
+{"tick":152,"type":"action_completed","text":"Bob Andersen finished eat."}
+{"tick":153,"type":"action_completed","text":"Mei Novak finished eat."}
+{"tick":154,"type":"transaction","text":"Jonas Kim bought food."}
+{"tick":154,"type":"action_completed","text":"Jonas Kim finished buy food."}
+{"tick":156,"type":"action_completed","text":"Sam Rossi finished work."}
+{"tick":156,"type":"conversation","text":"Noah Wright talked with Noor Novak."}
+{"tick":156,"type":"action_completed","text":"Noah Wright finished talk."}
+{"tick":160,"type":"conversation","text":"Jonas Novak talked with Rosa Kim."}
+{"tick":160,"type":"action_completed","text":"Jonas Novak finished talk."}
+{"tick":161,"type":"transaction","text":"Greta Silva bought food."}
+{"tick":161,"type":"action_completed","text":"Greta Silva finished buy food."}
+{"tick":162,"type":"action_completed","text":"Owen Khan finished rest."}
+{"tick":163,"type":"action_completed","text":"Maya Berg finished eat."}
+{"tick":164,"type":"conversation","text":"Felix Tanaka talked with Noor Novak."}
+{"tick":164,"type":"action_completed","text":"Felix Tanaka finished talk."}
+{"tick":169,"type":"action_completed","text":"Sora Costa finished eat."}
+{"tick":169,"type":"action_completed","text":"Sam Khan finished work."}
+{"tick":169,"type":"action_completed","text":"Anton Khan finished visit."}
+{"tick":171,"type":"action_completed","text":"Omar Kim finished work."}
+{"tick":172,"type":"action_completed","text":"Sarah Petrov finished eat."}
+{"tick":172,"type":"action_completed","text":"Jamal Reed finished idle."}
+{"tick":173,"type":"action_completed","text":"Maya Okada finished eat."}
+{"tick":175,"type":"action_completed","text":"Greta Silva finished eat."}
+{"tick":176,"type":"transaction","text":"Jonas Kim bought food."}
+{"tick":176,"type":"action_completed","text":"Jonas Kim finished buy food."}
+{"tick":176,"type":"transaction","text":"Ivy Andersen bought food."}
+{"tick":176,"type":"action_completed","text":"Ivy Andersen finished buy food."}
+{"tick":176,"type":"action_completed","text":"Mira Wright finished rest."}
+{"tick":176,"type":"action_completed","text":"Amelia Chen finished eat."}
+{"tick":177,"type":"transaction","text":"Felix Chen bought food."}
+{"tick":177,"type":"action_completed","text":"Felix Chen finished buy food."}
+{"tick":183,"type":"transaction","text":"Hana Silva bought food."}
+{"tick":183,"type":"action_completed","text":"Hana Silva finished buy food."}
+{"tick":186,"type":"conversation","text":"Elena Diaz talked with Lina Sato."}
+{"tick":186,"type":"action_completed","text":"Elena Diaz finished talk."}
+{"tick":187,"type":"action_completed","text":"Sam Bauer finished work."}
+{"tick":188,"type":"action_completed","text":"Ken Chen finished rest."}
+{"tick":190,"type":"action_completed","text":"Ivy Andersen finished eat."}
+{"tick":191,"type":"action_completed","text":"Felix Chen finished eat."}
+{"tick":191,"type":"conversation","text":"Owen Sato talked with Mira Andersen."}
+{"tick":191,"type":"action_completed","text":"Owen Sato finished talk."}
+{"tick":192,"type":"conversation","text":"Pavel Hassan talked with Mira Nguyen."}
+{"tick":192,"type":"action_completed","text":"Pavel Hassan finished talk."}
+{"tick":193,"type":"action_completed","text":"Nina Nwosu finished work."}
+{"tick":193,"type":"action_completed","text":"Ibrahim Sato finished visit."}
+{"tick":195,"type":"action_completed","text":"Ravi Diaz finished work."}
+{"tick":197,"type":"action_completed","text":"Yuki Kim finished work."}
+{"tick":201,"type":"action_completed","text":"Arthur Reed finished work."}
+{"tick":203,"type":"action_completed","text":"Lina Santos finished work."}
+{"tick":205,"type":"action_completed","text":"Anika Diaz finished work."}
+{"tick":205,"type":"transaction","text":"Hana Silva bought food."}
+{"tick":205,"type":"action_completed","text":"Hana Silva finished buy food."}
+{"tick":206,"type":"conversation","text":"Owen Khan talked with Mira Nguyen."}
+{"tick":206,"type":"action_completed","text":"Owen Khan finished talk."}
+{"tick":210,"type":"conversation","text":"Elena Larsen talked with Sora Costa."}
+{"tick":210,"type":"action_completed","text":"Elena Larsen finished talk."}
+{"tick":211,"type":"action_completed","text":"Eli Nguyen finished work."}
+{"tick":211,"type":"action_completed","text":"Yuki Kim finished eat."}
+{"tick":215,"type":"action_completed","text":"Sam Rossi finished work."}
+{"tick":215,"type":"transaction","text":"Maya Sato bought food."}
+{"tick":215,"type":"action_completed","text":"Maya Sato finished buy food."}
+{"tick":215,"type":"action_completed","text":"Pavel Novak finished eat."}
+{"tick":217,"type":"action_completed","text":"Mira Nguyen finished eat."}
+{"tick":220,"type":"action_completed","text":"Emma Reed finished work."}
+{"tick":220,"type":"action_completed","text":"Noor Santos finished eat."}
+{"tick":222,"type":"action_completed","text":"Bob Andersen finished idle."}
+{"tick":223,"type":"action_completed","text":"Sarah Tanaka finished work."}
+{"tick":223,"type":"conversation","text":"Maya Novak talked with Ken Chen."}
+{"tick":223,"type":"action_completed","text":"Maya Novak finished talk."}
+{"tick":225,"type":"action_completed","text":"Eli Nguyen finished eat."}
+{"tick":230,"type":"action_completed","text":"Sarah Vogel finished work."}
+{"tick":231,"type":"conversation","text":"Amelia Chen talked with Ken Chen."}
+{"tick":231,"type":"action_completed","text":"Amelia Chen finished talk."}
+{"tick":232,"type":"action_completed","text":"Sam Wright finished work."}
+{"tick":237,"type":"action_completed","text":"Sarah Tanaka finished eat."}
+{"tick":237,"type":"transaction","text":"Maya Sato bought food."}
+{"tick":237,"type":"action_completed","text":"Maya Sato finished buy food."}
+{"tick":239,"type":"action_completed","text":"Mei Nwosu finished work."}
+{"tick":240,"type":"action_completed","text":"Elena Diaz finished rest."}
+{"tick":241,"type":"action_completed","text":"Nora Rossi finished explore."}
+{"tick":241,"type":"action_completed","text":"Luca Berg finished work."}
+{"tick":241,"type":"transaction","text":"Noor Larsen bought food."}
+{"tick":241,"type":"action_completed","text":"Noor Larsen finished buy food."}
+{"tick":242,"type":"action_completed","text":"Amelia Nguyen finished work."}
+{"tick":244,"type":"action_completed","text":"Sarah Vogel finished eat."}
+{"tick":246,"type":"action_completed","text":"Soren Wright finished work."}
+{"tick":247,"type":"action_completed","text":"Priya Kim finished work."}
+{"tick":248,"type":"action_completed","text":"Noor Novak finished rest."}
+{"tick":248,"type":"action_completed","text":"Greta Nguyen finished work."}
+{"tick":249,"type":"action_completed","text":"Ines Chen finished work."}
+{"tick":251,"type":"conversation","text":"Felix Tanaka talked with Noor Novak."}
+{"tick":251,"type":"action_completed","text":"Felix Tanaka finished talk."}
+{"tick":252,"type":"action_completed","text":"Anton Kim finished work."}
+{"tick":254,"type":"transaction","text":"Alice Moreau bought food."}
+{"tick":254,"type":"action_completed","text":"Alice Moreau finished buy food."}
+{"tick":255,"type":"transaction","text":"Noor Silva bought food."}
+{"tick":255,"type":"action_completed","text":"Noor Silva finished buy food."}
+{"tick":255,"type":"conversation","text":"Pavel Hassan talked with Mira Nguyen."}
+{"tick":255,"type":"action_completed","text":"Pavel Hassan finished talk."}
+{"tick":255,"type":"action_completed","text":"Noor Larsen finished eat."}
+{"tick":256,"type":"action_completed","text":"Omar Kim finished work."}
+{"tick":257,"type":"action_completed","text":"Ken Chen finished work."}
+{"tick":257,"type":"action_completed","text":"Maya Okada finished rest."}
+{"tick":259,"type":"help","text":"Sam Bauer gave food to Sam Rossi."}
+{"tick":259,"type":"action_completed","text":"Sam Bauer finished help."}
+{"tick":260,"type":"action_completed","text":"Soren Wright finished eat."}
+{"tick":260,"type":"action_completed","text":"Ken Park finished work."}
+{"tick":261,"type":"action_completed","text":"Jonas Kim finished eat."}
+{"tick":261,"type":"action_completed","text":"Priya Kim finished eat."}
+{"tick":262,"type":"action_completed","text":"Anika Diaz finished eat."}
+{"tick":262,"type":"transaction","text":"Mateo Hassan bought food."}
+{"tick":262,"type":"action_completed","text":"Mateo Hassan finished buy food."}
+{"tick":262,"type":"action_completed","text":"Greta Nguyen finished eat."}
+{"tick":262,"type":"conversation","text":"Bob Andersen talked with Anton Khan."}
+{"tick":262,"type":"action_completed","text":"Bob Andersen finished talk."}
+{"tick":263,"type":"transaction","text":"Nora Rossi bought food."}
+{"tick":263,"type":"action_completed","text":"Nora Rossi finished buy food."}
+{"tick":266,"type":"action_completed","text":"Anton Kim finished eat."}
+{"tick":266,"type":"conversation","text":"Owen Sato talked with Noor Novak."}
+{"tick":266,"type":"action_completed","text":"Owen Sato finished talk."}
+{"tick":267,"type":"action_completed","text":"Sora Costa finished work."}
+{"tick":268,"type":"action_completed","text":"Alice Moreau finished eat."}
+{"tick":269,"type":"action_completed","text":"Noor Silva finished eat."}
+{"tick":269,"type":"action_completed","text":"Jamal Reed finished explore."}
+{"tick":272,"type":"action_completed","text":"Emma Reed finished work."}
+{"tick":276,"type":"action_completed","text":"Mateo Hassan finished eat."}
+{"tick":279,"type":"action_completed","text":"Diego Hughes finished work."}
+{"tick":280,"type":"help","text":"Sarah Tanaka gave food to Mei Nwosu."}
+{"tick":280,"type":"action_completed","text":"Sarah Tanaka finished help."}
+{"tick":280,"type":"transaction","text":"Ibrahim Singh bought food."}
+{"tick":280,"type":"action_completed","text":"Ibrahim Singh finished buy food."}
+{"tick":286,"type":"conversation","text":"Maya Novak talked with Sam Khan."}
+{"tick":286,"type":"action_completed","text":"Maya Novak finished talk."}
+{"tick":287,"type":"action_completed","text":"Elena Diaz finished visit."}
+{"tick":288,"type":"action_completed","text":"Mei Nguyen finished work."}
+{"tick":288,"type":"action_completed","text":"Omar Nwosu finished work."}
+{"tick":288,"type":"transaction","text":"Emma Khan bought food."}
+{"tick":288,"type":"action_completed","text":"Emma Khan finished buy food."}
+{"tick":288,"type":"conversation","text":"Noor Santos talked with Ibrahim Sato."}
+{"tick":288,"type":"action_completed","text":"Noor Santos finished talk."}
+{"tick":288,"type":"conversation","text":"Amelia Chen talked with Sam Khan."}
+{"tick":288,"type":"action_completed","text":"Amelia Chen finished talk."}
+{"tick":289,"type":"action_completed","text":"Mei Novak finished explore."}
+{"tick":290,"type":"action_completed","text":"Noor Novak finished ask for help."}
+{"tick":292,"type":"action_completed","text":"Jamal Kowalski finished work."}
+{"tick":293,"type":"action_completed","text":"Arthur Santos finished work."}
+{"tick":293,"type":"action_completed","text":"Luca Nguyen finished work."}
+{"tick":293,"type":"action_completed","text":"Hana Silva finished eat."}
+{"tick":293,"type":"action_completed","text":"Hugo Larsen finished work."}
+{"tick":295,"type":"action_completed","text":"Ines Chen finished eat."}
+{"tick":298,"type":"conversation","text":"Ibrahim Singh talked with Soren Wright."}
+{"tick":298,"type":"action_completed","text":"Ibrahim Singh finished talk."}
+{"tick":299,"type":"action_completed","text":"Eli Nguyen finished work."}
+{"tick":302,"type":"action_completed","text":"Emma Khan finished eat."}
+{"tick":302,"type":"action_completed","text":"Owen Khan finished eat."}
+{"tick":303,"type":"action_completed","text":"Ravi Diaz finished work."}
+{"tick":305,"type":"action_completed","text":"Sam Rossi finished work."}
+{"tick":305,"type":"action_completed","text":"Nina Sato finished work."}
+{"tick":306,"type":"action_completed","text":"Jamal Kowalski finished eat."}
+{"tick":307,"type":"action_completed","text":"Greta Diaz finished work."}
+{"tick":307,"type":"action_completed","text":"Luca Nguyen finished eat."}
+{"tick":307,"type":"action_completed","text":"Jamal Reed finished rest."}
+{"tick":308,"type":"action_completed","text":"Ken Park finished work."}
+{"tick":308,"type":"help","text":"Priya Kim gave food to Greta Wright."}
+{"tick":308,"type":"action_completed","text":"Priya Kim finished help."}
+{"tick":308,"type":"conversation","text":"Maya Okada talked with Elena Larsen."}
+{"tick":308,"type":"action_completed","text":"Maya Okada finished talk."}
+{"tick":309,"type":"action_completed","text":"Amelia Petrov finished work."}
+{"tick":311,"type":"action_completed","text":"Ibrahim Sato finished explore."}
+{"tick":313,"type":"action_completed","text":"Mira Nwosu finished work."}
+{"tick":314,"type":"action_completed","text":"Elena Larsen finished eat."}
+{"tick":314,"type":"conversation","text":"Felix Tanaka talked with Noor Novak."}
+{"tick":314,"type":"action_completed","text":"Felix Tanaka finished talk."}
+{"tick":315,"type":"action_completed","text":"John Park finished work."}
+{"tick":316,"type":"action_completed","text":"Sarah Vogel finished rest."}
+{"tick":316,"type":"action_completed","text":"Mira Nguyen finished sleep."}
+{"tick":316,"type":"action_completed","text":"Pavel Hassan finished visit."}
+{"tick":318,"type":"action_completed","text":"Sam Khan finished sleep."}
+{"tick":323,"type":"action_completed","text":"Nora Rossi finished eat."}
+{"tick":323,"type":"action_completed","text":"Anton Khan finished sleep."}
+{"tick":323,"type":"transaction","text":"Mateo Ali bought food."}
+{"tick":323,"type":"action_completed","text":"Mateo Ali finished buy food."}
+{"tick":324,"type":"transaction","text":"Amelia Tanaka bought food."}
+{"tick":324,"type":"action_completed","text":"Amelia Tanaka finished buy food."}
+{"tick":325,"type":"action_completed","text":"Ibrahim Moreau finished work."}
+{"tick":326,"type":"action_completed","text":"Sarah Ito finished work."}
+{"tick":326,"type":"action_completed","text":"Emma Wright finished explore."}
+{"tick":327,"type":"action_completed","text":"Priya Tanaka finished work."}
+{"tick":327,"type":"action_completed","text":"Diego Hughes finished work."}
+{"tick":328,"type":"action_completed","text":"Arthur Reed finished sleep."}
+{"tick":329,"type":"action_completed","text":"Mira Nwosu finished eat."}
+{"tick":331,"type":"action_completed","text":"John Park finished ask for help."}
+{"tick":331,"type":"action_completed","text":"Greta Silva finished work."}
+{"tick":331,"type":"action_completed","text":"Hana Silva finished eat."}
+{"tick":332,"type":"conversation","text":"Noor Larsen talked with Amelia Tanaka."}
+{"tick":332,"type":"action_completed","text":"Noor Larsen finished talk."}
+{"tick":334,"type":"action_completed","text":"Jamal Costa finished work."}
+{"tick":336,"type":"action_completed","text":"Priya Khan finished work."}
+{"tick":336,"type":"action_completed","text":"Omar Nwosu finished work."}
+{"tick":336,"type":"action_completed","text":"Maya Berg finished work."}
+{"tick":336,"type":"action_completed","text":"Amelia Kim finished explore."}
+{"tick":337,"type":"action_completed","text":"Soren Wright finished work."}
+{"tick":337,"type":"action_completed","text":"Elena Chen finished work."}
+{"tick":337,"type":"action_completed","text":"Mateo Ali finished eat."}
+{"tick":337,"type":"action_completed","text":"Maya Sato finished eat."}
+{"tick":338,"type":"action_completed","text":"Amelia Tanaka finished eat."}
+{"tick":338,"type":"conversation","text":"Amelia Chen talked with Sam Bauer."}
+{"tick":338,"type":"action_completed","text":"Amelia Chen finished talk."}
+{"tick":342,"type":"action_completed","text":"Arthur Reed finished eat."}
+{"tick":342,"type":"action_completed","text":"Hugo Larsen finished work."}
+{"tick":343,"type":"action_completed","text":"Felix Chen finished sleep."}
+{"tick":343,"type":"action_completed","text":"Elena Kowalski finished work."}
+{"tick":344,"type":"action_completed","text":"Mira Andersen finished work."}
+{"tick":344,"type":"conversation","text":"Emma Wright talked with Ibrahim Moreau."}
+{"tick":344,"type":"action_completed","text":"Emma Wright finished talk."}
+{"tick":344,"type":"transaction","text":"Nina Petrov bought food."}
+{"tick":344,"type":"action_completed","text":"Nina Petrov finished buy food."}
+{"tick":347,"type":"action_completed","text":"Theo Andersen finished work."}
+{"tick":347,"type":"action_completed","text":"Owen Sato finished visit."}
+{"tick":348,"type":"action_completed","text":"Anton Kim finished work."}
+{"tick":348,"type":"transaction","text":"Noah Tanaka bought food."}
+{"tick":348,"type":"action_completed","text":"Noah Tanaka finished buy food."}
+{"tick":349,"type":"action_completed","text":"Lina Santos finished sleep."}
+{"tick":349,"type":"transaction","text":"Lina Sato bought food."}
+{"tick":349,"type":"action_completed","text":"Lina Sato finished buy food."}
+{"tick":349,"type":"action_completed","text":"Sarah Petrov finished work."}
+{"tick":350,"type":"action_completed","text":"Ken Chen finished work."}
+{"tick":350,"type":"action_completed","text":"Mei Novak finished work."}
+{"tick":351,"type":"action_completed","text":"Sarah Vogel finished eat."}
+{"tick":352,"type":"action_completed","text":"Zara Nwosu finished work."}
+{"tick":354,"type":"conversation","text":"Amelia Kim talked with Priya Tanaka."}
+{"tick":354,"type":"action_completed","text":"Amelia Kim finished talk."}
+{"tick":356,"type":"action_completed","text":"Ines Sato finished work."}
+{"tick":358,"type":"action_completed","text":"Nina Petrov finished eat."}
+{"tick":359,"type":"action_completed","text":"Sora Costa finished work."}
+{"tick":359,"type":"action_completed","text":"Pavel Novak finished sleep."}
+{"tick":361,"type":"action_completed","text":"Ivy Wright finished work."}
+{"tick":361,"type":"action_completed","text":"Luca Berg finished sleep."}
+{"tick":362,"type":"action_completed","text":"Amelia Nguyen finished sleep."}
+{"tick":363,"type":"action_completed","text":"Lina Sato finished eat."}
+{"tick":364,"type":"help","text":"Noah Tanaka gave food to Amelia Tanaka."}
+{"tick":364,"type":"action_completed","text":"Noah Tanaka finished help."}
+{"tick":365,"type":"action_completed","text":"Mei Nwosu finished sleep."}
+{"tick":367,"type":"action_completed","text":"Amelia Bauer finished work."}
+{"tick":368,"type":"action_completed","text":"Rosa Bauer finished work."}
+{"tick":369,"type":"action_completed","text":"Anika Diaz finished work."}
+{"tick":370,"type":"conversation","text":"Zara Nwosu talked with Priya Khan."}
+{"tick":370,"type":"action_completed","text":"Zara Nwosu finished talk."}
+{"tick":370,"type":"action_completed","text":"Yuki Kim finished sleep."}
+{"tick":371,"type":"action_completed","text":"Ivy Andersen finished work."}
+{"tick":372,"type":"conversation","text":"Noor Santos talked with Sam Khan."}
+{"tick":372,"type":"action_completed","text":"Noor Santos finished talk."}
+{"tick":373,"type":"action_completed","text":"Ines Hassan finished work."}
+{"tick":373,"type":"action_completed","text":"Sam Wright finished sleep."}
+{"tick":375,"type":"action_completed","text":"Ivy Wright finished eat."}
+{"tick":376,"type":"action_completed","text":"Ines Sato finished eat."}
+{"tick":379,"type":"action_completed","text":"Greta Silva finished work."}
+{"tick":382,"type":"action_completed","text":"Jamal Costa finished work."}
+{"tick":382,"type":"action_completed","text":"Mira Wright finished work."}
+{"tick":383,"type":"action_completed","text":"Luca Nguyen finished work."}
+{"tick":384,"type":"action_completed","text":"Priya Khan finished work."}
+{"tick":384,"type":"action_completed","text":"Maya Berg finished work."}
+{"tick":385,"type":"action_completed","text":"Elena Chen finished work."}
+{"tick":388,"type":"help","text":"Ivy Andersen gave food to Ines Sato."}
+{"tick":388,"type":"action_completed","text":"Ivy Andersen finished help."}
+{"tick":389,"type":"action_completed","text":"Yuki Kim finished eat."}
+{"tick":389,"type":"action_completed","text":"Owen Khan finished rest."}
+{"tick":391,"type":"action_completed","text":"Ken Park finished eat."}
+{"tick":392,"type":"action_completed","text":"Mira Andersen finished work."}
+{"tick":392,"type":"help","text":"Ines Hassan gave food to Ines Sato."}
+{"tick":392,"type":"action_completed","text":"Ines Hassan finished help."}
+{"tick":392,"type":"transaction","text":"Noah Wright bought food."}
+{"tick":392,"type":"action_completed","text":"Noah Wright finished buy food."}
+{"tick":393,"type":"action_completed","text":"Sam Bauer finished sleep."}
+{"tick":393,"type":"conversation","text":"Felix Tanaka talked with Noor Novak."}
+{"tick":393,"type":"action_completed","text":"Felix Tanaka finished talk."}
+{"tick":394,"type":"action_completed","text":"Sarah Tanaka finished work."}
+{"tick":395,"type":"conversation","text":"Elena Diaz talked with Sam Khan."}
+{"tick":395,"type":"action_completed","text":"Elena Diaz finished talk."}
+{"tick":396,"type":"transaction","text":"Nina Nwosu bought food."}
+{"tick":396,"type":"action_completed","text":"Nina Nwosu finished buy food."}
+{"tick":396,"type":"action_completed","text":"Noor Novak finished ask for help."}
+{"tick":396,"type":"action_completed","text":"Jonas Novak finished explore."}
+{"tick":397,"type":"action_completed","text":"Ibrahim Singh finished eat."}
+{"tick":399,"type":"transaction","text":"Ibrahim Okada bought food."}
+{"tick":399,"type":"action_completed","text":"Ibrahim Okada finished buy food."}
+{"tick":400,"type":"conversation","text":"Mira Nguyen talked with Noor Novak."}
+{"tick":400,"type":"action_completed","text":"Mira Nguyen finished talk."}
+{"tick":402,"type":"action_completed","text":"Ibrahim Sato finished sleep."}
+{"tick":403,"type":"action_completed","text":"Felix Chen finished work."}
+{"tick":403,"type":"action_completed","text":"Maya Okada finished rest."}
+{"tick":404,"type":"action_completed","text":"Jamal Kowalski finished work."}
+{"tick":407,"type":"conversation","text":"Amelia Chen talked with Priya Khan."}
+{"tick":407,"type":"action_completed","text":"Amelia Chen finished talk."}
+{"tick":408,"type":"action_completed","text":"Anton Khan finished eat."}
+{"tick":408,"type":"action_completed","text":"Hana Bauer finished work."}
+{"tick":409,"type":"action_completed","text":"Greta Nguyen finished explore."}
+{"tick":410,"type":"action_completed","text":"Nina Nwosu finished eat."}
+{"tick":410,"type":"conversation","text":"Priya Kim talked with Emma Wright."}
+{"tick":410,"type":"action_completed","text":"Priya Kim finished talk."}
+{"tick":411,"type":"action_completed","text":"Lina Sato finished rest."}
+{"tick":412,"type":"conversation","text":"Nina Petrov talked with Nina Nwosu."}
+{"tick":412,"type":"action_completed","text":"Nina Petrov finished talk."}
+{"tick":414,"type":"transaction","text":"Noah Wright bought food."}
+{"tick":414,"type":"action_completed","text":"Noah Wright finished buy food."}
+{"tick":419,"type":"action_completed","text":"Lina Santos finished eat."}
+{"tick":421,"type":"action_completed","text":"Hugo Larsen finished work."}
+{"tick":421,"type":"transaction","text":"Ibrahim Okada bought food."}
+{"tick":421,"type":"action_completed","text":"Ibrahim Okada finished buy food."}
+{"tick":422,"type":"conversation","text":"Pavel Hassan talked with Owen Khan."}
+{"tick":422,"type":"action_completed","text":"Pavel Hassan finished talk."}
+{"tick":422,"type":"help","text":"Noor Larsen gave food to Nina Nwosu."}
+{"tick":422,"type":"action_completed","text":"Noor Larsen finished help."}
+{"tick":425,"type":"action_completed","text":"Sam Rossi finished work."}
+{"tick":426,"type":"action_completed","text":"Sarah Vogel finished work."}
+{"tick":432,"type":"action_completed","text":"Mira Wright finished work."}
+{"tick":433,"type":"action_completed","text":"Mateo Ali finished work."}
+{"tick":434,"type":"action_completed","text":"Maya Novak finished sleep."}
+{"tick":439,"type":"action_completed","text":"Rosa Kim finished explore."}
+{"tick":439,"type":"action_completed","text":"Alice Moreau finished work."}
+{"tick":441,"type":"action_completed","text":"Greta Wright finished work."}
+{"tick":441,"type":"transaction","text":"Greta Diaz bought food."}
+{"tick":441,"type":"action_completed","text":"Greta Diaz finished buy food."}
+{"tick":443,"type":"transaction","text":"Amelia Petrov bought food."}
+{"tick":443,"type":"action_completed","text":"Amelia Petrov finished buy food."}
+{"tick":443,"type":"transaction","text":"Jamal Reed bought food."}
+{"tick":443,"type":"action_completed","text":"Jamal Reed finished buy food."}
+{"tick":444,"type":"action_completed","text":"Nina Sato finished sleep."}
+{"tick":445,"type":"action_completed","text":"Ravi Diaz finished sleep."}
+{"tick":447,"type":"conversation","text":"Amelia Kim talked with Ines Sato."}
+{"tick":447,"type":"action_completed","text":"Amelia Kim finished talk."}
+{"tick":448,"type":"conversation","text":"Zara Nwosu talked with Priya Khan."}
+{"tick":448,"type":"action_completed","text":"Zara Nwosu finished talk."}
+{"tick":449,"type":"action_completed","text":"Ines Sato finished work."}
+{"tick":449,"type":"action_completed","text":"Ines Chen finished sleep."}
+{"tick":449,"type":"action_completed","text":"Bob Andersen finished explore."}
+{"tick":450,"type":"transaction","text":"Arthur Santos bought food."}
+{"tick":450,"type":"action_completed","text":"Arthur Santos finished buy food."}
+{"tick":454,"type":"conversation","text":"Owen Sato talked with Noor Novak."}
+{"tick":454,"type":"action_completed","text":"Owen Sato finished talk."}
+{"tick":455,"type":"action_completed","text":"Greta Diaz finished eat."}
+{"tick":455,"type":"action_completed","text":"Owen Khan finished idle."}
+{"tick":455,"type":"action_completed","text":"Maya Okada finished idle."}
+{"tick":457,"type":"action_completed","text":"Amelia Petrov finished eat."}
+{"tick":457,"type":"action_completed","text":"Jamal Reed finished eat."}
+{"tick":461,"type":"action_completed","text":"Lina Sato finished rest."}
+{"tick":461,"type":"action_completed","text":"Elena Chen finished eat."}
+{"tick":462,"type":"action_completed","text":"Eli Nguyen finished sleep."}
+{"tick":463,"type":"transaction","text":"Omar Kim bought food."}
+{"tick":463,"type":"action_completed","text":"Omar Kim finished buy food."}
+{"tick":463,"type":"action_completed","text":"Emma Reed finished sleep."}
+{"tick":464,"type":"action_completed","text":"Anika Diaz finished sleep."}
+{"tick":464,"type":"action_completed","text":"Arthur Santos finished eat."}
+{"tick":464,"type":"action_completed","text":"Noor Silva finished work."}
+{"tick":465,"type":"conversation","text":"Pavel Novak talked with Noor Novak."}
+{"tick":465,"type":"action_completed","text":"Pavel Novak finished talk."}
+{"tick":467,"type":"action_completed","text":"Sarah Ito finished sleep."}
+{"tick":470,"type":"action_completed","text":"Greta Silva finished work."}
+{"tick":471,"type":"action_completed","text":"Nina Petrov finished eat."}
+{"tick":474,"type":"help","text":"Ibrahim Sato gave food to Anika Diaz."}
+{"tick":474,"type":"action_completed","text":"Ibrahim Sato finished help."}
+{"tick":474,"type":"transaction","text":"Noah Tanaka bought food."}
+{"tick":474,"type":"action_completed","text":"Noah Tanaka finished buy food."}
+{"tick":477,"type":"action_completed","text":"Omar Kim finished eat."}
+{"tick":478,"type":"action_completed","text":"Jonas Kim finished work."}
+{"tick":478,"type":"action_completed","text":"Hana Silva finished sleep."}
+{"tick":479,"type":"action_completed","text":"Felix Chen finished ask for help."}
+{"tick":479,"type":"conversation","text":"Felix Tanaka talked with Noor Novak."}
+{"tick":479,"type":"action_completed","text":"Felix Tanaka finished talk."}
+{"tick":481,"type":"action_completed","text":"Maya Berg finished work."}
+{"tick":482,"type":"action_completed","text":"Amelia Nguyen finished work."}
+{"tick":485,"type":"action_completed","text":"Sora Costa finished work."}
+{"tick":486,"type":"action_completed","text":"Sam Bauer finished work."}
+{"tick":486,"type":"action_completed","text":"Emma Khan finished work."}
+{"tick":487,"type":"action_completed","text":"Emma Reed finished eat."}
+{"tick":487,"type":"conversation","text":"Priya Kim talked with Mira Nwosu."}
+{"tick":487,"type":"action_completed","text":"Priya Kim finished talk."}
+{"tick":488,"type":"action_completed","text":"Ken Park finished work."}
+{"tick":489,"type":"action_completed","text":"Maya Sato finished sleep."}
+{"tick":491,"type":"action_completed","text":"Mei Nwosu finished work."}
+{"tick":491,"type":"action_completed","text":"Ivy Andersen finished ask for help."}
+{"tick":492,"type":"action_completed","text":"Jonas Kim finished eat."}
+{"tick":493,"type":"action_completed","text":"Mira Nguyen finished idle."}
+{"tick":493,"type":"action_completed","text":"Maya Okada finished idle."}
+{"tick":495,"type":"action_completed","text":"Mateo Hassan finished work."}
+{"tick":497,"type":"conversation","text":"Amelia Chen talked with Sam Bauer."}
+{"tick":497,"type":"action_completed","text":"Amelia Chen finished talk."}
+{"tick":498,"type":"conversation","text":"Jamal Reed talked with Nina Nwosu."}
+{"tick":498,"type":"action_completed","text":"Jamal Reed finished talk."}
+{"tick":501,"type":"action_completed","text":"Ibrahim Moreau finished sleep."}
+{"tick":502,"type":"action_completed","text":"Amelia Nguyen finished eat."}
+{"tick":503,"type":"action_completed","text":"Lina Sato finished idle."}
+{"tick":504,"type":"action_completed","text":"Hana Silva finished visit."}
+{"tick":504,"type":"transaction","text":"Theo Andersen bought food."}
+{"tick":504,"type":"action_completed","text":"Theo Andersen finished buy food."}
+{"tick":504,"type":"action_completed","text":"Noah Wright finished eat."}
+{"tick":505,"type":"action_completed","text":"Mei Nwosu finished eat."}
+{"tick":506,"type":"action_completed","text":"Diego Hughes finished sleep."}
+{"tick":507,"type":"action_completed","text":"Lina Santos finished work."}
+{"tick":508,"type":"action_completed","text":"Ibrahim Singh finished work."}
+{"tick":509,"type":"action_completed","text":"Ibrahim Okada finished eat."}
+{"tick":512,"type":"action_completed","text":"Noor Silva finished work."}
+{"tick":514,"type":"action_completed","text":"Sam Wright finished work."}
+{"tick":515,"type":"action_completed","text":"Greta Nguyen finished work."}
+{"tick":515,"type":"action_completed","text":"Ibrahim Moreau finished eat."}
+{"tick":516,"type":"transaction","text":"Hugo Larsen bought food."}
+{"tick":516,"type":"action_completed","text":"Hugo Larsen finished buy food."}
+{"tick":517,"type":"action_completed","text":"Maya Sato finished eat."}
+{"tick":518,"type":"action_completed","text":"Nora Rossi finished work."}
+{"tick":519,"type":"conversation","text":"Nina Petrov talked with Amelia Petrov."}
+{"tick":519,"type":"action_completed","text":"Nina Petrov finished talk."}
+{"tick":519,"type":"action_completed","text":"Elena Kowalski finished sleep."}
+{"tick":520,"type":"action_completed","text":"Amelia Tanaka finished sleep."}
+{"tick":521,"type":"action_completed","text":"Priya Khan finished work."}
+{"tick":521,"type":"action_completed","text":"Noor Larsen finished eat."}
+{"tick":522,"type":"action_completed","text":"Ravi Diaz finished eat."}
+{"tick":522,"type":"action_completed","text":"Arthur Reed finished work."}
+{"tick":524,"type":"action_completed","text":"Jamal Kowalski finished work."}
+{"tick":524,"type":"action_completed","text":"Emma Wright finished explore."}
+{"tick":525,"type":"transaction","text":"Rosa Bauer bought food."}
+{"tick":525,"type":"action_completed","text":"Rosa Bauer finished buy food."}
+{"tick":525,"type":"action_completed","text":"Sarah Petrov finished sleep."}
+{"tick":525,"type":"action_completed","text":"Noor Santos finished sleep."}
+{"tick":526,"type":"transaction","text":"Theo Andersen bought food."}
+{"tick":526,"type":"action_completed","text":"Theo Andersen finished buy food."}
+{"tick":527,"type":"action_completed","text":"Yuki Kim finished work."}
+{"tick":528,"type":"transaction","text":"Sam Khan bought food."}
+{"tick":528,"type":"action_completed","text":"Sam Khan finished buy food."}
+{"tick":530,"type":"action_completed","text":"Jonas Novak finished explore."}
+{"tick":531,"type":"action_completed","text":"Pavel Hassan finished explore."}
+{"tick":532,"type":"conversation","text":"Maya Okada talked with Eli Nguyen."}
+{"tick":532,"type":"action_completed","text":"Maya Okada finished talk."}
+{"tick":534,"type":"action_completed","text":"Emma Reed finished eat."}
+{"tick":537,"type":"action_completed","text":"Luca Nguyen finished explore."}
+{"tick":537,"type":"conversation","text":"Pavel Novak talked with Mira Nguyen."}
+{"tick":537,"type":"action_completed","text":"Pavel Novak finished talk."}
+{"tick":539,"type":"action_completed","text":"Sam Bauer finished ask for help."}
+{"tick":539,"type":"conversation","text":"Zara Nwosu talked with Sam Bauer."}
+{"tick":539,"type":"action_completed","text":"Zara Nwosu finished talk."}
+{"tick":539,"type":"action_completed","text":"Rosa Bauer finished eat."}
+{"tick":539,"type":"transaction","text":"Luca Berg bought food."}
+{"tick":539,"type":"action_completed","text":"Luca Berg finished buy food."}
+{"tick":540,"type":"action_completed","text":"Mei Novak finished sleep."}
+{"tick":541,"type":"action_completed","text":"Jonas Kim finished rest."}
+{"tick":541,"type":"action_completed","text":"Elena Larsen finished explore."}
+{"tick":542,"type":"action_completed","text":"Sam Khan finished eat."}
+{"tick":542,"type":"action_completed","text":"Mei Nguyen finished sleep."}
+{"tick":547,"type":"action_completed","text":"Lina Sato finished rest."}
+{"tick":548,"type":"action_completed","text":"Soren Wright finished sleep."}
+{"tick":549,"type":"transaction","text":"John Park bought food."}
+{"tick":549,"type":"action_completed","text":"John Park finished buy food."}
+{"tick":549,"type":"transaction","text":"Mateo Ali bought food."}
+{"tick":549,"type":"action_completed","text":"Mateo Ali finished buy food."}
+{"tick":553,"type":"transaction","text":"Omar Nwosu bought food."}
+{"tick":553,"type":"action_completed","text":"Omar Nwosu finished buy food."}
+{"tick":553,"type":"transaction","text":"Hugo Larsen bought food."}
+{"tick":553,"type":"action_completed","text":"Hugo Larsen finished buy food."}
+{"tick":553,"type":"action_completed","text":"Luca Berg finished eat."}
+{"tick":554,"type":"transaction","text":"Ken Chen bought food."}
+{"tick":554,"type":"action_completed","text":"Ken Chen finished buy food."}
+{"tick":554,"type":"action_completed","text":"Priya Tanaka finished sleep."}
+{"tick":554,"type":"action_completed","text":"Anton Kim finished sleep."}
+{"tick":556,"type":"action_completed","text":"Mei Nguyen finished eat."}
+{"tick":556,"type":"action_completed","text":"Sarah Vogel finished work."}
+{"tick":562,"type":"transaction","text":"Elena Diaz bought food."}
+{"tick":562,"type":"action_completed","text":"Elena Diaz finished buy food."}
+{"tick":563,"type":"action_completed","text":"John Park finished eat."}
+{"tick":564,"type":"conversation","text":"Pavel Hassan talked with Mei Nguyen."}
+{"tick":564,"type":"action_completed","text":"Pavel Hassan finished talk."}
+{"tick":565,"type":"transaction","text":"Hana Bauer bought food."}
+{"tick":565,"type":"action_completed","text":"Hana Bauer finished buy food."}
+{"tick":566,"type":"action_completed","text":"Alice Moreau finished sleep."}
+{"tick":566,"type":"transaction","text":"Sam Wright bought food."}
+{"tick":566,"type":"action_completed","text":"Sam Wright finished buy food."}
+{"tick":567,"type":"action_completed","text":"Omar Nwosu finished eat."}
+{"tick":567,"type":"conversation","text":"Mei Novak talked with Mei Nguyen."}
+{"tick":567,"type":"action_completed","text":"Mei Novak finished talk."}
+{"tick":568,"type":"action_completed","text":"Ken Chen finished eat."}
+{"tick":568,"type":"action_completed","text":"Mira Nwosu finished sleep."}
+{"tick":568,"type":"action_completed","text":"Greta Nguyen finished work."}
+{"tick":569,"type":"action_completed","text":"Anika Diaz finished work."}
+{"tick":569,"type":"action_completed","text":"Mateo Ali finished eat."}
+{"tick":569,"type":"action_completed","text":"Maya Berg finished work."}
+{"tick":569,"type":"action_completed","text":"Ines Chen finished work."}
+{"tick":570,"type":"action_completed","text":"Arthur Reed finished work."}
+{"tick":570,"type":"action_completed","text":"Noah Tanaka finished eat."}
+{"tick":571,"type":"action_completed","text":"Nina Sato finished work."}
+{"tick":573,"type":"action_completed","text":"Sam Rossi finished sleep."}
+{"tick":575,"type":"action_completed","text":"Priya Kim finished rest."}
+{"tick":576,"type":"action_completed","text":"Mei Nwosu finished work."}
+{"tick":576,"type":"action_completed","text":"Anton Khan finished work."}
+{"tick":576,"type":"action_completed","text":"Elena Diaz finished eat."}
+{"tick":578,"type":"action_completed","text":"Yuki Kim finished work."}
+{"tick":579,"type":"action_completed","text":"Hana Bauer finished eat."}
+{"tick":582,"type":"transaction","text":"Jamal Costa bought food."}
+{"tick":582,"type":"action_completed","text":"Jamal Costa finished buy food."}
+{"tick":583,"type":"action_completed","text":"Bob Andersen finished explore."}
+{"tick":583,"type":"help","text":"Noah Wright gave food to Ken Chen."}
+{"tick":583,"type":"action_completed","text":"Noah Wright finished help."}
+{"tick":584,"type":"action_completed","text":"Amelia Nguyen finished work."}
+{"tick":585,"type":"action_completed","text":"Jonas Kim finished rest."}
+{"tick":586,"type":"action_completed","text":"Ibrahim Okada finished eat."}
+{"tick":588,"type":"action_completed","text":"Amelia Tanaka finished work."}
+{"tick":588,"type":"action_completed","text":"Eli Nguyen finished work."}
+{"tick":590,"type":"action_completed","text":"Ibrahim Moreau finished eat."}
+{"tick":591,"type":"conversation","text":"Jamal Reed talked with Ken Chen."}
+{"tick":591,"type":"action_completed","text":"Jamal Reed finished talk."}
+{"tick":593,"type":"action_completed","text":"Greta Silva finished work."}
+{"tick":593,"type":"action_completed","text":"Ivy Andersen finished eat."}
+{"tick":594,"type":"transaction","text":"Lina Sato bought food."}
+{"tick":594,"type":"action_completed","text":"Lina Sato finished buy food."}
+{"tick":596,"type":"action_completed","text":"Jamal Costa finished eat."}
+{"tick":597,"type":"action_completed","text":"Nina Nwosu finished sleep."}
+{"tick":597,"type":"transaction","text":"Mira Wright bought food."}
+{"tick":597,"type":"action_completed","text":"Mira Wright finished buy food."}
+{"tick":597,"type":"conversation","text":"Maya Okada talked with Ivy Wright."}
+{"tick":597,"type":"action_completed","text":"Maya Okada finished talk."}
+{"tick":599,"type":"action_completed","text":"Mira Andersen finished sleep."}
+{"tick":599,"type":"action_completed","text":"Alice Moreau finished eat."}
+{"tick":602,"type":"action_completed","text":"Eli Nguyen finished eat."}
+{"tick":605,"type":"action_completed","text":"Theo Andersen finished eat."}
+{"tick":606,"type":"action_completed","text":"Emma Khan finished sleep."}
+{"tick":607,"type":"transaction","text":"Ines Hassan bought food."}
+{"tick":607,"type":"action_completed","text":"Ines Hassan finished buy food."}
+{"tick":607,"type":"conversation","text":"Nina Petrov talked with Ken Chen."}
+{"tick":607,"type":"action_completed","text":"Nina Petrov finished talk."}
+{"tick":607,"type":"action_completed","text":"Bob Andersen finished rest."}
+{"tick":608,"type":"action_completed","text":"Ken Chen finished eat."}
+{"tick":608,"type":"action_completed","text":"Sarah Ito finished work."}
+{"tick":609,"type":"action_completed","text":"Sora Costa finished sleep."}
+{"tick":609,"type":"action_completed","text":"Lina Santos finished work."}
+{"tick":609,"type":"action_completed","text":"Luca Berg finished eat."}
+{"tick":612,"type":"action_completed","text":"Maya Sato finished explore."}
+{"tick":613,"type":"action_completed","text":"Mei Nguyen finished rest."}
+{"tick":614,"type":"action_completed","text":"Sarah Tanaka finished sleep."}
+{"tick":615,"type":"conversation","text":"Elena Diaz talked with Ken Chen."}
+{"tick":615,"type":"action_completed","text":"Elena Diaz finished talk."}
+{"tick":615,"type":"conversation","text":"Noor Santos talked with Sam Rossi."}
+{"tick":615,"type":"action_completed","text":"Noor Santos finished talk."}
+{"tick":616,"type":"conversation","text":"Priya Kim talked with Elena Chen."}
+{"tick":616,"type":"action_completed","text":"Priya Kim finished talk."}
+{"tick":617,"type":"action_completed","text":"Rosa Bauer finished rest."}
+{"tick":617,"type":"action_completed","text":"Ines Chen finished work."}
+{"tick":620,"type":"transaction","text":"Maya Novak bought food."}
+{"tick":620,"type":"action_completed","text":"Maya Novak finished buy food."}
+{"tick":621,"type":"action_completed","text":"Amelia Bauer finished sleep."}
+{"tick":621,"type":"action_completed","text":"Mira Wright finished rest."}
+{"tick":622,"type":"action_completed","text":"Ines Hassan finished eat."}
+{"tick":624,"type":"action_completed","text":"Anton Khan finished work."}
+{"tick":624,"type":"action_completed","text":"Hugo Larsen finished eat."}
+{"tick":628,"type":"action_completed","text":"Jamal Kowalski finished work."}
+{"tick":629,"type":"action_completed","text":"Sam Wright finished eat."}
+{"tick":629,"type":"action_completed","text":"Ivy Wright finished sleep."}
+{"tick":630,"type":"action_completed","text":"Jonas Kim finished rest."}
+{"tick":632,"type":"transaction","text":"Sam Khan bought food."}
+{"tick":632,"type":"action_completed","text":"Sam Khan finished buy food."}
+{"tick":633,"type":"action_completed","text":"Diego Hughes finished work."}
+{"tick":634,"type":"action_completed","text":"Ravi Diaz finished work."}
+{"tick":635,"type":"action_completed","text":"Amelia Bauer finished eat."}
+{"tick":635,"type":"transaction","text":"Ibrahim Singh bought food."}
+{"tick":635,"type":"action_completed","text":"Ibrahim Singh finished buy food."}
+{"tick":635,"type":"action_completed","text":"Maya Novak finished eat."}
+{"tick":636,"type":"transaction","text":"Noah Tanaka bought food."}
+{"tick":636,"type":"action_completed","text":"Noah Tanaka finished buy food."}
+{"tick":637,"type":"action_completed","text":"Amelia Nguyen finished eat."}
+{"tick":638,"type":"action_completed","text":"Zara Nwosu finished work."}
+{"tick":640,"type":"action_completed","text":"Anika Diaz finished work."}
+{"tick":640,"type":"conversation","text":"Ibrahim Okada talked with Ken Chen."}
+{"tick":640,"type":"action_completed","text":"Ibrahim Okada finished talk."}
+{"tick":642,"type":"action_completed","text":"Maya Sato finished rest."}
+{"tick":645,"type":"action_completed","text":"Lina Sato finished eat."}
+{"tick":645,"type":"action_completed","text":"Mira Nguyen finished work."}
+{"tick":645,"type":"transaction","text":"Elena Kowalski bought food."}
+{"tick":645,"type":"action_completed","text":"Elena Kowalski finished buy food."}
+{"tick":646,"type":"action_completed","text":"Pavel Hassan finished eat."}
+{"tick":647,"type":"conversation","text":"Ivy Wright talked with Sam Rossi."}
+{"tick":647,"type":"action_completed","text":"Ivy Wright finished talk."}
+{"tick":650,"type":"action_completed","text":"Sam Bauer finished rest."}
+{"tick":650,"type":"transaction","text":"Noor Novak bought food."}
+{"tick":650,"type":"action_completed","text":"Noor Novak finished buy food."}
+{"tick":652,"type":"transaction","text":"Mateo Hassan bought food."}
+{"tick":652,"type":"action_completed","text":"Mateo Hassan finished buy food."}
+{"tick":655,"type":"action_completed","text":"Mira Wright finished eat."}
+{"tick":657,"type":"action_completed","text":"Nina Nwosu finished work."}
+{"tick":657,"type":"action_completed","text":"Bob Andersen finished rest."}
+{"tick":657,"type":"action_completed","text":"Elena Larsen finished explore."}
+{"tick":659,"type":"action_completed","text":"Elena Kowalski finished eat."}
+{"tick":660,"type":"transaction","text":"Sarah Ito bought food."}
+{"tick":660,"type":"action_completed","text":"Sarah Ito finished buy food."}
+{"tick":662,"type":"action_completed","text":"Luca Nguyen finished work."}
+{"tick":662,"type":"transaction","text":"Amelia Chen bought food."}
+{"tick":662,"type":"action_completed","text":"Amelia Chen finished buy food."}
+{"tick":663,"type":"action_completed","text":"Theo Andersen finished eat."}
+{"tick":664,"type":"action_completed","text":"Noor Novak finished eat."}
+{"tick":666,"type":"transaction","text":"Jonas Novak bought food."}
+{"tick":666,"type":"action_completed","text":"Jonas Novak finished buy food."}
+{"tick":667,"type":"action_completed","text":"Omar Kim finished sleep."}
+{"tick":668,"type":"help","text":"Mateo Hassan gave food to Ken Chen."}
+{"tick":668,"type":"action_completed","text":"Mateo Hassan finished help."}
+{"tick":671,"type":"action_completed","text":"Mei Nwosu finished work."}
+{"tick":672,"type":"action_completed","text":"Luca Berg finished rest."}
+{"tick":673,"type":"conversation","text":"Jonas Kim talked with Luca Nguyen."}
+{"tick":673,"type":"action_completed","text":"Jonas Kim finished talk."}
+{"tick":675,"type":"conversation","text":"Elena Larsen talked with Priya Kim."}
+{"tick":675,"type":"action_completed","text":"Elena Larsen finished talk."}
+{"tick":676,"type":"action_completed","text":"Emma Reed finished work."}
+{"tick":676,"type":"conversation","text":"Noor Santos talked with Sam Rossi."}
+{"tick":676,"type":"action_completed","text":"Noor Santos finished talk."}
+{"tick":677,"type":"action_completed","text":"Greta Diaz finished sleep."}
+{"tick":678,"type":"help","text":"Amelia Chen gave food to Ken Chen."}
+{"tick":678,"type":"action_completed","text":"Amelia Chen finished help."}
+{"tick":679,"type":"action_completed","text":"Amelia Petrov finished sleep."}
+{"tick":679,"type":"action_completed","text":"Noor Silva finished sleep."}
+{"tick":679,"type":"transaction","text":"Noah Wright bought food."}
+{"tick":679,"type":"action_completed","text":"Noah Wright finished buy food."}
+{"tick":680,"type":"action_completed","text":"Jonas Novak finished eat."}
+{"tick":681,"type":"transaction","text":"Emma Wright bought food."}
+{"tick":681,"type":"action_completed","text":"Emma Wright finished buy food."}
+{"tick":681,"type":"transaction","text":"Owen Sato bought food."}
+{"tick":681,"type":"action_completed","text":"Owen Sato finished buy food."}
+{"tick":682,"type":"transaction","text":"Sarah Ito bought food."}
+{"tick":682,"type":"action_completed","text":"Sarah Ito finished buy food."}
+{"tick":685,"type":"action_completed","text":"Anton Kim finished work."}
+{"tick":685,"type":"conversation","text":"Elena Diaz talked with Sam Khan."}
+{"tick":685,"type":"action_completed","text":"Elena Diaz finished talk."}
+{"tick":686,"type":"conversation","text":"Maya Sato talked with Sam Bauer."}
+{"tick":686,"type":"action_completed","text":"Maya Sato finished talk."}
+{"tick":687,"type":"action_completed","text":"Ibrahim Sato finished work."}
+{"tick":687,"type":"action_completed","text":"Eli Nguyen finished work."}
+{"tick":689,"type":"action_completed","text":"Arthur Santos finished work."}
+{"tick":693,"type":"action_completed","text":"Rosa Kim finished sleep."}
+{"tick":693,"type":"action_completed","text":"Mira Nguyen finished work."}
+{"tick":695,"type":"action_completed","text":"Greta Wright finished sleep."}
+{"tick":697,"type":"conversation","text":"Amelia Petrov talked with Rosa Kim."}
+{"tick":697,"type":"action_completed","text":"Amelia Petrov finished talk."}
+{"tick":698,"type":"transaction","text":"Felix Chen bought food."}
+{"tick":698,"type":"action_completed","text":"Felix Chen finished buy food."}
+{"tick":700,"type":"action_completed","text":"Amelia Tanaka finished work."}
+{"tick":701,"type":"conversation","text":"Nina Petrov talked with Sam Khan."}
+{"tick":701,"type":"action_completed","text":"Nina Petrov finished talk."}
+{"tick":701,"type":"action_completed","text":"Anton Kim finished ask for help."}
+{"tick":701,"type":"action_completed","text":"Sarah Petrov finished work."}
+{"tick":702,"type":"action_completed","text":"Pavel Hassan finished visit."}
+{"tick":703,"type":"action_completed","text":"Sam Khan finished eat."}
+{"tick":703,"type":"transaction","text":"Owen Sato bought food."}
+{"tick":703,"type":"action_completed","text":"Owen Sato finished buy food."}
+{"tick":704,"type":"help","text":"Noah Tanaka gave food to Sam Khan."}
+{"tick":704,"type":"action_completed","text":"Noah Tanaka finished help."}
+{"tick":707,"type":"action_completed","text":"Amelia Bauer finished visit."}
+{"tick":709,"type":"action_completed","text":"Greta Wright finished eat."}
+{"tick":709,"type":"transaction","text":"Ibrahim Sato bought food."}
+{"tick":709,"type":"action_completed","text":"Ibrahim Sato finished buy food."}
+{"tick":712,"type":"action_completed","text":"Nina Nwosu finished visit."}
+{"tick":712,"type":"action_completed","text":"Felix Chen finished eat."}
+{"tick":712,"type":"action_completed","text":"Elena Chen finished sleep."}
+{"tick":713,"type":"action_completed","text":"Ines Chen finished work."}
+{"tick":714,"type":"conversation","text":"Maya Novak talked with Felix Chen."}
+{"tick":714,"type":"action_completed","text":"Maya Novak finished talk."}
+{"tick":715,"type":"action_completed","text":"Sarah Petrov finished eat."}
+{"tick":716,"type":"action_completed","text":"Sam Wright finished work."}
+{"tick":718,"type":"action_completed","text":"Sam Bauer finished work."}
+{"tick":718,"type":"action_completed","text":"Hana Silva finished work."}
+{"tick":719,"type":"action_completed","text":"Soren Wright finished work."}
+{"tick":721,"type":"action_completed","text":"Noor Larsen finished explore."}
+{"tick":724,"type":"action_completed","text":"Hugo Larsen finished work."}
+{"tick":724,"type":"conversation","text":"Jonas Novak talked with Sam Khan."}
+{"tick":724,"type":"action_completed","text":"Jonas Novak finished talk."}
+{"tick":725,"type":"transaction","text":"Priya Tanaka bought food."}
+{"tick":725,"type":"action_completed","text":"Priya Tanaka finished buy food."}
+{"tick":726,"type":"action_completed","text":"Elena Chen finished eat."}
+{"tick":727,"type":"action_completed","text":"Jamal Kowalski finished eat."}
+{"tick":728,"type":"transaction","text":"Nina Sato bought food."}
+{"tick":728,"type":"action_completed","text":"Nina Sato finished buy food."}
+{"tick":733,"type":"action_completed","text":"Emma Wright finished work."}
+{"tick":733,"type":"transaction","text":"Maya Berg bought food."}
+{"tick":733,"type":"action_completed","text":"Maya Berg finished buy food."}
+{"tick":735,"type":"action_completed","text":"Soren Wright finished ask for help."}
+{"tick":736,"type":"transaction","text":"Felix Tanaka bought food."}
+{"tick":736,"type":"action_completed","text":"Felix Tanaka finished buy food."}
+{"tick":737,"type":"action_completed","text":"Nora Rossi finished explore."}
+{"tick":738,"type":"action_completed","text":"Greta Nguyen finished sleep."}
+{"tick":739,"type":"action_completed","text":"Priya Tanaka finished eat."}
+{"tick":739,"type":"action_completed","text":"Ivy Wright finished eat."}
+{"tick":741,"type":"help","text":"Noah Wright gave food to Sam Khan."}
+{"tick":741,"type":"action_completed","text":"Noah Wright finished help."}
+{"tick":742,"type":"action_completed","text":"Nina Sato finished eat."}
+{"tick":742,"type":"conversation","text":"Elena Diaz talked with Sam Khan."}
+{"tick":742,"type":"action_completed","text":"Elena Diaz finished talk."}
+{"tick":743,"type":"action_completed","text":"Lina Santos finished sleep."}
+{"tick":743,"type":"action_completed","text":"Priya Kim finished work."}
+{"tick":744,"type":"action_completed","text":"Ravi Diaz finished work."}
+{"tick":744,"type":"action_completed","text":"Hana Silva finished visit."}
+{"tick":744,"type":"conversation","text":"Maya Sato talked with Nina Nwosu."}
+{"tick":744,"type":"action_completed","text":"Maya Sato finished talk."}
+{"tick":745,"type":"action_completed","text":"Anika Diaz finished sleep."}
+{"tick":745,"type":"action_completed","text":"Ibrahim Okada finished rest."}
+{"tick":747,"type":"action_completed","text":"Emma Reed finished work."}
+{"tick":747,"type":"action_completed","text":"Ines Sato finished sleep."}
+{"tick":747,"type":"action_completed","text":"Maya Berg finished eat."}
+{"tick":750,"type":"action_completed","text":"Felix Tanaka finished eat."}
+{"tick":751,"type":"action_completed","text":"Yuki Kim finished sleep."}
+{"tick":751,"type":"action_completed","text":"Amelia Kim finished explore."}
+{"tick":752,"type":"action_completed","text":"Ken Park finished sleep."}
+{"tick":752,"type":"action_completed","text":"Greta Nguyen finished eat."}
+{"tick":756,"type":"action_completed","text":"Arthur Reed finished sleep."}
+{"tick":757,"type":"action_completed","text":"Greta Wright finished rest."}
+{"tick":758,"type":"transaction","text":"Elena Kowalski bought food."}
+{"tick":758,"type":"action_completed","text":"Elena Kowalski finished buy food."}
+{"tick":761,"type":"action_completed","text":"John Park finished sleep."}
+{"tick":761,"type":"action_completed","text":"Ines Sato finished eat."}
+{"tick":764,"type":"action_completed","text":"Omar Nwosu finished sleep."}
+{"tick":764,"type":"action_completed","text":"Hana Bauer finished work."}
+{"tick":766,"type":"action_completed","text":"Ken Park finished eat."}
+{"tick":768,"type":"conversation","text":"Maya Novak talked with Sam Khan."}
+{"tick":768,"type":"action_completed","text":"Maya Novak finished talk."}
+{"tick":769,"type":"action_completed","text":"Ibrahim Sato finished eat."}
+{"tick":769,"type":"action_completed","text":"Yuki Kim finished idle."}
+{"tick":770,"type":"transaction","text":"Mira Andersen bought food."}
+{"tick":770,"type":"action_completed","text":"Mira Andersen finished buy food."}
+{"tick":771,"type":"action_completed","text":"Mateo Ali finished sleep."}
+{"tick":773,"type":"action_completed","text":"Ivy Andersen finished sleep."}
+{"tick":775,"type":"conversation","text":"Jonas Kim talked with Emma Reed."}
+{"tick":775,"type":"action_completed","text":"Jonas Kim finished talk."}
+{"tick":776,"type":"conversation","text":"Mateo Hassan talked with Felix Chen."}
+{"tick":776,"type":"action_completed","text":"Mateo Hassan finished talk."}
+{"tick":776,"type":"conversation","text":"Noor Santos talked with Ken Chen."}
+{"tick":776,"type":"action_completed","text":"Noor Santos finished talk."}
+{"tick":777,"type":"transaction","text":"Sam Rossi bought food."}
+{"tick":777,"type":"action_completed","text":"Sam Rossi finished buy food."}
+{"tick":777,"type":"conversation","text":"Ivy Wright talked with Anika Diaz."}
+{"tick":777,"type":"action_completed","text":"Ivy Wright finished talk."}
+{"tick":777,"type":"transaction","text":"Emma Khan bought food."}
+{"tick":777,"type":"action_completed","text":"Emma Khan finished buy food."}
+{"tick":779,"type":"conversation","text":"Elena Chen talked with Greta Wright."}
+{"tick":779,"type":"action_completed","text":"Elena Chen finished talk."}
+{"tick":780,"type":"action_completed","text":"Sarah Ito finished eat."}
+{"tick":780,"type":"action_completed","text":"Mei Novak finished work."}
+{"tick":780,"type":"action_completed","text":"Amelia Nguyen finished sleep."}
+{"tick":782,"type":"action_completed","text":"Nina Nwosu finished eat."}
+{"tick":783,"type":"action_completed","text":"Ken Chen finished sleep."}
+{"tick":784,"type":"action_completed","text":"Mira Andersen finished eat."}
+{"tick":785,"type":"transaction","text":"Sarah Tanaka bought food."}
+{"tick":785,"type":"action_completed","text":"Sarah Tanaka finished buy food."}
+{"tick":785,"type":"transaction","text":"Amelia Chen bought food."}
+{"tick":785,"type":"action_completed","text":"Amelia Chen finished buy food."}
+{"tick":790,"type":"action_completed","text":"Alice Moreau finished work."}
+{"tick":790,"type":"transaction","text":"Diego Hughes bought food."}
+{"tick":790,"type":"action_completed","text":"Diego Hughes finished buy food."}
+{"tick":791,"type":"action_completed","text":"Amelia Tanaka finished eat."}
+{"tick":791,"type":"action_completed","text":"Emma Khan finished eat."}
+{"tick":793,"type":"transaction","text":"Omar Kim bought food."}
+{"tick":793,"type":"action_completed","text":"Omar Kim finished buy food."}
+{"tick":793,"type":"conversation","text":"Nina Petrov talked with Sam Rossi."}
+{"tick":793,"type":"action_completed","text":"Nina Petrov finished talk."}
+{"tick":794,"type":"help","text":"Hugo Larsen gave food to Emma Wright."}
+{"tick":794,"type":"action_completed","text":"Hugo Larsen finished help."}
+{"tick":795,"type":"transaction","text":"Mei Nguyen bought food."}
+{"tick":795,"type":"action_completed","text":"Mei Nguyen finished buy food."}
+{"tick":795,"type":"action_completed","text":"Mira Nwosu finished work."}
+{"tick":795,"type":"action_completed","text":"Sarah Petrov finished rest."}
+{"tick":795,"type":"action_completed","text":"Owen Sato finished eat."}
+{"tick":795,"type":"action_completed","text":"Owen Khan finished explore."}
+{"tick":796,"type":"action_completed","text":"Mei Novak finished ask for help."}
+{"tick":796,"type":"conversation","text":"Elena Diaz talked with Sam Rossi."}
+{"tick":796,"type":"action_completed","text":"Elena Diaz finished talk."}
+{"tick":797,"type":"action_completed","text":"Jamal Costa finished sleep."}
+{"tick":797,"type":"conversation","text":"Greta Nguyen talked with Jamal Costa."}
+{"tick":797,"type":"action_completed","text":"Greta Nguyen finished talk."}
+{"tick":798,"type":"conversation","text":"Amelia Nguyen talked with Jamal Costa."}
+{"tick":798,"type":"action_completed","text":"Amelia Nguyen finished talk."}
+{"tick":799,"type":"action_completed","text":"Sarah Tanaka finished eat."}
+{"tick":801,"type":"conversation","text":"Ken Chen talked with Anika Diaz."}
+{"tick":801,"type":"action_completed","text":"Ken Chen finished talk."}
+{"tick":801,"type":"help","text":"Amelia Petrov gave food to Jamal Costa."}
+{"tick":801,"type":"action_completed","text":"Amelia Petrov finished help."}
+{"tick":803,"type":"action_completed","text":"Sarah Vogel finished sleep."}
+{"tick":803,"type":"action_completed","text":"Nina Sato finished rest."}
+{"tick":804,"type":"action_completed","text":"Diego Hughes finished eat."}
+{"tick":806,"type":"transaction","text":"Sora Costa bought food."}
+{"tick":806,"type":"action_completed","text":"Sora Costa finished buy food."}
+{"tick":806,"type":"action_completed","text":"Rosa Bauer finished work."}
+{"tick":806,"type":"action_completed","text":"Ibrahim Singh finished sleep."}
+{"tick":808,"type":"transaction","text":"Noor Silva bought food."}
+{"tick":808,"type":"action_completed","text":"Noor Silva finished buy food."}
+{"tick":808,"type":"transaction","text":"Noah Tanaka bought food."}
+{"tick":808,"type":"action_completed","text":"Noah Tanaka finished buy food."}
+{"tick":809,"type":"help","text":"Omar Kim gave food to Sam Rossi."}
+{"tick":809,"type":"action_completed","text":"Omar Kim finished help."}
+{"tick":810,"type":"conversation","text":"Pavel Hassan talked with Jamal Costa."}
+{"tick":810,"type":"action_completed","text":"Pavel Hassan finished talk."}
+{"tick":811,"type":"action_completed","text":"Mei Nguyen finished eat."}
+{"tick":811,"type":"action_completed","text":"Ibrahim Moreau finished work."}
+{"tick":812,"type":"action_completed","text":"Luca Berg finished work."}
+{"tick":812,"type":"action_completed","text":"Maya Okada finished explore."}
+{"tick":814,"type":"transaction","text":"Greta Silva bought food."}
+{"tick":814,"type":"action_completed","text":"Greta Silva finished buy food."}
+{"tick":814,"type":"action_completed","text":"Priya Tanaka finished rest."}
+{"tick":814,"type":"transaction","text":"Bob Andersen bought food."}
+{"tick":814,"type":"action_completed","text":"Bob Andersen finished buy food."}
+{"tick":817,"type":"action_completed","text":"Anton Khan finished sleep."}
+{"tick":817,"type":"action_completed","text":"Elena Kowalski finished eat."}
+{"tick":817,"type":"conversation","text":"Maya Sato talked with Sam Bauer."}
+{"tick":817,"type":"action_completed","text":"Maya Sato finished talk."}
+{"tick":819,"type":"action_completed","text":"Mira Nwosu finished rest."}
+{"tick":820,"type":"action_completed","text":"Ibrahim Singh finished eat."}
+{"tick":822,"type":"help","text":"Sora Costa gave food to Mei Nguyen."}
+{"tick":822,"type":"action_completed","text":"Sora Costa finished help."}
+{"tick":822,"type":"action_completed","text":"Greta Wright finished visit."}
+{"tick":822,"type":"action_completed","text":"Amelia Bauer finished rest."}
+{"tick":822,"type":"action_completed","text":"Noor Silva finished eat."}
+{"tick":824,"type":"action_completed","text":"Mira Wright finished sleep."}
+{"tick":826,"type":"action_completed","text":"Ines Hassan finished sleep."}
+{"tick":827,"type":"action_completed","text":"Anika Diaz finished ask for help."}
+{"tick":828,"type":"action_completed","text":"Greta Silva finished eat."}
+{"tick":829,"type":"action_completed","text":"Emma Wright finished eat."}
+{"tick":829,"type":"conversation","text":"Ibrahim Moreau talked with Arthur Santos."}
+{"tick":829,"type":"action_completed","text":"Ibrahim Moreau finished talk."}
+{"tick":830,"type":"action_completed","text":"Ines Sato finished rest."}
+{"tick":830,"type":"action_completed","text":"Mateo Ali finished explore."}
+{"tick":830,"type":"action_completed","text":"Bob Andersen finished eat."}
+{"tick":831,"type":"conversation","text":"Luca Berg talked with Arthur Santos."}
+{"tick":831,"type":"action_completed","text":"Luca Berg finished talk."}
+{"tick":832,"type":"action_completed","text":"Ravi Diaz finished eat."}
+{"tick":832,"type":"conversation","text":"Ivy Wright talked with Ken Chen."}
+{"tick":832,"type":"action_completed","text":"Ivy Wright finished talk."}
+{"tick":833,"type":"action_completed","text":"Ivy Andersen finished explore."}
+{"tick":835,"type":"action_completed","text":"Jamal Reed finished sleep."}
+{"tick":836,"type":"help","text":"Nina Nwosu gave food to Amelia Tanaka."}
+{"tick":836,"type":"action_completed","text":"Nina Nwosu finished help."}
+{"tick":839,"type":"action_completed","text":"Sarah Petrov finished idle."}
+{"tick":846,"type":"transaction","text":"Amelia Kim bought food."}
+{"tick":846,"type":"action_completed","text":"Amelia Kim finished buy food."}
+{"tick":847,"type":"conversation","text":"Mira Andersen talked with Sora Costa."}
+{"tick":847,"type":"action_completed","text":"Mira Andersen finished talk."}
+{"tick":847,"type":"transaction","text":"Soren Wright bought food."}
+{"tick":847,"type":"action_completed","text":"Soren Wright finished buy food."}
+{"tick":848,"type":"transaction","text":"Greta Diaz bought food."}
+{"tick":848,"type":"action_completed","text":"Greta Diaz finished buy food."}
+{"tick":848,"type":"action_completed","text":"Ibrahim Sato finished rest."}
+{"tick":848,"type":"action_completed","text":"Noor Larsen finished explore."}
+{"tick":849,"type":"action_completed","text":"Theo Andersen finished sleep."}
+{"tick":850,"type":"transaction","text":"Noah Wright bought food."}
+{"tick":850,"type":"action_completed","text":"Noah Wright finished buy food."}
+{"tick":852,"type":"transaction","text":"Amelia Chen bought food."}
+{"tick":852,"type":"action_completed","text":"Amelia Chen finished buy food."}
+{"tick":854,"type":"action_completed","text":"Lina Sato finished explore."}
+{"tick":854,"type":"conversation","text":"Amelia Nguyen talked with Priya Khan."}
+{"tick":854,"type":"action_completed","text":"Amelia Nguyen finished talk."}
+{"tick":855,"type":"action_completed","text":"Eli Nguyen finished sleep."}
+{"tick":857,"type":"conversation","text":"Noor Santos talked with Sam Khan."}
+{"tick":857,"type":"action_completed","text":"Noor Santos finished talk."}
+{"tick":858,"type":"conversation","text":"Nina Sato talked with Sora Costa."}
+{"tick":858,"type":"action_completed","text":"Nina Sato finished talk."}
+{"tick":859,"type":"action_completed","text":"Nina Petrov finished visit."}
+{"tick":860,"type":"action_completed","text":"Noor Novak finished work."}
+{"tick":860,"type":"transaction","text":"Noah Tanaka bought food."}
+{"tick":860,"type":"action_completed","text":"Noah Tanaka finished buy food."}
+{"tick":861,"type":"transaction","text":"Nora Rossi bought food."}
+{"tick":861,"type":"action_completed","text":"Nora Rossi finished buy food."}
+{"tick":861,"type":"conversation","text":"Maya Novak talked with Sora Costa."}
+{"tick":861,"type":"action_completed","text":"Maya Novak finished talk."}
+{"tick":862,"type":"help","text":"Owen Sato gave food to Sora Costa."}
+{"tick":862,"type":"action_completed","text":"Owen Sato finished help."}
+{"tick":863,"type":"action_completed","text":"Priya Khan finished sleep."}
+{"tick":864,"type":"transaction","text":"Rosa Kim bought food."}
+{"tick":864,"type":"action_completed","text":"Rosa Kim finished buy food."}
+{"tick":865,"type":"action_completed","text":"Sam Khan finished sleep."}
+{"tick":866,"type":"action_completed","text":"Greta Diaz finished eat."}
+{"tick":866,"type":"conversation","text":"Pavel Hassan talked with Priya Khan."}
+{"tick":866,"type":"action_completed","text":"Pavel Hassan finished talk."}
+{"tick":866,"type":"action_completed","text":"Amelia Kim finished eat."}
+{"tick":870,"type":"help","text":"Ines Sato gave food to Priya Khan."}
+{"tick":870,"type":"action_completed","text":"Ines Sato finished help."}
+{"tick":871,"type":"action_completed","text":"Ken Park finished explore."}
+{"tick":871,"type":"action_completed","text":"Pavel Novak finished explore."}
+{"tick":872,"type":"conversation","text":"Lina Sato talked with Priya Khan."}
+{"tick":872,"type":"action_completed","text":"Lina Sato finished talk."}
+{"tick":874,"type":"action_completed","text":"Jonas Kim finished idle."}
+{"tick":874,"type":"action_completed","text":"Noor Larsen finished rest."}
+{"tick":875,"type":"action_completed","text":"Theo Andersen finished visit."}
+{"tick":875,"type":"action_completed","text":"Nora Rossi finished eat."}
+{"tick":876,"type":"action_completed","text":"Mateo Ali finished ask for help."}
+{"tick":878,"type":"action_completed","text":"Rosa Kim finished eat."}
+{"tick":879,"type":"conversation","text":"Elena Chen talked with Priya Khan."}
+{"tick":879,"type":"action_completed","text":"Elena Chen finished talk."}
+{"tick":880,"type":"conversation","text":"Ken Chen talked with Anika Diaz."}
+{"tick":880,"type":"action_completed","text":"Ken Chen finished talk."}
+{"tick":880,"type":"action_completed","text":"Sarah Tanaka finished rest."}
+{"tick":880,"type":"action_completed","text":"Mira Nguyen finished sleep."}
+{"tick":881,"type":"action_completed","text":"Sam Wright finished sleep."}
+{"tick":882,"type":"help","text":"Mei Nguyen gave food to Rosa Kim."}
+{"tick":882,"type":"action_completed","text":"Mei Nguyen finished help."}
+{"tick":882,"type":"transaction","text":"Greta Silva bought food."}
+{"tick":882,"type":"action_completed","text":"Greta Silva finished buy food."}
+{"tick":882,"type":"transaction","text":"Arthur Reed bought food."}
+{"tick":882,"type":"action_completed","text":"Arthur Reed finished buy food."}
+{"tick":883,"type":"help","text":"Sam Khan gave food to Ken Chen."}
+{"tick":883,"type":"action_completed","text":"Sam Khan finished help."}
+{"tick":883,"type":"transaction","text":"Mateo Hassan bought food."}
+{"tick":883,"type":"action_completed","text":"Mateo Hassan finished buy food."}
+{"tick":884,"type":"action_completed","text":"Amelia Bauer finished rest."}
+{"tick":885,"type":"action_completed","text":"Mei Nwosu finished sleep."}
+{"tick":887,"type":"action_completed","text":"Amelia Tanaka finished sleep."}
+{"tick":887,"type":"conversation","text":"Emma Khan talked with Rosa Kim."}
+{"tick":887,"type":"action_completed","text":"Emma Khan finished talk."}
+{"tick":889,"type":"action_completed","text":"Luca Nguyen finished sleep."}
+{"tick":890,"type":"action_completed","text":"Felix Chen finished sleep."}
+{"tick":890,"type":"transaction","text":"Priya Kim bought food."}
+{"tick":890,"type":"action_completed","text":"Priya Kim finished buy food."}
+{"tick":891,"type":"conversation","text":"Ibrahim Sato talked with Rosa Kim."}
+{"tick":891,"type":"action_completed","text":"Ibrahim Sato finished talk."}
+{"tick":891,"type":"action_completed","text":"Mei Novak finished eat."}
+{"tick":892,"type":"conversation","text":"Pavel Novak talked with Nina Nwosu."}
+{"tick":892,"type":"action_completed","text":"Pavel Novak finished talk."}
+{"tick":894,"type":"action_completed","text":"Priya Tanaka finished visit."}
+{"tick":894,"type":"conversation","text":"Ibrahim Singh talked with Priya Khan."}
+{"tick":894,"type":"action_completed","text":"Ibrahim Singh finished talk."}
+{"tick":894,"type":"action_completed","text":"Sarah Petrov finished rest."}
+{"tick":895,"type":"action_completed","text":"Sam Wright finished eat."}
+{"tick":895,"type":"action_completed","text":"Ines Chen finished sleep."}
+{"tick":896,"type":"conversation","text":"Nina Nwosu talked with Ravi Diaz."}
+{"tick":896,"type":"action_completed","text":"Nina Nwosu finished talk."}
+{"tick":896,"type":"action_completed","text":"Arthur Reed finished eat."}
+{"tick":902,"type":"conversation","text":"Noor Silva talked with Rosa Kim."}
+{"tick":902,"type":"action_completed","text":"Noor Silva finished talk."}
+{"tick":902,"type":"action_completed","text":"Elena Kowalski finished rest."}
+{"tick":903,"type":"action_completed","text":"Sam Rossi finished sleep."}
+{"tick":904,"type":"conversation","text":"Amelia Kim talked with Mei Nguyen."}
+{"tick":904,"type":"action_completed","text":"Amelia Kim finished talk."}
+{"tick":905,"type":"action_completed","text":"Priya Kim finished eat."}
+{"tick":907,"type":"conversation","text":"Amelia Nguyen talked with Priya Khan."}
+{"tick":907,"type":"action_completed","text":"Amelia Nguyen finished talk."}
+{"tick":910,"type":"conversation","text":"Mira Andersen talked with Rosa Kim."}
+{"tick":910,"type":"action_completed","text":"Mira Andersen finished talk."}
+{"tick":912,"type":"transaction","text":"Lina Santos bought food."}
+{"tick":912,"type":"action_completed","text":"Lina Santos finished buy food."}
+{"tick":912,"type":"action_completed","text":"Greta Diaz finished rest."}
+{"tick":914,"type":"conversation","text":"Maya Sato talked with Nina Nwosu."}
+{"tick":914,"type":"action_completed","text":"Maya Sato finished talk."}
+{"tick":915,"type":"conversation","text":"Jonas Kim talked with Noor Novak."}
+{"tick":915,"type":"action_completed","text":"Jonas Kim finished talk."}
+{"tick":916,"type":"action_completed","text":"Felix Chen finished visit."}
+{"tick":916,"type":"action_completed","text":"Arthur Santos finished sleep."}
+{"tick":917,"type":"help","text":"Rosa Kim gave food to Sam Bauer."}
+{"tick":917,"type":"action_completed","text":"Rosa Kim finished help."}
+{"tick":917,"type":"action_completed","text":"Alice Moreau finished sleep."}
+{"tick":917,"type":"conversation","text":"Noor Larsen talked with Jonas Kim."}
+{"tick":917,"type":"action_completed","text":"Noor Larsen finished talk."}
+{"tick":919,"type":"transaction","text":"Omar Kim bought food."}
+{"tick":919,"type":"action_completed","text":"Omar Kim finished buy food."}
+{"tick":920,"type":"action_completed","text":"Anton Kim finished sleep."}
+{"tick":921,"type":"transaction","text":"Hana Bauer bought food."}
+{"tick":921,"type":"action_completed","text":"Hana Bauer finished buy food."}
+{"tick":921,"type":"conversation","text":"Ivy Wright talked with Sam Rossi."}
+{"tick":921,"type":"action_completed","text":"Ivy Wright finished talk."}
+{"tick":922,"type":"conversation","text":"Ibrahim Moreau talked with Sarah Vogel."}
+{"tick":922,"type":"action_completed","text":"Ibrahim Moreau finished talk."}
+{"tick":923,"type":"action_completed","text":"Sarah Vogel finished explore."}
+{"tick":924,"type":"transaction","text":"Sam Bauer bought food."}
+{"tick":924,"type":"action_completed","text":"Sam Bauer finished buy food."}
+{"tick":924,"type":"action_completed","text":"Zara Nwosu finished sleep."}
+{"tick":924,"type":"action_completed","text":"Ibrahim Okada finished explore."}
+{"tick":925,"type":"transaction","text":"Maya Okada bought food."}
+{"tick":925,"type":"action_completed","text":"Maya Okada finished buy food."}
+{"tick":926,"type":"action_completed","text":"Sora Costa finished eat."}
+{"tick":926,"type":"action_completed","text":"Lina Santos finished eat."}
+{"tick":926,"type":"action_completed","text":"Bob Andersen finished explore."}
+{"tick":927,"type":"transaction","text":"Maya Novak bought food."}
+{"tick":927,"type":"action_completed","text":"Maya Novak finished buy food."}
+{"tick":930,"type":"action_completed","text":"Anika Diaz finished eat."}
+{"tick":930,"type":"conversation","text":"Amelia Bauer talked with Zara Nwosu."}
+{"tick":930,"type":"action_completed","text":"Amelia Bauer finished talk."}
+{"tick":931,"type":"conversation","text":"Ken Chen talked with Sam Rossi."}
+{"tick":931,"type":"action_completed","text":"Ken Chen finished talk."}
+{"tick":932,"type":"action_completed","text":"Greta Wright finished visit."}
+{"tick":932,"type":"transaction","text":"John Park bought food."}
+{"tick":932,"type":"action_completed","text":"John Park finished buy food."}
+{"tick":935,"type":"transaction","text":"Omar Nwosu bought food."}
+{"tick":935,"type":"action_completed","text":"Omar Nwosu finished buy food."}
+{"tick":935,"type":"action_completed","text":"Ken Park finished rest."}
+{"tick":935,"type":"action_completed","text":"Hana Bauer finished eat."}
+{"tick":935,"type":"transaction","text":"Hugo Larsen bought food."}
+{"tick":935,"type":"action_completed","text":"Hugo Larsen finished buy food."}
+{"tick":936,"type":"action_completed","text":"Soren Wright finished eat."}
+{"tick":936,"type":"action_completed","text":"Elena Larsen finished sleep."}
+{"tick":938,"type":"action_completed","text":"Sam Bauer finished eat."}
+{"tick":938,"type":"action_completed","text":"Amelia Chen finished eat."}
+{"tick":940,"type":"transaction","text":"Mateo Hassan bought food."}
+{"tick":940,"type":"action_completed","text":"Mateo Hassan finished buy food."}
+{"tick":940,"type":"action_completed","text":"Maya Okada finished eat."}
+{"tick":941,"type":"action_completed","text":"Sam Rossi finished eat."}
+{"tick":942,"type":"conversation","text":"Ibrahim Okada talked with Sam Rossi."}
+{"tick":942,"type":"action_completed","text":"Ibrahim Okada finished talk."}
+{"tick":943,"type":"action_completed","text":"Ravi Diaz finished sleep."}
+{"tick":945,"type":"action_completed","text":"Sarah Tanaka finished rest."}
+{"tick":945,"type":"transaction","text":"Anton Khan bought food."}
+{"tick":945,"type":"action_completed","text":"Anton Khan finished buy food."}
+{"tick":946,"type":"action_completed","text":"John Park finished eat."}
+{"tick":947,"type":"transaction","text":"Nina Sato bought food."}
+{"tick":947,"type":"action_completed","text":"Nina Sato finished buy food."}
+{"tick":947,"type":"action_completed","text":"Anton Kim finished ask for help."}
+{"tick":951,"type":"action_completed","text":"Diego Hughes finished sleep."}
+{"tick":953,"type":"action_completed","text":"Mira Wright finished explore."}
+{"tick":956,"type":"conversation","text":"Sam Khan talked with Sam Rossi."}
+{"tick":956,"type":"action_completed","text":"Sam Khan finished talk."}
+{"tick":956,"type":"action_completed","text":"Maya Berg finished sleep."}
+{"tick":956,"type":"action_completed","text":"Noah Tanaka finished eat."}
+{"tick":957,"type":"transaction","text":"Omar Nwosu bought food."}
+{"tick":957,"type":"action_completed","text":"Omar Nwosu finished buy food."}
+{"tick":957,"type":"action_completed","text":"Owen Sato finished ask for help."}
+{"tick":958,"type":"action_completed","text":"Emma Reed finished sleep."}
+{"tick":959,"type":"action_completed","text":"Anton Khan finished eat."}
+{"tick":960,"type":"action_completed","text":"Sarah Ito finished sleep."}
+{"tick":961,"type":"action_completed","text":"Hana Silva finished sleep."}
+{"tick":963,"type":"transaction","text":"Rosa Bauer bought food."}
+{"tick":963,"type":"action_completed","text":"Rosa Bauer finished buy food."}
+{"tick":964,"type":"action_completed","text":"Mei Nguyen finished explore."}
+{"tick":964,"type":"conversation","text":"Greta Diaz talked with Sam Bauer."}
+{"tick":964,"type":"action_completed","text":"Greta Diaz finished talk."}
+{"tick":964,"type":"action_completed","text":"Ibrahim Sato finished rest."}
+{"tick":967,"type":"transaction","text":"Ivy Andersen bought food."}
+{"tick":967,"type":"action_completed","text":"Ivy Andersen finished buy food."}
+{"tick":968,"type":"transaction","text":"Jamal Costa bought food."}
+{"tick":968,"type":"action_completed","text":"Jamal Costa finished buy food."}
+{"tick":970,"type":"conversation","text":"Sam Wright talked with Sam Rossi."}
+{"tick":970,"type":"action_completed","text":"Sam Wright finished talk."}
+{"tick":972,"type":"conversation","text":"Mira Andersen talked with Sam Bauer."}
+{"tick":972,"type":"action_completed","text":"Mira Andersen finished talk."}
+{"tick":974,"type":"action_completed","text":"Sarah Ito finished eat."}
+{"tick":975,"type":"action_completed","text":"Hana Silva finished eat."}
+{"tick":976,"type":"conversation","text":"Sora Costa talked with Sam Bauer."}
+{"tick":976,"type":"action_completed","text":"Sora Costa finished talk."}
+{"tick":977,"type":"conversation","text":"Ines Sato talked with Greta Wright."}
+{"tick":977,"type":"action_completed","text":"Ines Sato finished talk."}
+{"tick":977,"type":"action_completed","text":"Rosa Bauer finished eat."}
+{"tick":978,"type":"action_completed","text":"Lina Santos finished idle."}
+{"tick":978,"type":"action_completed","text":"Elena Kowalski finished rest."}
+{"tick":979,"type":"action_completed","text":"Mira Wright finished visit."}
+{"tick":981,"type":"help","text":"Amelia Tanaka gave food to Sam Rossi."}
+{"tick":981,"type":"action_completed","text":"Amelia Tanaka finished help."}
+{"tick":981,"type":"action_completed","text":"Ivy Andersen finished eat."}
+{"tick":982,"type":"action_completed","text":"Jamal Costa finished eat."}
+{"tick":984,"type":"action_completed","text":"Jonas Novak finished sleep."}
+{"tick":985,"type":"action_completed","text":"Nina Sato finished eat."}
+{"tick":987,"type":"conversation","text":"Emma Khan talked with Sam Bauer."}
+{"tick":987,"type":"action_completed","text":"Emma Khan finished talk."}
+{"tick":991,"type":"conversation","text":"Amelia Nguyen talked with Amelia Bauer."}
+{"tick":991,"type":"action_completed","text":"Amelia Nguyen finished talk."}
+{"tick":992,"type":"transaction","text":"Eli Nguyen bought food."}
+{"tick":992,"type":"action_completed","text":"Eli Nguyen finished buy food."}
+{"tick":993,"type":"action_completed","text":"Soren Wright finished eat."}
+{"tick":993,"type":"action_completed","text":"Ken Park finished idle."}
+{"tick":993,"type":"action_completed","text":"Felix Tanaka finished sleep."}
+{"tick":995,"type":"conversation","text":"Noor Larsen talked with Jonas Kim."}
+{"tick":995,"type":"action_completed","text":"Noor Larsen finished talk."}
+{"tick":996,"type":"conversation","text":"Ken Chen talked with Sam Rossi."}
+{"tick":996,"type":"action_completed","text":"Ken Chen finished talk."}
+{"tick":996,"type":"transaction","text":"Mira Nwosu bought food."}
+{"tick":996,"type":"action_completed","text":"Mira Nwosu finished buy food."}
+{"tick":997,"type":"transaction","text":"Ines Hassan bought food."}
+{"tick":997,"type":"action_completed","text":"Ines Hassan finished buy food."}
+{"tick":998,"type":"action_completed","text":"Bob Andersen finished rest."}
+{"tick":999,"type":"conversation","text":"Sarah Tanaka talked with Sam Bauer."}
+{"tick":999,"type":"action_completed","text":"Sarah Tanaka finished talk."}
+{"tick":1002,"type":"action_completed","text":"Omar Kim finished eat."}
+{"tick":1002,"type":"conversation","text":"Priya Tanaka talked with Sam Bauer."}
+{"tick":1002,"type":"action_completed","text":"Priya Tanaka finished talk."}
+{"tick":1002,"type":"transaction","text":"Noor Silva bought food."}
+{"tick":1002,"type":"action_completed","text":"Noor Silva finished buy food."}
+{"tick":1003,"type":"conversation","text":"John Park talked with Sam Bauer."}
+{"tick":1003,"type":"action_completed","text":"John Park finished talk."}
+{"tick":1004,"type":"action_completed","text":"Luca Berg finished sleep."}
+{"tick":1006,"type":"action_completed","text":"Eli Nguyen finished eat."}
+{"tick":1007,"type":"action_completed","text":"Yuki Kim finished explore."}
+{"tick":1007,"type":"action_completed","text":"Pavel Hassan finished sleep."}
+{"tick":1008,"type":"transaction","text":"Jamal Reed bought food."}
+{"tick":1008,"type":"action_completed","text":"Jamal Reed finished buy food."}
+{"tick":1009,"type":"conversation","text":"Maya Okada talked with Rosa Kim."}
+{"tick":1009,"type":"action_completed","text":"Maya Okada finished talk."}
+{"tick":1010,"type":"action_completed","text":"Mira Nwosu finished eat."}
+{"tick":1011,"type":"action_completed","text":"Rosa Kim finished explore."}
+{"tick":1011,"type":"action_completed","text":"Jamal Kowalski finished sleep."}
+{"tick":1012,"type":"transaction","text":"Maya Novak bought food."}
+{"tick":1012,"type":"action_completed","text":"Maya Novak finished buy food."}
+{"tick":1013,"type":"action_completed","text":"Ivy Wright finished visit."}
+{"tick":1014,"type":"help","text":"Ines Hassan gave food to Rosa Kim."}
+{"tick":1014,"type":"action_completed","text":"Ines Hassan finished help."}
+{"tick":1014,"type":"action_completed","text":"Elena Diaz finished explore."}
+{"tick":1017,"type":"conversation","text":"Anika Diaz talked with Sam Rossi."}
+{"tick":1017,"type":"action_completed","text":"Anika Diaz finished talk."}
+{"tick":1017,"type":"transaction","text":"Noor Novak bought food."}
+{"tick":1017,"type":"action_completed","text":"Noor Novak finished buy food."}
+{"tick":1017,"type":"action_completed","text":"Emma Wright finished sleep."}
+{"tick":1019,"type":"action_completed","text":"Anton Khan finished visit."}
+{"tick":1019,"type":"transaction","text":"Noor Santos bought food."}
+{"tick":1019,"type":"action_completed","text":"Noor Santos finished buy food."}
+{"tick":1022,"type":"action_completed","text":"Jamal Reed finished eat."}
+{"tick":1023,"type":"action_completed","text":"Ibrahim Sato finished visit."}
+{"tick":1029,"type":"action_completed","text":"Jamal Costa finished eat."}
+{"tick":1029,"type":"conversation","text":"Mira Andersen talked with Rosa Kim."}
+{"tick":1029,"type":"action_completed","text":"Mira Andersen finished talk."}
+{"tick":1029,"type":"action_completed","text":"Elena Kowalski finished rest."}
+{"tick":1030,"type":"conversation","text":"Amelia Bauer talked with Jamal Kowalski."}
+{"tick":1030,"type":"action_completed","text":"Amelia Bauer finished talk."}
+{"tick":1030,"type":"action_completed","text":"Nina Sato finished rest."}
+{"tick":1031,"type":"action_completed","text":"Sam Rossi finished rest."}
+{"tick":1031,"type":"transaction","text":"Mei Nwosu bought food."}
+{"tick":1031,"type":"action_completed","text":"Mei Nwosu finished buy food."}
+{"tick":1034,"type":"transaction","text":"Priya Khan bought food."}
+{"tick":1034,"type":"action_completed","text":"Priya Khan finished buy food."}
+{"tick":1034,"type":"action_completed","text":"Nina Nwosu finished sleep."}
+{"tick":1035,"type":"action_completed","text":"Jamal Kowalski finished rest."}
+{"tick":1036,"type":"transaction","text":"Sarah Vogel bought food."}
+{"tick":1036,"type":"action_completed","text":"Sarah Vogel finished buy food."}
+{"tick":1036,"type":"action_completed","text":"Noor Novak finished eat."}
+{"tick":1038,"type":"action_completed","text":"Noor Santos finished eat."}
+{"tick":1039,"type":"conversation","text":"Hana Silva talked with Sam Rossi."}
+{"tick":1039,"type":"action_completed","text":"Hana Silva finished talk."}
+{"tick":1040,"type":"conversation","text":"Greta Wright talked with Jamal Kowalski."}
+{"tick":1040,"type":"action_completed","text":"Greta Wright finished talk."}
+{"tick":1041,"type":"action_completed","text":"Greta Silva finished sleep."}
+{"tick":1041,"type":"action_completed","text":"Ken Park finished rest."}
+{"tick":1041,"type":"action_completed","text":"Mateo Hassan finished eat."}
+{"tick":1042,"type":"action_completed","text":"Emma Wright finished rest."}
+{"tick":1043,"type":"transaction","text":"Amelia Petrov bought food."}
+{"tick":1043,"type":"action_completed","text":"Amelia Petrov finished buy food."}
+{"tick":1043,"type":"transaction","text":"Alice Moreau bought food."}
+{"tick":1043,"type":"action_completed","text":"Alice Moreau finished buy food."}
+{"tick":1043,"type":"action_completed","text":"Ibrahim Okada finished rest."}
+{"tick":1045,"type":"action_completed","text":"Mei Nwosu finished eat."}
+{"tick":1047,"type":"action_completed","text":"Owen Sato finished eat."}
+{"tick":1048,"type":"action_completed","text":"Priya Khan finished eat."}
+{"tick":1050,"type":"action_completed","text":"Sarah Vogel finished eat."}
+{"tick":1051,"type":"transaction","text":"Mira Nguyen bought food."}
+{"tick":1051,"type":"action_completed","text":"Mira Nguyen finished buy food."}
+{"tick":1052,"type":"action_completed","text":"Omar Nwosu finished eat."}
+{"tick":1053,"type":"conversation","text":"Luca Berg talked with Jamal Kowalski."}
+{"tick":1053,"type":"action_completed","text":"Luca Berg finished talk."}
+{"tick":1056,"type":"action_completed","text":"Noah Wright finished sleep."}
+{"tick":1057,"type":"action_completed","text":"Amelia Petrov finished eat."}
+{"tick":1057,"type":"action_completed","text":"Mei Nguyen finished rest."}
+{"tick":1057,"type":"action_completed","text":"Alice Moreau finished eat."}
+{"tick":1058,"type":"action_completed","text":"Ibrahim Singh finished explore."}
+{"tick":1060,"type":"transaction","text":"Luca Nguyen bought food."}
+{"tick":1060,"type":"action_completed","text":"Luca Nguyen finished buy food."}
+{"tick":1061,"type":"action_completed","text":"Mira Nwosu finished idle."}
+{"tick":1061,"type":"action_completed","text":"Hugo Larsen finished sleep."}
+{"tick":1062,"type":"action_completed","text":"Nora Rossi finished sleep."}
+{"tick":1062,"type":"conversation","text":"Amelia Nguyen talked with Jamal Kowalski."}
+{"tick":1062,"type":"action_completed","text":"Amelia Nguyen finished talk."}
+{"tick":1063,"type":"action_completed","text":"Elena Larsen finished explore."}
+{"tick":1064,"type":"conversation","text":"Ivy Andersen talked with Priya Khan."}
+{"tick":1064,"type":"action_completed","text":"Ivy Andersen finished talk."}
+{"tick":1065,"type":"conversation","text":"Omar Kim talked with Priya Khan."}
+{"tick":1065,"type":"action_completed","text":"Omar Kim finished talk."}
+{"tick":1065,"type":"action_completed","text":"Mira Nguyen finished eat."}
+{"tick":1067,"type":"action_completed","text":"Greta Silva finished eat."}
+{"tick":1068,"type":"conversation","text":"Pavel Hassan talked with Jamal Kowalski."}
+{"tick":1068,"type":"action_completed","text":"Pavel Hassan finished talk."}
+{"tick":1070,"type":"action_completed","text":"Noah Wright finished eat."}
+{"tick":1071,"type":"action_completed","text":"Jamal Kowalski finished ask for help."}
+{"tick":1072,"type":"action_completed","text":"Theo Andersen finished explore."}
+{"tick":1072,"type":"action_completed","text":"Bob Andersen finished explore."}
+{"tick":1073,"type":"conversation","text":"Sam Rossi talked with Nina Nwosu."}
+{"tick":1073,"type":"action_completed","text":"Sam Rossi finished talk."}
+{"tick":1073,"type":"action_completed","text":"Greta Diaz finished explore."}
+{"tick":1073,"type":"action_completed","text":"Noor Silva finished eat."}
+{"tick":1074,"type":"action_completed","text":"Nina Petrov finished explore."}
+{"tick":1076,"type":"conversation","text":"Sora Costa talked with Priya Khan."}
+{"tick":1076,"type":"action_completed","text":"Sora Costa finished talk."}
+{"tick":1076,"type":"action_completed","text":"Ines Sato finished visit."}
+{"tick":1077,"type":"transaction","text":"Diego Hughes bought food."}
+{"tick":1077,"type":"action_completed","text":"Diego Hughes finished buy food."}
+{"tick":1079,"type":"action_completed","text":"Owen Khan finished sleep."}
+{"tick":1081,"type":"conversation","text":"Jamal Costa talked with Priya Khan."}
+{"tick":1081,"type":"action_completed","text":"Jamal Costa finished talk."}
+{"tick":1082,"type":"transaction","text":"Luca Nguyen bought food."}
+{"tick":1082,"type":"action_completed","text":"Luca Nguyen finished buy food."}
+{"tick":1082,"type":"action_completed","text":"Jamal Reed finished rest."}
+{"tick":1083,"type":"conversation","text":"Emma Wright talked with Sam Bauer."}
+{"tick":1083,"type":"action_completed","text":"Emma Wright finished talk."}
+{"tick":1084,"type":"conversation","text":"Eli Nguyen talked with Priya Khan."}
+{"tick":1084,"type":"action_completed","text":"Eli Nguyen finished talk."}
+{"tick":1084,"type":"transaction","text":"Emma Reed bought food."}
+{"tick":1084,"type":"action_completed","text":"Emma Reed finished buy food."}
+{"tick":1084,"type":"action_completed","text":"Nina Sato finished idle."}
+{"tick":1085,"type":"action_completed","text":"Jonas Kim finished sleep."}
+{"tick":1086,"type":"action_completed","text":"Hugo Larsen finished eat."}
+{"tick":1086,"type":"transaction","text":"Pavel Novak bought food."}
+{"tick":1086,"type":"action_completed","text":"Pavel Novak finished buy food."}
+{"tick":1087,"type":"help","text":"Rosa Kim gave food to Priya Khan."}
+{"tick":1087,"type":"action_completed","text":"Rosa Kim finished help."}
+{"tick":1087,"type":"transaction","text":"Arthur Santos bought food."}
+{"tick":1087,"type":"action_completed","text":"Arthur Santos finished buy food."}
+{"tick":1088,"type":"conversation","text":"Amelia Tanaka talked with Sam Bauer."}
+{"tick":1088,"type":"action_completed","text":"Amelia Tanaka finished talk."}
+{"tick":1088,"type":"transaction","text":"Sarah Tanaka bought food."}
+{"tick":1088,"type":"action_completed","text":"Sarah Tanaka finished buy food."}
+{"tick":1089,"type":"help","text":"Ken Chen gave food to Sam Bauer."}
+{"tick":1089,"type":"action_completed","text":"Ken Chen finished help."}
+{"tick":1089,"type":"action_completed","text":"Priya Kim finished sleep."}
+{"tick":1089,"type":"action_completed","text":"Emma Khan finished eat."}
+{"tick":1090,"type":"conversation","text":"John Park talked with Rosa Kim."}
+{"tick":1090,"type":"action_completed","text":"John Park finished talk."}
+{"tick":1090,"type":"conversation","text":"Theo Andersen talked with Lina Sato."}
+{"tick":1090,"type":"action_completed","text":"Theo Andersen finished talk."}
+{"tick":1090,"type":"action_completed","text":"Mei Novak finished sleep."}
+{"tick":1090,"type":"transaction","text":"Mira Wright bought food."}
+{"tick":1090,"type":"action_completed","text":"Mira Wright finished buy food."}
+{"tick":1091,"type":"action_completed","text":"Anika Diaz finished eat."}
+{"tick":1092,"type":"transaction","text":"Mateo Ali bought food."}
+{"tick":1092,"type":"action_completed","text":"Mateo Ali finished buy food."}
+{"tick":1093,"type":"action_completed","text":"Sam Bauer finished sleep."}
+{"tick":1093,"type":"action_completed","text":"Noor Santos finished visit."}
+{"tick":1094,"type":"action_completed","text":"Diego Hughes finished eat."}
+{"tick":1095,"type":"transaction","text":"Zara Nwosu bought food."}
+{"tick":1095,"type":"action_completed","text":"Zara Nwosu finished buy food."}
+{"tick":1097,"type":"conversation","text":"Alice Moreau talked with Priya Khan."}
+{"tick":1097,"type":"action_completed","text":"Alice Moreau finished talk."}
+{"tick":1098,"type":"action_completed","text":"Emma Reed finished eat."}
+{"tick":1098,"type":"action_completed","text":"Nina Petrov finished rest."}
+{"tick":1098,"type":"transaction","text":"Elena Kowalski bought food."}
+{"tick":1098,"type":"action_completed","text":"Elena Kowalski finished buy food."}
+{"tick":1099,"type":"transaction","text":"Ines Chen bought food."}
+{"tick":1099,"type":"action_completed","text":"Ines Chen finished buy food."}
+{"tick":1100,"type":"transaction","text":"Priya Tanaka bought food."}
+{"tick":1100,"type":"action_completed","text":"Priya Tanaka finished buy food."}
+{"tick":1100,"type":"action_completed","text":"Sarah Petrov finished explore."}
+{"tick":1101,"type":"action_completed","text":"Arthur Santos finished eat."}
+{"tick":1101,"type":"action_completed","text":"Owen Khan finished idle."}
+{"tick":1102,"type":"transaction","text":"Yuki Kim bought food."}
+{"tick":1102,"type":"action_completed","text":"Yuki Kim finished buy food."}
+{"tick":1102,"type":"help","text":"Pavel Novak gave food to Priya Khan."}
+{"tick":1102,"type":"action_completed","text":"Pavel Novak finished help."}
+{"tick":1103,"type":"action_completed","text":"Ibrahim Okada finished idle."}
+{"tick":1104,"type":"transaction","text":"Mira Nwosu bought food."}
+{"tick":1104,"type":"action_completed","text":"Mira Nwosu finished buy food."}
+{"tick":1106,"type":"action_completed","text":"Mateo Ali finished eat."}
+{"tick":1107,"type":"conversation","text":"Priya Kim talked with Sam Bauer."}
+{"tick":1107,"type":"action_completed","text":"Priya Kim finished talk."}
+{"tick":1107,"type":"action_completed","text":"Maya Novak finished eat."}
+{"tick":1108,"type":"conversation","text":"Mira Nguyen talked with Priya Khan."}
+{"tick":1108,"type":"action_completed","text":"Mira Nguyen finished talk."}
+{"tick":1109,"type":"conversation","text":"Mei Novak talked with Jamal Kowalski."}
+{"tick":1109,"type":"action_completed","text":"Mei Novak finished talk."}
+{"tick":1110,"type":"action_completed","text":"Lina Santos finished explore."}
+{"tick":1112,"type":"action_completed","text":"Amelia Kim finished sleep."}
+{"tick":1113,"type":"transaction","text":"Felix Chen bought food."}
+{"tick":1113,"type":"action_completed","text":"Felix Chen finished buy food."}
+{"tick":1113,"type":"action_completed","text":"Ines Chen finished eat."}
+{"tick":1114,"type":"action_completed","text":"Omar Nwosu finished eat."}
+{"tick":1114,"type":"action_completed","text":"Greta Nguyen finished explore."}
+{"tick":1115,"type":"action_completed","text":"Mei Nguyen finished rest."}
+{"tick":1116,"type":"action_completed","text":"Nina Nwosu finished eat."}
+{"tick":1116,"type":"conversation","text":"Amelia Nguyen talked with Jamal Kowalski."}
+{"tick":1116,"type":"action_completed","text":"Amelia Nguyen finished talk."}
+{"tick":1117,"type":"transaction","text":"Zara Nwosu bought food."}
+{"tick":1117,"type":"action_completed","text":"Zara Nwosu finished buy food."}
+{"tick":1120,"type":"action_completed","text":"Arthur Reed finished explore."}
+{"tick":1123,"type":"action_completed","text":"Nina Sato finished idle."}
+{"tick":1125,"type":"action_completed","text":"Amelia Bauer finished rest."}
+{"tick":1126,"type":"transaction","text":"Ines Hassan bought food."}
+{"tick":1126,"type":"action_completed","text":"Ines Hassan finished buy food."}
+{"tick":1126,"type":"conversation","text":"Hana Silva talked with Sam Bauer."}
+{"tick":1126,"type":"action_completed","text":"Hana Silva finished talk."}
+{"tick":1127,"type":"action_completed","text":"Felix Chen finished eat."}
+{"tick":1127,"type":"transaction","text":"Maya Berg bought food."}
+{"tick":1127,"type":"action_completed","text":"Maya Berg finished buy food."}
+{"tick":1128,"type":"conversation","text":"Lina Santos talked with Theo Andersen."}
+{"tick":1128,"type":"action_completed","text":"Lina Santos finished talk."}
+{"tick":1128,"type":"transaction","text":"Yuki Kim bought food."}
+{"tick":1128,"type":"action_completed","text":"Yuki Kim finished buy food."}
+{"tick":1129,"type":"transaction","text":"Ravi Diaz bought food."}
+{"tick":1129,"type":"action_completed","text":"Ravi Diaz finished buy food."}
+{"tick":1130,"type":"help","text":"Sam Bauer gave food to Sam Rossi."}
+{"tick":1130,"type":"action_completed","text":"Sam Bauer finished help."}
+{"tick":1131,"type":"transaction","text":"Ibrahim Sato bought food."}
+{"tick":1131,"type":"action_completed","text":"Ibrahim Sato finished buy food."}
+{"tick":1131,"type":"action_completed","text":"Ivy Andersen finished rest."}
+{"tick":1133,"type":"transaction","text":"Mira Andersen bought food."}
+{"tick":1133,"type":"action_completed","text":"Mira Andersen finished buy food."}
+{"tick":1133,"type":"conversation","text":"Mei Nwosu talked with Priya Khan."}
+{"tick":1133,"type":"action_completed","text":"Mei Nwosu finished talk."}
+{"tick":1137,"type":"conversation","text":"Noor Silva talked with Priya Khan."}
+{"tick":1137,"type":"action_completed","text":"Noor Silva finished talk."}
+{"tick":1139,"type":"help","text":"Priya Khan gave food to Zara Nwosu."}
+{"tick":1139,"type":"action_completed","text":"Priya Khan finished help."}
+{"tick":1139,"type":"transaction","text":"Sarah Tanaka bought food."}
+{"tick":1139,"type":"action_completed","text":"Sarah Tanaka finished buy food."}
+{"tick":1139,"type":"action_completed","text":"Amelia Chen finished sleep."}
+{"tick":1140,"type":"action_completed","text":"Sarah Vogel finished rest."}
+{"tick":1140,"type":"action_completed","text":"Priya Tanaka finished eat."}
+{"tick":1140,"type":"conversation","text":"Ivy Wright talked with Sam Bauer."}
+{"tick":1140,"type":"action_completed","text":"Ivy Wright finished talk."}
+{"tick":1141,"type":"action_completed","text":"Maya Berg finished eat."}
+{"tick":1142,"type":"conversation","text":"Luca Berg talked with Jamal Kowalski."}
+{"tick":1142,"type":"action_completed","text":"Luca Berg finished talk."}
+{"tick":1143,"type":"conversation","text":"Anika Diaz talked with Sam Bauer."}
+{"tick":1143,"type":"action_completed","text":"Anika Diaz finished talk."}
+{"tick":1143,"type":"action_completed","text":"Ravi Diaz finished eat."}
+{"tick":1144,"type":"action_completed","text":"Greta Silva finished eat."}
+{"tick":1144,"type":"action_completed","text":"Arthur Reed finished rest."}
+{"tick":1146,"type":"conversation","text":"Amelia Petrov talked with Priya Khan."}
+{"tick":1146,"type":"action_completed","text":"Amelia Petrov finished talk."}
+{"tick":1146,"type":"action_completed","text":"Sarah Ito finished explore."}
+{"tick":1151,"type":"transaction","text":"Greta Diaz bought food."}
+{"tick":1151,"type":"action_completed","text":"Greta Diaz finished buy food."}
+{"tick":1152,"type":"action_completed","text":"Owen Khan finished ask for help."}
+{"tick":1157,"type":"action_completed","text":"Elena Kowalski finished eat."}
+{"tick":1157,"type":"transaction","text":"Jonas Novak bought food."}
+{"tick":1157,"type":"action_completed","text":"Jonas Novak finished buy food."}
+{"tick":1159,"type":"conversation","text":"Nina Nwosu talked with Sam Bauer."}
+{"tick":1159,"type":"action_completed","text":"Nina Nwosu finished talk."}
+{"tick":1159,"type":"action_completed","text":"Hana Bauer finished sleep."}
+{"tick":1159,"type":"action_completed","text":"Emma Khan finished visit."}
+{"tick":1159,"type":"action_completed","text":"Ibrahim Okada finished rest."}
+{"tick":1160,"type":"conversation","text":"Sam Rossi talked with Sam Bauer."}
+{"tick":1160,"type":"action_completed","text":"Sam Rossi finished talk."}
+{"tick":1160,"type":"transaction","text":"Omar Kim bought food."}
+{"tick":1160,"type":"action_completed","text":"Omar Kim finished buy food."}
+{"tick":1160,"type":"help","text":"Mira Nwosu gave food to Priya Khan."}
+{"tick":1160,"type":"action_completed","text":"Mira Nwosu finished help."}
+{"tick":1164,"type":"conversation","text":"Eli Nguyen talked with Priya Khan."}
+{"tick":1164,"type":"action_completed","text":"Eli Nguyen finished talk."}
+{"tick":1165,"type":"transaction","text":"Felix Tanaka bought food."}
+{"tick":1165,"type":"action_completed","text":"Felix Tanaka finished buy food."}
+{"tick":1165,"type":"action_completed","text":"Noah Tanaka finished sleep."}
+{"tick":1166,"type":"conversation","text":"Diego Hughes talked with Priya Khan."}
+{"tick":1166,"type":"action_completed","text":"Diego Hughes finished talk."}
+{"tick":1167,"type":"action_completed","text":"Sarah Ito finished idle."}
+{"tick":1168,"type":"conversation","text":"Sora Costa talked with Priya Khan."}
+{"tick":1168,"type":"action_completed","text":"Sora Costa finished talk."}
+{"tick":1169,"type":"action_completed","text":"Ibrahim Singh finished explore."}
+{"tick":1171,"type":"conversation","text":"John Park talked with Priya Khan."}
+{"tick":1171,"type":"action_completed","text":"John Park finished talk."}
+{"tick":1172,"type":"conversation","text":"Ivy Andersen talked with Priya Khan."}
+{"tick":1172,"type":"action_completed","text":"Ivy Andersen finished talk."}
+{"tick":1174,"type":"conversation","text":"Pavel Hassan talked with Jamal Kowalski."}
+{"tick":1174,"type":"action_completed","text":"Pavel Hassan finished talk."}
+{"tick":1175,"type":"conversation","text":"Omar Nwosu talked with Priya Khan."}
+{"tick":1175,"type":"action_completed","text":"Omar Nwosu finished talk."}
+{"tick":1176,"type":"action_completed","text":"Luca Nguyen finished eat."}
+{"tick":1177,"type":"action_completed","text":"Emma Reed finished idle."}
+{"tick":1177,"type":"action_completed","text":"Maya Okada finished sleep."}
+{"tick":1178,"type":"action_completed","text":"Lina Sato finished explore."}
+{"tick":1180,"type":"transaction","text":"Arthur Santos bought food."}
+{"tick":1180,"type":"action_completed","text":"Arthur Santos finished buy food."}
+{"tick":1181,"type":"conversation","text":"Ken Chen talked with Sam Bauer."}
+{"tick":1181,"type":"action_completed","text":"Ken Chen finished talk."}
+{"tick":1182,"type":"action_completed","text":"Mira Wright finished eat."}
+{"tick":1183,"type":"action_completed","text":"Rosa Bauer finished sleep."}
+{"tick":1186,"type":"action_completed","text":"Mira Andersen finished eat."}
+{"tick":1186,"type":"transaction","text":"Bob Andersen bought food."}
+{"tick":1186,"type":"action_completed","text":"Bob Andersen finished buy food."}
+{"tick":1186,"type":"transaction","text":"Noor Larsen bought food."}
+{"tick":1186,"type":"action_completed","text":"Noor Larsen finished buy food."}
+{"tick":1189,"type":"action_completed","text":"Mei Nguyen finished explore."}
+{"tick":1190,"type":"action_completed","text":"Mira Nguyen finished rest."}
+{"tick":1191,"type":"action_completed","text":"Priya Tanaka finished rest."}
+{"tick":1192,"type":"conversation","text":"Ravi Diaz talked with Priya Khan."}
+{"tick":1192,"type":"action_completed","text":"Ravi Diaz finished talk."}
+{"tick":1193,"type":"action_completed","text":"Ines Hassan finished eat."}
+{"tick":1194,"type":"action_completed","text":"Rosa Kim finished rest."}
+{"tick":1195,"type":"action_completed","text":"Amelia Tanaka finished rest."}
+{"tick":1195,"type":"conversation","text":"Theo Andersen talked with Lina Santos."}
+{"tick":1195,"type":"action_completed","text":"Theo Andersen finished talk."}
+{"tick":1195,"type":"transaction","text":"Sarah Petrov bought food."}
+{"tick":1195,"type":"action_completed","text":"Sarah Petrov finished buy food."}
+{"tick":1196,"type":"action_completed","text":"Soren Wright finished sleep."}
+{"tick":1197,"type":"action_completed","text":"Alice Moreau finished rest."}
+{"tick":1199,"type":"conversation","text":"Maya Novak talked with Priya Khan."}
+{"tick":1199,"type":"action_completed","text":"Maya Novak finished talk."}
+{"tick":1200,"type":"action_completed","text":"Ibrahim Moreau finished sleep."}
+{"tick":1200,"type":"action_completed","text":"Noor Larsen finished eat."}
+{"tick":1201,"type":"transaction","text":"Anton Kim bought food."}
+{"tick":1201,"type":"action_completed","text":"Anton Kim finished buy food."}
+{"tick":1201,"type":"transaction","text":"Jonas Novak bought food."}
+{"tick":1201,"type":"action_completed","text":"Jonas Novak finished buy food."}
+{"tick":1202,"type":"action_completed","text":"Priya Kim finished visit."}
+{"tick":1203,"type":"action_completed","text":"Ibrahim Sato finished eat."}
+{"tick":1204,"type":"action_completed","text":"Greta Diaz finished eat."}
+{"tick":1205,"type":"action_completed","text":"Omar Kim finished eat."}
+{"tick":1208,"type":"action_completed","text":"Sarah Vogel finished visit."}
+{"tick":1209,"type":"action_completed","text":"Noor Novak finished sleep."}
+{"tick":1209,"type":"action_completed","text":"Sarah Petrov finished eat."}
+{"tick":1211,"type":"action_completed","text":"Zara Nwosu finished eat."}
+{"tick":1213,"type":"action_completed","text":"Sarah Ito finished visit."}
+{"tick":1215,"type":"action_completed","text":"Mateo Hassan finished sleep."}
+{"tick":1215,"type":"action_completed","text":"Anton Kim finished eat."}
+{"tick":1216,"type":"conversation","text":"Anika Diaz talked with Sam Bauer."}
+{"tick":1216,"type":"action_completed","text":"Anika Diaz finished talk."}
+{"tick":1219,"type":"action_completed","text":"Ines Sato finished sleep."}
+{"tick":1219,"type":"action_completed","text":"Bob Andersen finished eat."}
+{"tick":1220,"type":"action_completed","text":"Ibrahim Moreau finished ask for help."}
+{"tick":1220,"type":"transaction","text":"Elena Larsen bought food."}
+{"tick":1220,"type":"action_completed","text":"Elena Larsen finished buy food."}
+{"tick":1221,"type":"action_completed","text":"Elena Chen finished explore."}
+{"tick":1221,"type":"action_completed","text":"Elena Kowalski finished explore."}
+{"tick":1222,"type":"action_completed","text":"Felix Chen finished visit."}
+{"tick":1223,"type":"action_completed","text":"Soren Wright finished rest."}
+{"tick":1224,"type":"action_completed","text":"Emma Reed finished rest."}
+{"tick":1226,"type":"action_completed","text":"Amelia Petrov finished rest."}
+{"tick":1226,"type":"conversation","text":"Maya Okada talked with Sam Bauer."}
+{"tick":1226,"type":"action_completed","text":"Maya Okada finished talk."}
+{"tick":1227,"type":"action_completed","text":"Lina Santos finished ask for help."}
+{"tick":1227,"type":"transaction","text":"Ibrahim Singh bought food."}
+{"tick":1227,"type":"action_completed","text":"Ibrahim Singh finished buy food."}
+{"tick":1228,"type":"help","text":"Greta Silva gave food to Sam Bauer."}
+{"tick":1228,"type":"action_completed","text":"Greta Silva finished help."}
+{"tick":1228,"type":"action_completed","text":"Yuki Kim finished eat."}
+{"tick":1229,"type":"transaction","text":"Jonas Kim bought food."}
+{"tick":1229,"type":"action_completed","text":"Jonas Kim finished buy food."}
+{"tick":1229,"type":"transaction","text":"Pavel Novak bought food."}
+{"tick":1229,"type":"action_completed","text":"Pavel Novak finished buy food."}
+{"tick":1231,"type":"action_completed","text":"Sarah Tanaka finished ask for help."}
+{"tick":1233,"type":"transaction","text":"Nora Rossi bought food."}
+{"tick":1233,"type":"action_completed","text":"Nora Rossi finished buy food."}
+{"tick":1234,"type":"conversation","text":"Sam Bauer talked with Sam Rossi."}
+{"tick":1234,"type":"action_completed","text":"Sam Bauer finished talk."}
+{"tick":1234,"type":"action_completed","text":"Maya Sato finished explore."}
+{"tick":1235,"type":"action_completed","text":"Mateo Hassan finished eat."}
+{"tick":1235,"type":"transaction","text":"Mira Nguyen bought food."}
+{"tick":1235,"type":"action_completed","text":"Mira Nguyen finished buy food."}
+{"tick":1236,"type":"action_completed","text":"Luca Nguyen finished eat."}
+{"tick":1237,"type":"conversation","text":"Nina Nwosu talked with Sam Bauer."}
+{"tick":1237,"type":"action_completed","text":"Nina Nwosu finished talk."}
+{"tick":1238,"type":"conversation","text":"Ivy Andersen talked with Priya Khan."}
+{"tick":1238,"type":"action_completed","text":"Ivy Andersen finished talk."}
+{"tick":1239,"type":"transaction","text":"Eli Nguyen bought food."}
+{"tick":1239,"type":"action_completed","text":"Eli Nguyen finished buy food."}
+{"tick":1241,"type":"conversation","text":"Noor Silva talked with Priya Khan."}
+{"tick":1241,"type":"action_completed","text":"Noor Silva finished talk."}
+{"tick":1243,"type":"action_completed","text":"Sam Wright finished explore."}
+{"tick":1244,"type":"action_completed","text":"Ken Chen finished visit."}

@@ -1,0 +1,132 @@
+.panel {
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+  z-index: 6;
+  display: grid;
+  gap: 6px;
+  width: min(320px, calc(100% - 220px));
+  max-height: min(52%, 360px);
+  padding: 10px 12px;
+  overflow: hidden;
+  background: var(--surface-1);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(10px);
+}
+
+.heading {
+  display: grid;
+  gap: 2px;
+}
+
+.heading strong {
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.heading span {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.census {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 6px;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+
+.chip {
+  flex: 0 0 auto;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 3px 8px;
+  font-size: 11px;
+  color: var(--text-primary);
+  background: var(--surface-2);
+}
+
+.chip[data-action='steal'],
+.chip[data-action='fight'] {
+  color: var(--negative);
+  border-color: rgba(224, 108, 96, 0.4);
+}
+
+.chip[data-action='help'],
+.chip[data-action='ask_for_help'] {
+  color: var(--positive);
+  border-color: rgba(124, 201, 138, 0.4);
+}
+
+.stream {
+  display: grid;
+  gap: 6px;
+  min-height: 0;
+  overflow: auto;
+  scrollbar-width: thin;
+}
+
+.stream p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 12px;
+}
+
+.line {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 8px;
+  align-items: baseline;
+  width: 100%;
+  border: 0;
+  border-left: 2px solid var(--border);
+  border-radius: 6px;
+  padding: 6px 8px;
+  background: var(--surface-2);
+  color: var(--text-primary);
+  text-align: left;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.line span:nth-child(2) {
+  min-width: 0;
+}
+
+.line[data-provider='jev'] {
+  border-left-color: var(--accent);
+}
+
+.line[data-provider='help'] {
+  border-left-color: var(--positive);
+}
+
+.line[data-provider='crime'],
+.line[data-provider='conflict'] {
+  border-left-color: var(--negative);
+}
+
+.tag,
+.line em {
+  font-size: 10px;
+  font-style: normal;
+  color: var(--accent);
+  white-space: nowrap;
+}
+
+.panel small {
+  color: var(--text-muted);
+  font-size: 10px;
+}
+
+@media (max-width: 640px) {
+  .panel {
+    width: calc(100% - 32px);
+    max-height: 34%;
+  }
+}

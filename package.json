@@ -1,12 +1,15 @@
 {
-  "name": "hundred",
+  "name": "jev-lab",
   "version": "0.2.0",
   "private": true,
-  "description": "Open source AI society simulation powered by Jev",
+  "description": "Jev use-case lab: Hundred society sim and Jev Shogi",
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "dev": "pnpm --filter @hundred/server --filter @hundred/web --parallel dev",
+    "dev": "pnpm --filter @lab/web --filter @hundred/server --filter @hundred/web --filter @shogi/server --filter @shogi/web --parallel dev",
+    "dev:lab": "pnpm --filter @lab/web dev",
+    "dev:hundred": "pnpm --filter @hundred/server --filter @hundred/web --parallel dev",
+    "dev:shogi": "pnpm --filter @shogi/server --filter @shogi/web --parallel dev",
     "build": "pnpm -r --if-present build",
     "start": "pnpm --filter @hundred/server start",
     "lint": "oxlint --type-aware",

@@ -1,31 +1,41 @@
-# Hundred
+# Jev Lab
 
-**100 AI agents. One tiny world. No scripted story.**
+**Use cases for [Jev](https://docs.typesafe.ai), TypeSafe’s System One model.** Jev only answers the next choice. Engines keep the rules.
 
 ```text
-   hair
-  ┌────┐
-  │ • •│
-  │ ᴗ  │     100 people, one town
-  └────┘     Jev chooses the next action
-   ███       The engine decides what happens
-   ╱ ╲
+  Jev Lab
+  ├── Hundred     100 people, one town
+  └── Jev Shogi   human Sente, Jev Gote
 ```
-
-Hundred is a local-first open source society simulation. One hundred NPCs live in a tiny town with hunger, money, jobs, relationships, and memories. [Jev](https://docs.typesafe.ai), TypeSafe's System One model, only answers one question: **what should this person do next?**
-
-![Hundred layout](docs/architecture/overview.md)
 
 ## Quick start
 
 ```bash
-git clone https://github.com/jammaru/hundred.git
-cd hundred
+git clone https://github.com/jammaru/jev-lab.git
+cd jev-lab
 pnpm install
 pnpm dev
 ```
 
-Open `http://127.0.0.1:5188`. No API key is required. The world starts in **Rules** mode.
+Open `http://127.0.0.1:5173`. No API key is required. Products start in **Rules** mode.
+
+| App       | URL                   |
+| --------- | --------------------- |
+| Lab hub   | http://127.0.0.1:5173 |
+| Hundred   | http://127.0.0.1:5188 |
+| Jev Shogi | http://127.0.0.1:5191 |
+
+`pnpm dev:hundred` and `pnpm dev:shogi` start one product at a time.
+
+## Products
+
+### Hundred
+
+One hundred NPCs live in a tiny town with hunger, money, jobs, relationships, and memories. Jev only answers **what should this person do next?**
+
+### Jev Shogi
+
+A wooden shogi board. You play Sente. After each legal move, Jev (or local rules) chooses Gote’s reply from engine-legal USI moves. Jev never invents an illegal move.
 
 ## Nix development environment
 
@@ -61,7 +71,7 @@ and editor inside WSL.
 
 ### World sprites
 
-Original sprites are retained in `apps/web/public/assets/sprites`. The Vite sprite
+Original sprites are retained in `apps/hundred-web/public/assets/sprites`. The Vite sprite
 plugin produces `/assets/world/*.png` for both development and production. It
 removes bright and dark magenta, recovers RGB data beneath alpha erased by the
 legacy shadow key, and trims each sprite with transparent padding. This must happen
@@ -72,36 +82,41 @@ these legacy sources, not arbitrary new transparent artwork.
 
 ## Enable Jev
 
+Keep the key in `.env`. Hundred stays on local Rules unless you opt in. Jev Shogi uses Jev whenever the key is present.
+
 ```bash
 cp .env.example .env
 ```
 
 ```env
 JEV_API_KEY=your_key_here
+DECISION_PROVIDER=rules
+SHOGI_PROVIDER=jev
 ```
 
 ```bash
-pnpm dev
+pnpm test:jev
 ```
 
-The top bar shows `Jev ●` when decisions come from TypeSafe. If Jev times out or errors, the engine falls back to rules and the world keeps moving.
+That live test is the cheap way to confirm the key. Hundred: set `DECISION_PROVIDER=jev` only when you want the town to spend credits. Shogi: `SHOGI_PROVIDER=jev` (the default when a key exists). `SHOGI_PROVIDER=rules` forces local replies. If Jev times out or errors, engines fall back to rules.
 
 ## How it works
 
-- Simulation engine: movement, needs, food, work, theft, help, fights
-- Decision providers: `rules`, `jev`, `replay`
-- Renderer: cozy pixel-art town in PixiJS, React inspector, town / follow / first-person cameras
-- Recording: `runs/<timestamp>_seed-<seed>/`
+- Hundred simulation: movement, needs, food, work, theft, help, fights
+- Shogi engine: legal moves, drops, promotion, check, mate
+- Decision providers: `rules`, `jev` (Hundred also has `replay`)
+- Hundred renderer: cozy pixel-art town in PixiJS, React inspector, town / follow / first-person cameras
+- Recording: `apps/hundred-server/runs/<timestamp>_seed-<seed>/`
 
-Jev never receives the whole world. Each request is a compact state object plus the currently available actions.
+Jev never receives a whole world or a whole game tree. Each request is compact state plus the currently legal options.
 
 ## Replay
 
 ```bash
-pnpm replay ./runs/<run-directory>
+pnpm replay ./apps/hundred-server/runs/<run-directory>
 ```
 
-This replays recorded decisions and never calls the Jev API.
+This replays recorded Hundred decisions and never calls the Jev API.
 
 ## Development
 

@@ -1,6 +1,6 @@
 # Security
 
-Hundred binds to `127.0.0.1` by default. Do not change the default host to `0.0.0.0`.
+Jev Lab binds to `127.0.0.1` by default. Do not change the default host to `0.0.0.0`.
 
 API keys live in `.env` on the server only.
 

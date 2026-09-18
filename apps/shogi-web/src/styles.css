@@ -1,0 +1,432 @@
+:root {
+  color-scheme: dark;
+  --ink: #2b1b0e;
+  --paper: #f4e4c1;
+  --wood: #c9964a;
+  --wood-dark: #6b3d1f;
+  --felt: #1c140e;
+  --gold: #e8c36a;
+  font-family: 'Shippori Mincho', 'Noto Serif JP', serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background:
+    radial-gradient(1200px 600px at 50% -10%, rgba(232, 195, 106, 0.16), transparent 55%),
+    linear-gradient(180deg, #2a1c12 0%, #120c08 100%);
+  color: var(--paper);
+}
+
+button,
+select {
+  font: inherit;
+}
+
+.page {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: center;
+  padding: 18px 28px 8px;
+}
+
+.topbar h1 {
+  margin: 0;
+  font-size: 28px;
+  letter-spacing: 0.12em;
+}
+
+.topbar p {
+  margin: 4px 0 0;
+  opacity: 0.78;
+  font-size: 13px;
+}
+
+.labLink {
+  color: var(--gold);
+  text-decoration: none;
+  border: 1px solid rgba(232, 195, 106, 0.35);
+  padding: 6px 10px;
+  border-radius: 999px;
+}
+
+.topActions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.topActions button,
+.topActions select,
+.fallback button,
+.modalCard button {
+  background: #3a2718;
+  color: var(--paper);
+  border: 1px solid #8a6233;
+  border-radius: 8px;
+  padding: 8px 12px;
+}
+
+.badge {
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #3a2718;
+  border: 1px solid #6b4a2a;
+}
+
+.badge.jev {
+  background: #5a2a18;
+  border-color: var(--gold);
+}
+
+.table {
+  display: grid;
+  grid-template-columns: 168px minmax(420px, 640px) 168px minmax(180px, 240px);
+  grid-template-areas: 'gote stage sente kifu';
+  gap: 20px;
+  align-items: start;
+  justify-content: center;
+  padding: 12px 24px 40px;
+}
+
+.komadai-gote {
+  grid-area: gote;
+}
+
+.stage {
+  grid-area: stage;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.komadai-sente {
+  grid-area: sente;
+}
+
+.status {
+  margin: 0;
+  min-height: 1.4em;
+  letter-spacing: 0.08em;
+}
+
+.status.check {
+  color: #ffb4a2;
+}
+
+.status.mate,
+.status.thinking {
+  color: var(--gold);
+}
+
+.hint {
+  margin: 0;
+  font-size: 12px;
+  opacity: 0.65;
+}
+
+.boardWrap {
+  background: #4a2b16;
+  padding: 18px 18px 22px;
+  border-radius: 8px;
+  box-shadow:
+    0 0 0 3px #2a160c,
+    0 18px 40px rgba(0, 0, 0, 0.45);
+}
+
+.fileLabels,
+.rankLabels {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  color: #f0d7a6;
+  font-size: 13px;
+}
+
+.fileLabels {
+  grid-template-columns: repeat(9, 1fr);
+  padding: 0 0 8px;
+  text-align: center;
+}
+
+.boardRow {
+  display: grid;
+  grid-template-columns: 1fr 22px;
+  gap: 8px;
+}
+
+.rankLabels {
+  grid-template-rows: repeat(9, 1fr);
+  align-items: center;
+  text-align: center;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  width: min(64vw, 540px);
+  aspect-ratio: 1;
+  background:
+    repeating-linear-gradient(90deg, rgba(120, 70, 24, 0.16) 0 1px, transparent 1px 7px),
+    linear-gradient(180deg, #e8c37a 0%, #d7a45a 48%, #c4893e 100%);
+  border: 2px solid #5c3314;
+  box-shadow: inset 0 0 0 1px #8a5a28;
+}
+
+.square {
+  position: relative;
+  border: 1px solid rgba(70, 38, 12, 0.55);
+  background: transparent;
+  padding: 2px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.square:disabled {
+  cursor: default;
+}
+
+.square.selected {
+  background: rgba(255, 214, 110, 0.28);
+}
+
+.square.last {
+  background: rgba(186, 64, 42, 0.22);
+}
+
+.square.target {
+  background: rgba(80, 120, 64, 0.18);
+}
+
+.square.hoshi::after {
+  content: '';
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #4a2a12;
+  top: -4px;
+  left: -4px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(48, 92, 46, 0.8);
+}
+
+.koma {
+  width: 86%;
+  height: 92%;
+  filter: drop-shadow(0 2px 1px rgba(70, 40, 10, 0.45));
+  overflow: visible;
+}
+
+.komaGote {
+  transform: rotate(180deg);
+}
+
+.komaLast {
+  filter: drop-shadow(0 0 6px rgba(186, 64, 42, 0.55));
+}
+
+.komaSelected {
+  transform: translateY(-3px);
+  filter: drop-shadow(0 6px 4px rgba(0, 0, 0, 0.35));
+}
+
+.komaGote.komaSelected {
+  transform: rotate(180deg) translateY(-3px);
+}
+
+.komaKanji,
+.komaKanjiPromo {
+  font-family: 'Shippori Mincho', 'Noto Serif JP', serif;
+  font-weight: 800;
+  font-size: 18px;
+  fill: #2a160c;
+}
+
+.komaKanjiPromo {
+  fill: #9c1c12;
+}
+
+.komadai {
+  background: linear-gradient(180deg, #6a4324, #3d2412);
+  border: 2px solid #2a160c;
+  border-radius: 6px;
+  min-height: 280px;
+  padding: 12px;
+  box-shadow: inset 0 0 0 1px rgba(255, 220, 160, 0.12);
+}
+
+.komadai header {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-bottom: 10px;
+  letter-spacing: 0.08em;
+}
+
+.komadai header span {
+  opacity: 0.7;
+  font-size: 12px;
+}
+
+.komadai ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.handPiece {
+  position: relative;
+  width: 100%;
+  height: 58px;
+  background: transparent;
+  border: 0;
+  padding: 0;
+}
+
+.handPiece.selected {
+  outline: 1px solid var(--gold);
+}
+
+.handPiece .koma {
+  width: 42px;
+  height: 54px;
+}
+
+.handPiece em {
+  position: absolute;
+  right: 8px;
+  bottom: 4px;
+  font-style: normal;
+  background: #2a160c;
+  border-radius: 999px;
+  padding: 1px 7px;
+  font-size: 12px;
+}
+
+.emptyHand {
+  opacity: 0.55;
+}
+
+.kifu {
+  grid-area: kifu;
+  background: #f7edd4;
+  color: #2a160c;
+  min-height: 420px;
+  padding: 16px;
+  border-radius: 2px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.28);
+}
+
+.kifu h2 {
+  margin: 0 0 12px;
+  font-size: 16px;
+}
+
+.kifu ol {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.kifu li {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 3px 0;
+}
+
+.kifu li.latest {
+  font-weight: 700;
+}
+
+.kifu em {
+  font-style: normal;
+  font-size: 11px;
+  color: #8a3b1c;
+}
+
+.fallback {
+  display: grid;
+  place-items: center;
+  gap: 12px;
+  padding: 80px 20px;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  border: 0;
+  background: rgba(12, 8, 4, 0.55);
+  display: grid;
+  place-items: center;
+}
+
+.modalCard {
+  background: #f7edd4;
+  color: #2a160c;
+  padding: 24px;
+  border-radius: 10px;
+  display: grid;
+  gap: 12px;
+  min-width: 240px;
+}
+
+.modalCard div {
+  display: flex;
+  gap: 8px;
+}
+
+.modalCard button {
+  flex: 1;
+  color: var(--paper);
+}
+
+@media (max-width: 1100px) {
+  .table {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      'stage stage'
+      'gote sente'
+      'kifu kifu';
+    justify-items: center;
+  }
+
+  .komadai,
+  .kifu,
+  .stage {
+    width: min(540px, 100%);
+  }
+}

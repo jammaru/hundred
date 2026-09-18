@@ -4,6 +4,9 @@
   "workspaces": {
     "packages/decision-jev": {
       "entry": ["src/**/*.test.ts"]
+    },
+    "packages/shogi-engine": {
+      "entry": ["src/**/*.test.ts"]
     }
   }
 }

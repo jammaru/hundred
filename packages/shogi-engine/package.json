@@ -1,0 +1,19 @@
+{
+  "name": "@jev/shogi-engine",
+  "version": "0.2.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    }
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json --pretty"
+  },
+  "devDependencies": {
+    "vitest": "catalog:"
+  }
+}

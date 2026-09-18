@@ -4,10 +4,23 @@ import { fileURLToPath } from 'node:url';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 
-const forbidden: Record<string, string[]> = {
-  '@hundred/domain': ['react', 'pixi.js', 'hono', '@typesafe-ai/sdk', 'zustand'],
-  '@hundred/simulation': ['react', 'pixi.js', 'hono', '@typesafe-ai/sdk'],
-  '@hundred/decision': ['react', 'pixi.js', 'hono', '@typesafe-ai/sdk'],
+const forbidden: Record<string, { folder: string; banned: string[] }> = {
+  '@hundred/domain': {
+    folder: 'packages/domain',
+    banned: ['react', 'pixi.js', 'hono', '@typesafe-ai/sdk', 'zustand'],
+  },
+  '@hundred/simulation': {
+    folder: 'packages/simulation',
+    banned: ['react', 'pixi.js', 'hono', '@typesafe-ai/sdk'],
+  },
+  '@hundred/decision': {
+    folder: 'packages/decision',
+    banned: ['react', 'pixi.js', 'hono', '@typesafe-ai/sdk'],
+  },
+  '@jev/shogi-engine': {
+    folder: 'packages/shogi-engine',
+    banned: ['react', 'pixi.js', 'hono', '@typesafe-ai/sdk'],
+  },
 };
 
 const readDeps = (packagePath: string): string[] => {
@@ -19,9 +32,8 @@ const readDeps = (packagePath: string): string[] => {
 };
 
 let failed = false;
-for (const [name, banned] of Object.entries(forbidden)) {
-  const folder = name.replace('@hundred/', '');
-  const deps = readDeps(join(root, 'packages', folder, 'package.json'));
+for (const [name, { folder, banned }] of Object.entries(forbidden)) {
+  const deps = readDeps(join(root, folder, 'package.json'));
   for (const item of banned) {
     if (deps.includes(item)) {
       console.error(`${name} must not depend on ${item}`);

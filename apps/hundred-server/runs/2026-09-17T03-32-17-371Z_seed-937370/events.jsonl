@@ -1,0 +1,55 @@
+{"tick":46,"type":"action_completed","text":"Soren Petrov finished eat."}
+{"tick":48,"type":"action_completed","text":"Omar Ali finished idle."}
+{"tick":51,"type":"action_completed","text":"Eli Vogel finished eat."}
+{"tick":57,"type":"conversation","text":"Eli Ali talked with Ravi Chen."}
+{"tick":57,"type":"action_completed","text":"Eli Ali finished talk."}
+{"tick":58,"type":"conversation","text":"Sarah Okada talked with Priya Larsen."}
+{"tick":58,"type":"action_completed","text":"Sarah Okada finished talk."}
+{"tick":58,"type":"action_completed","text":"Rosa Wright finished eat."}
+{"tick":66,"type":"action_completed","text":"Mira Tanaka finished work."}
+{"tick":72,"type":"action_completed","text":"Ibrahim Singh finished eat."}
+{"tick":74,"type":"action_completed","text":"Maya Nwosu finished eat."}
+{"tick":82,"type":"action_completed","text":"Zara Bauer finished work."}
+{"tick":83,"type":"action_completed","text":"Owen Diaz finished eat."}
+{"tick":86,"type":"conversation","text":"Omar Ali talked with Emma Silva."}
+{"tick":86,"type":"action_completed","text":"Omar Ali finished talk."}
+{"tick":88,"type":"action_completed","text":"Noor Ali finished work."}
+{"tick":88,"type":"action_completed","text":"Leo Berg finished eat."}
+{"tick":90,"type":"action_completed","text":"Mei Hassan finished eat."}
+{"tick":104,"type":"action_completed","text":"Priya Ali finished eat."}
+{"tick":105,"type":"action_completed","text":"Theo Andersen finished eat."}
+{"tick":105,"type":"action_completed","text":"Aya Okada finished eat."}
+{"tick":107,"type":"action_completed","text":"Leo Diaz finished eat."}
+{"tick":112,"type":"action_completed","text":"Anton Sato finished eat."}
+{"tick":113,"type":"action_completed","text":"Kai Diaz finished rest."}
+{"tick":113,"type":"action_completed","text":"Maya Andersen finished eat."}
+{"tick":114,"type":"action_completed","text":"Leo Hughes finished eat."}
+{"tick":114,"type":"action_completed","text":"Amelia Nwosu finished eat."}
+{"tick":119,"type":"action_completed","text":"Kai Petrov finished work."}
+{"tick":119,"type":"conversation","text":"Ibrahim Costa talked with Theo Andersen."}
+{"tick":119,"type":"action_completed","text":"Ibrahim Costa finished talk."}
+{"tick":120,"type":"action_completed","text":"Ines Kim finished eat."}
+{"tick":120,"type":"action_completed","text":"Anton Wright finished eat."}
+{"tick":120,"type":"action_completed","text":"John Khan finished eat."}
+{"tick":122,"type":"conversation","text":"Sora Petrov talked with Omar Ali."}
+{"tick":122,"type":"action_completed","text":"Sora Petrov finished talk."}
+{"tick":122,"type":"action_completed","text":"Maya Ali finished eat."}
+{"tick":123,"type":"action_completed","text":"Lina Chen finished visit."}
+{"tick":125,"type":"action_completed","text":"Diego Costa finished eat."}
+{"tick":125,"type":"conversation","text":"Diego Nwosu talked with Sam Nguyen."}
+{"tick":125,"type":"action_completed","text":"Diego Nwosu finished talk."}
+{"tick":125,"type":"action_completed","text":"Ivy Ito finished eat."}
+{"tick":128,"type":"action_completed","text":"Leila Sato finished eat."}
+{"tick":129,"type":"action_completed","text":"Emma Silva finished work."}
+{"tick":129,"type":"action_completed","text":"Ken Singh finished work."}
+{"tick":129,"type":"action_completed","text":"Freya Singh finished work."}
+{"tick":132,"type":"action_completed","text":"Priya Larsen finished work."}
+{"tick":132,"type":"transaction","text":"Clara Okada bought food."}
+{"tick":132,"type":"action_completed","text":"Clara Okada finished buy food."}
+{"tick":132,"type":"action_completed","text":"Zara Bauer finished ask for help."}
+{"tick":132,"type":"action_completed","text":"Ines Nwosu finished idle."}
+{"tick":136,"type":"action_completed","text":"Sarah Novak finished eat."}
+{"tick":138,"type":"action_completed","text":"John Larsen finished eat."}
+{"tick":139,"type":"action_completed","text":"Maya Sato finished eat."}
+{"tick":141,"type":"conversation","text":"Nora Park talked with Ravi Kowalski."}
+{"tick":141,"type":"action_completed","text":"Nora Park finished talk."}
